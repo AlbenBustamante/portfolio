@@ -4,19 +4,23 @@
   <h1 class="text-lg font-medium text-primary-700">
     {{ "\<Alben Bustamante />" }}
   </h1>
-  <ul
-    class="fixed right-0 top-20 bottom-0 flex flex-col justify-start gap-2 h-[calc(100dvh_-_5rem)] transition-transform duration-300 bg-primary-50 w-3/4"
+  <div
+    class="fixed right-0 top-20 bottom-0 flex flex-col justify-between gap-2 h-[calc(100dvh_-_5rem)] w-3/4 py-7 transition-transform duration-300 bg-primary-50"
     [ngClass]="{ 'translate-x-full': !show() }"
   >
-    <app-navbar-item headline="About me" />
-    <app-navbar-item headline="Skills" />
-    <app-navbar-item headline="Experience" />
-    <app-navbar-item headline="Projecs" />
-    <app-navbar-item headline="Certifications" />
-  </ul>
-  <div class="flex justify-center items-center gap-2.5">
-    <svg class="size-6 text-primary-500" globe-icon></svg>
-    <svg class="size-6 text-primary-500" moon-icon></svg>
+    <ul class="flex flex-col gap-2">
+      <app-navbar-item headline="About me" />
+      <app-navbar-item headline="Skills" />
+      <app-navbar-item headline="Experience" />
+      <app-navbar-item headline="Projects" />
+      <app-navbar-item headline="Certifications" />
+    </ul>
+    <div
+      class="flex justify-between items-center gap-2.5 rounded-3xl shadow px-12 py-4 bg-primary-100 w-3/4 mx-auto"
+    >
+      <svg class="size-8 text-primary-500" globe-icon></svg>
+      <svg class="size-8 text-primary-500" moon-icon></svg>
+    </div>
   </div>
   <button class="outline-none cursor-pointer" (click)="toggleShowNavBar()">
     @if (show()) {
