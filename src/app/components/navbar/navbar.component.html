@@ -1,9 +1,11 @@
 <nav
   class="top-0 right-0 left-0 bg-primary-50 px-5 py-4 flex items-center justify-between gap-5 h-20"
 >
-  <h1 class="text-xl font-medium text-primary-700">Alben Bustamante</h1>
+  <h1 class="text-lg font-medium text-primary-700">
+    {{ "\<Alben Bustamante />" }}
+  </h1>
   <ul
-    class="fixed right-0 top-20 bottom-0 flex flex-col justify-center h-[calc(100dvh_-_5rem)] transition-transform duration-300 bg-primary-50 w-3/4"
+    class="fixed right-0 top-20 bottom-0 flex flex-col justify-start gap-2 h-[calc(100dvh_-_5rem)] transition-transform duration-300 bg-primary-50 w-3/4"
     [ngClass]="{ 'translate-x-full': !show() }"
   >
     <app-navbar-item headline="About me" />
@@ -13,8 +15,8 @@
     <app-navbar-item headline="Certifications" />
   </ul>
   <div class="flex justify-center items-center gap-2.5">
-    <svg class="size-8 text-primary-500" globe-icon></svg>
-    <svg class="size-8 text-primary-500" moon-icon></svg>
+    <svg class="size-6 text-primary-500" globe-icon></svg>
+    <svg class="size-6 text-primary-500" moon-icon></svg>
   </div>
   <button class="outline-none cursor-pointer" (click)="toggleShowNavBar()">
     @if (show()) {
