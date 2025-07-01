@@ -1,5 +1,5 @@
 <nav
-  class="top-0 right-0 left-0 bg-primary-50 px-5 py-4 flex items-center justify-between gap-5 h-20"
+  class="sticky top-0 right-0 left-0 bg-primary-50 px-5 py-4 flex items-center justify-between gap-5 h-20"
 >
   <h1 class="text-lg font-medium text-primary-700">
     {{ "\<Alben Bustamante />" }}
@@ -9,6 +9,7 @@
     [ngClass]="{ 'translate-x-full': !show() }"
   >
     <ul class="flex flex-col gap-2">
+      <app-navbar-item headline="Home" />
       <app-navbar-item headline="About me" />
       <app-navbar-item headline="Skills" />
       <app-navbar-item headline="Experience" />
