@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 })
 export class NavbarItemComponent {
   @Input({ required: true }) headline!: string;
+  @Input({ required: true }) route!: string;
 }
