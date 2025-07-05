@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
+import { LandingTitleComponent } from '../components/landing-title/landing-title.component';
+import { LandingSubtitleComponent } from '../components/landing-subtitle/landing-subtitle.component';
 
 @Component({
   selector: 'app-resume',
-  imports: [],
+  imports: [LandingTitleComponent, LandingSubtitleComponent],
   templateUrl: './resume.component.html',
-  styleUrl: './resume.component.css'
+  styleUrl: './resume.component.css',
 })
-export class ResumeComponent {
-
-}
+export class ResumeComponent {}

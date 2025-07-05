@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { LandingTitleComponent } from '../components/landing-title/landing-title.component';
 
 @Component({
   selector: 'app-projects',
-  imports: [],
+  imports: [LandingTitleComponent],
   templateUrl: './projects.component.html',
-  styleUrl: './projects.component.css'
+  styleUrl: './projects.component.css',
 })
-export class ProjectsComponent {
-
-}
+export class ProjectsComponent {}
