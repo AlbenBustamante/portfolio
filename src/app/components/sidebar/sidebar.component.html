@@ -6,25 +6,32 @@
       <h1 class="text-center text-2xl font-semibold text-primary-700">
         Alben Bustamante
       </h1>
-      <p class="text-center text-neutral-700 font-medium">Hi there, I'm</p>
+      <p class="text-center text-primary-950 font-medium">Hi there, I'm</p>
     </div>
     <app-accessibility />
   </header>
-  <div class="border-y-2 border-neutral-300 py-12">
-    <p class="text-center text-lg text-neutral-700 text-balance font-semibold">
+  <div class="border-y-2 border-primary-100 py-12">
+    <p class="text-center text-lg text-primary-900 text-balance font-semibold">
       A passionate FullStack Developer who builds scalable solutions for Web and
       Software applications through of Java and Angular.
     </p>
   </div>
-  <footer class="flex items-center justify-center gap-5 p-5">
-    <app-sidebar-social-media-button text="albenbustamante">
-      <svg class="size-6" github-icon></svg>
-    </app-sidebar-social-media-button>
-    <app-sidebar-social-media-button text="Alben Bustamante">
-      <svg class="size-6" linkedin-icon></svg>
-    </app-sidebar-social-media-button>
-    <app-sidebar-social-media-button text="albenbustamante@gmail.com">
-      <svg class="size-6" email-icon></svg>
-    </app-sidebar-social-media-button>
+  <footer class="grid grid-cols-2 md:max-lg:grid-cols-1 gap-5 py-5 px-12">
+    <div class="grid grid-cols-2 gap-5">
+      <app-sidebar-social-media-button text="albenbustamante">
+        <svg class="size-6" github-icon></svg>
+      </app-sidebar-social-media-button>
+      <app-sidebar-social-media-button text="Alben Bustamante">
+        <svg class="size-6" linkedin-icon></svg>
+      </app-sidebar-social-media-button>
+    </div>
+    <div class="grid grid-cols-2 gap-5">
+      <app-sidebar-social-media-button text="albenbustamante@gmail.com">
+        <svg class="size-6" email-icon></svg>
+      </app-sidebar-social-media-button>
+      <app-sidebar-social-media-button text="+57 3165574868">
+        <svg class="size-6" phone-icon></svg>
+      </app-sidebar-social-media-button>
+    </div>
   </footer>
 </aside>

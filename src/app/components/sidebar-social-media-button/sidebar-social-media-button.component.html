@@ -1,6 +1,10 @@
 <button
-  class="cursor-pointer p-1.5 hover:bg-primary-200 hover:scale-110 rounded-full transition-all flex items-center gap-2 w-full"
+  class="cursor-pointer p-2 md:max-lg:p-3 hover:bg-primary-200 hover:scale-110 md:max-lg:hover:scale-105 rounded-full transition-all flex items-center gap-5 md:max-lg:w-full"
 >
   <ng-content />
-  <p class="hidden text-neutral-700 font-medium">{{ text }}</p>
+  <p
+    class="hidden md:max-lg:block text-neutral-700 font-medium text-left overflow-ellipsis whitespace-nowrap overflow-hidden"
+  >
+    {{ text }}
+  </p>
 </button>

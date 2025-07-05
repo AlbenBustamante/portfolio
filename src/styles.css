@@ -31,6 +31,12 @@
   --color-gray-950: var(--color-neutral-950);
 }
 
+*,
+*::before,
+*::after {
+  @apply outline-none;
+}
+
 body {
-  @apply font-mono;
+  @apply font-mono text-primary-950;
 }

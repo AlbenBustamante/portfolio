@@ -4,6 +4,7 @@ import { SidebarSocialMediaButtonComponent } from '../sidebar-social-media-butto
 import { LinkedinIconComponent } from '../icons/linkedin-icon/linkedin-icon.component';
 import { EmailIconComponent } from '../icons/email-icon/email-icon.component';
 import { AccessibilityComponent } from '../accessibility/accessibility.component';
+import { PhoneIconComponent } from '../icons/phone-icon/phone-icon.component';
 
 @Component({
   selector: 'app-sidebar',
@@ -12,6 +13,7 @@ import { AccessibilityComponent } from '../accessibility/accessibility.component
     LinkedinIconComponent,
     EmailIconComponent,
     SidebarSocialMediaButtonComponent,
+    PhoneIconComponent,
     AccessibilityComponent,
   ],
   templateUrl: './sidebar.component.html',
