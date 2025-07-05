@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AccessibilityComponent } from '../../components/accessibility/accessibility.component';
+//import { AccessibilityComponent } from '../../components/accessibility/accessibility.component';
 import { EmailIconComponent } from '../../../../components/icons/email-icon/email-icon.component';
 import { GithubIconComponent } from '../../../../components/icons/github-icon/github-icon.component';
 import { LinkedinIconComponent } from '../../../../components/icons/linkedin-icon/linkedin-icon.component';
@@ -14,7 +14,7 @@ import { SidebarSocialMediaButtonComponent } from '../sidebar-social-media-butto
     EmailIconComponent,
     SidebarSocialMediaButtonComponent,
     PhoneIconComponent,
-    AccessibilityComponent,
+    //AccessibilityComponent,
   ],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.css',
