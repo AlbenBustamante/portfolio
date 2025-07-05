@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { GithubIconComponent } from '../icons/github-icon/github-icon.component';
+import { AccessibilityComponent } from '../../../components/accessibility/accessibility.component';
+import { EmailIconComponent } from '../../../components/icons/email-icon/email-icon.component';
+import { GithubIconComponent } from '../../../components/icons/github-icon/github-icon.component';
+import { LinkedinIconComponent } from '../../../components/icons/linkedin-icon/linkedin-icon.component';
+import { PhoneIconComponent } from '../../../components/icons/phone-icon/phone-icon.component';
 import { SidebarSocialMediaButtonComponent } from '../sidebar-social-media-button/sidebar-social-media-button.component';
-import { LinkedinIconComponent } from '../icons/linkedin-icon/linkedin-icon.component';
-import { EmailIconComponent } from '../icons/email-icon/email-icon.component';
-import { AccessibilityComponent } from '../accessibility/accessibility.component';
-import { PhoneIconComponent } from '../icons/phone-icon/phone-icon.component';
 
 @Component({
   selector: 'app-sidebar',
