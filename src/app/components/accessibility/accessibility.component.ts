@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { MoonIconComponent } from '../moon-icon/moon-icon.component';
-import { GlobeIconComponent } from '../globe-icon/globe-icon.component';
+import { MoonIconComponent } from '../icons/moon-icon/moon-icon.component';
+import { GlobeIconComponent } from '../icons/globe-icon/globe-icon.component';
 
 @Component({
   selector: 'app-accessibility',

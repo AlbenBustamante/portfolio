@@ -1,12 +1,27 @@
-<aside class="bg-primary-50 p-4 flex flex-col gap-1">
-  <header class="flex flex-col-reverse gap-1">
+<aside
+  class="w-full h-[calc(100dvh_-_6.5rem)] bg-primary-50 p-5 rounded-xl flex flex-col justify-between gap-5"
+>
+  <header class="flex flex-col-reverse gap-1 py-5">
     <h1 class="text-center text-2xl font-semibold text-primary-700">
       Alben Bustamante
     </h1>
     <p class="text-center text-neutral-700 font-medium">Hi there, I'm</p>
   </header>
-  <p class="text-center text-neutral-700 text-balance">
-    A passionate FullStack Developer who builds scalable Software and Web
-    solutions through of Java and Angular.
-  </p>
+  <div class="border-y-2 border-neutral-300 py-12">
+    <p class="text-center text-lg text-neutral-700 text-balance font-semibold">
+      A passionate FullStack Developer who builds scalable solutions for Web and
+      Software applications through of Java and Angular.
+    </p>
+  </div>
+  <footer class="flex items-center justify-center gap-5 p-5">
+    <app-sidebar-social-media-button text="albenbustamante">
+      <svg class="size-6" github-icon></svg>
+    </app-sidebar-social-media-button>
+    <app-sidebar-social-media-button text="Alben Bustamante">
+      <svg class="size-6" linkedin-icon></svg>
+    </app-sidebar-social-media-button>
+    <app-sidebar-social-media-button text="albenbustamante@gmail.com">
+      <svg class="size-6" email-icon></svg>
+    </app-sidebar-social-media-button>
+  </footer>
 </aside>
