@@ -1,43 +1,16 @@
 <nav
-  class="sticky top-0 right-5 left-0 bg-primary-50 px-7 py-5 rounded-2xl flex items-center justify-between gap-5 h-20"
+  class="fixed left-5 bottom-0 right-5 bg-primary-50 px-7 rounded-t-2xl flex items-center justify-center h-16"
 >
-  <h1 class="text-lg font-medium text-primary-700">
-    {{ "\<Alben Bustamante />" }}
-  </h1>
-  <div
-    class="fixed right-0 top-0 bottom-0 h-dvh w-full transition-transform duration-300 grid grid-cols-4"
-    [ngClass]="{ 'translate-x-full': !show() }"
-  >
-    <div
-      class="col-span-1 bg-primary-950 duration-700 transition-opacity"
-      [ngClass]="{ 'opacity-0': !show(), 'opacity-75': show() }"
-    ></div>
-    <div
-      class="col-span-3 flex flex-col justify-between gap-2 py-7 bg-primary-50"
+  <ul class="flex items-center justify-between gap-2">
+    <app-navbar-item headline="Home" />
+    <app-navbar-item headline="About" />
+    <app-navbar-item headline="Portfolio" />
+    <app-navbar-item headline="Contact" />
+  </ul>
+  <!--div
+      class="flex justify-between items-center gap-2.5 rounded-3xl shadow px-12 py-4 bg-primary-100 w-3/4 mx-auto"
     >
-      <button
-        class="outline-none cursor-pointer absolute top-11 right-12"
-        (click)="toggleShowNavBar()"
-      >
-        <svg class="size-8 text-primary-500" close-menu-icon></svg>
-      </button>
-      <ul class="flex flex-col gap-2 mt-12">
-        <app-navbar-item headline="Home" />
-        <app-navbar-item headline="About me" />
-        <app-navbar-item headline="Skills" />
-        <app-navbar-item headline="Experience" />
-        <app-navbar-item headline="Projects" />
-        <app-navbar-item headline="Certifications" />
-      </ul>
-      <div
-        class="flex justify-between items-center gap-2.5 rounded-3xl shadow px-12 py-4 bg-primary-100 w-3/4 mx-auto"
-      >
-        <svg class="size-8 text-primary-500" globe-icon></svg>
-        <svg class="size-8 text-primary-500" moon-icon></svg>
-      </div>
-    </div>
-  </div>
-  <button class="outline-none cursor-pointer" (click)="toggleShowNavBar()">
-    <svg class="size-8 text-primary-500" open-menu-icon></svg>
-  </button>
+      <svg class="size-8 text-primary-500" globe-icon></svg>
+      <svg class="size-8 text-primary-500" moon-icon></svg>
+    </div-->
 </nav>

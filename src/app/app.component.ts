@@ -1,14 +1,11 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { NgClass } from '@angular/common';
+import HomeComponent from './features/home/home.component';
 
 @Component({
   selector: 'app-root',
-  imports: [NavbarComponent, RouterOutlet, NgClass],
+  imports: [NavbarComponent, HomeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent {
-  readonly showNavBar = signal<boolean>(false);
-}
+export class AppComponent {}
