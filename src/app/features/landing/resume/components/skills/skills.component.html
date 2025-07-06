@@ -1,14 +1,18 @@
 <section>
   <app-landing-subtitle headline="Skills" />
-  <ul class="mt-2 grid grid-cols-[repeat(auto-fit,_3rem)]">
-    <li><svg ts-icon></svg></li>
-    <li><svg java-icon></svg></li>
-    <li><svg js-icon></svg></li>
-    <li><svg html-icon></svg></li>
-    <li><svg css-icon></svg></li>
-    <li><svg tailwind-icon></svg></li>
-    <li><svg angular-icon></svg></li>
-    <li><svg spring-icon></svg></li>
-    <li><svg sql-icon></svg></li>
-  </ul>
+  <div class="flex flex-col gap-5">
+    <app-skill-card headline="Programming Languages">
+      <li><svg class="size-10 sm:size-11 md:size-12" java-icon></svg></li>
+      <li><svg class="size-10 sm:size-11 md:size-12" js-icon></svg></li>
+      <li><svg class="size-10 sm:size-11 md:size-12" ts-icon></svg></li>
+      <li><svg class="size-10 sm:size-11 md:size-12" html-icon></svg></li>
+      <li><svg class="size-10 sm:size-11 md:size-12" css-icon></svg></li>
+      <li><svg class="size-10 sm:size-11 md:size-12" sql-icon></svg></li>
+    </app-skill-card>
+    <app-skill-card headline="Frameworks & Libraries">
+      <li><svg class="size-10 sm:size-11 md:size-12" tailwind-icon></svg></li>
+      <li><svg class="size-10 sm:size-11 md:size-12" angular-icon></svg></li>
+      <li><svg class="size-10 sm:size-11 md:size-12" spring-icon></svg></li>
+    </app-skill-card>
+  </div>
 </section>

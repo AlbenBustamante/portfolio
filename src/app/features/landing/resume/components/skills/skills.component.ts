@@ -9,6 +9,7 @@ import { TailwindIconComponent } from '../../icons/tailwind-icon/tailwind-icon.c
 import { AngularIconComponent } from '../../icons/angular-icon/angular-icon.component';
 import { SpringIconComponent } from '../../icons/spring-icon/spring-icon.component';
 import { SqlIconComponent } from '../../icons/sql-icon/sql-icon.component';
+import { SkillCardComponent } from '../skill-card/skill-card.component';
 
 @Component({
   selector: 'app-skills',
@@ -23,6 +24,7 @@ import { SqlIconComponent } from '../../icons/sql-icon/sql-icon.component';
     AngularIconComponent,
     SpringIconComponent,
     SqlIconComponent,
+    SkillCardComponent,
   ],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.css',
