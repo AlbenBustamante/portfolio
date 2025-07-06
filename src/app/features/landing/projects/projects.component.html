@@ -1,12 +1,9 @@
 <app-landing-section-container headline="Projects">
-  <ul class="grid grid-cols-[repeat(auto-fit,_minmax(20rem,_1fr))] gap-3.5">
-    <li>Portfolio</li>
-    <li>FinManage</li>
-    <li>COP Calculator</li>
-    <li>Fun Virtual Reading</li>
-    <li>ToDo List</li>
-    <li>Microblogging</li>
-    <li>Register Sales</li>
-    <li>Banking Correspondent</li>
+  <ul class="grid grid-cols-[repeat(auto-fit,_minmax(20rem,_1fr))] gap-7">
+    @for (project of projects(); track $index) {
+    <li>
+      <app-project-item [project]="project" />
+    </li>
+    }
   </ul>
 </app-landing-section-container>
