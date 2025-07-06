@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { LandingTitleComponent } from '../components/landing-title/landing-title.component';
+import { LandingSectionContainerComponent } from '../components/landing-section-container/landing-section-container.component';
 
 @Component({
   selector: 'app-projects',
-  imports: [LandingTitleComponent],
+  imports: [LandingSectionContainerComponent],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css',
 })
