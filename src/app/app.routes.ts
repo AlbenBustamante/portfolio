@@ -5,6 +5,6 @@ export const routes: Routes = [
   { path: '', component: LandingComponent },
   {
     path: 'project',
-    loadComponent: () => import('./features/project/project.component'),
+    loadComponent: () => import('./features/project-details/project-details.component'),
   },
 ];
