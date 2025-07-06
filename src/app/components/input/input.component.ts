@@ -10,7 +10,7 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
 export class InputComponent {
   @Input({ required: true }) name!: string;
   @Input({ required: true }) label!: string;
-  @Input() type: 'text' = 'text';
+  @Input() type: 'text' | 'email' = 'text';
   @Input() placeholder: string = '';
   @Input() control: FormControl = new FormControl('');
   @Input() autocomplete: 'name' | 'email' | 'off' = 'off';
