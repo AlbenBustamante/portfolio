@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { LandingTitleComponent } from '../components/landing-title/landing-title.component';
+import { LandingSectionContainerComponent } from '../components/landing-section-container/landing-section-container.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
 
 @Component({
   selector: 'app-contact',
-  imports: [LandingTitleComponent],
+  imports: [LandingSectionContainerComponent, ContactFormComponent],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css',
 })
