@@ -23,7 +23,7 @@
     [control]="form.controls['message']"
   />
   <div class="w-full flex items-center justify-between gap-7">
-    <app-button>Clean</app-button>
+    <app-button (click)="onClean()">Clean</app-button>
     <app-button type="submit" class="w-full">Send Message</app-button>
   </div>
 </form>

@@ -58,4 +58,8 @@ export class ContactFormComponent {
         }
       );
   }
+
+  onClean() {
+    this.form.reset();
+  }
 }
