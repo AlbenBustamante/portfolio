@@ -1,18 +1,37 @@
-<section>
-  <app-landing-subtitle headline="Skills" />
-  <div class="flex flex-col gap-5">
+<app-resume-section headline="Skills">
+  <div
+    class="grid grid-cols-[repeat(auto-fit,_minmax(20rem,_1fr))] gap-x-10 gap-y-7"
+  >
     <app-skill-card headline="Programming Languages">
-      <li><svg class="size-10 sm:size-11 md:size-12" java-icon></svg></li>
-      <li><svg class="size-10 sm:size-11 md:size-12" js-icon></svg></li>
-      <li><svg class="size-10 sm:size-11 md:size-12" ts-icon></svg></li>
-      <li><svg class="size-10 sm:size-11 md:size-12" sql-icon></svg></li>
-      <li><svg class="size-10 sm:size-11 md:size-12" html-icon></svg></li>
-      <li><svg class="size-10 sm:size-11 md:size-12" css-icon></svg></li>
+      <app-skill-item skill="Java" />
+      <app-skill-item skill="JavaScript" />
+      <app-skill-item skill="TypeScript" />
+      <app-skill-item skill="HTML" />
+      <app-skill-item skill="CSS" />
+      <app-skill-item skill="SQL" />
+      <app-skill-item skill="Dart" />
     </app-skill-card>
-    <app-skill-card headline="Frameworks & Libraries">
-      <li><svg class="size-10 sm:size-11 md:size-12" spring-icon></svg></li>
-      <li><svg class="size-10 sm:size-11 md:size-12" angular-icon></svg></li>
-      <li><svg class="size-10 sm:size-11 md:size-12" tailwind-icon></svg></li>
+    <app-skill-card headline="Backend Development">
+      <app-skill-item skill="Spring" />
+      <app-skill-item skill="Node.js" />
+      <app-skill-item skill="Express.js" />
+    </app-skill-card>
+    <app-skill-card headline="Frontend Development">
+      <app-skill-item skill="Angular" />
+      <app-skill-item skill="Tailwind CSS" />
+      <app-skill-item skill="Bootstrap" />
+    </app-skill-card>
+    <app-skill-card headline="Mobile Development">
+      <app-skill-item skill="Flutter" />
+    </app-skill-card>
+    <app-skill-card headline="Databases">
+      <app-skill-item skill="PostgreSQL" />
+      <app-skill-item skill="MySQL" />
+      <app-skill-item skill="Firestore" />
+      <app-skill-item skill="MongoDB" />
+    </app-skill-card>
+    <app-skill-card headline="Tools">
+      <app-skill-item skill="Git" />
     </app-skill-card>
   </div>
-</section>
+</app-resume-section>

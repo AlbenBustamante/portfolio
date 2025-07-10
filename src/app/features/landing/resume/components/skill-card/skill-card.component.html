@@ -1,10 +1,10 @@
 <article
-  class="flex flex-col gap-5 px-5 py-2.5 border-b-2 border-primary-300 rounded-2xl"
+  class="flex flex-col gap-5 px-5 py-6 rounded-2xl shadow shadow-primary-300 hover:-translate-y-0.5 hover:shadow-md transition-all"
 >
-  <h4 class="text-center text-lg sm:text-xl md:text-2xl font-semibold">
+  <h4 class="text-left text-lg sm:text-xl md:text-2xl font-semibold">
     {{ headline }}
   </h4>
-  <ul class="flex items-center justify-center flex-wrap gap-5">
+  <ul class="flex items-center justify-start flex-wrap gap-3.5">
     <ng-content />
   </ul>
 </article>
