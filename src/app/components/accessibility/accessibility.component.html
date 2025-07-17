@@ -1,0 +1,31 @@
+<div class="fixed bottom-[50%] right-0.5 flex flex-col gap-3 z-50">
+  <button
+    class="cursor-pointer outline-none bg-primary-500 p-2 rounded-2xl opacity-30 hover:opacity-100 transition-opacity duration-300 relative"
+    (click)="toggleShowLanguages()"
+    [ngClass]="{ 'opacity-100': showLanguages() }"
+  >
+    <svg class="size-5 sm:size-6 md:size-7 text-primary-50" globe-icon></svg>
+    <ul
+      class="absolute flex-col right-12 sm:right-14 md:right-16 top-0 text-sm sm:text-base md:text-lg"
+      [ngClass]="{ hidden: !showLanguages(), flex: showLanguages() }"
+    >
+      <li
+        class="py-2.5 px-3.5 bg-primary-500 hover:bg-primary-600 text-primary-50 transition-colors duration-150 rounded-t-xl"
+        (click)="setLanguage('es')"
+      >
+        Español
+      </li>
+      <li
+        class="py-2.5 px-3.5 bg-primary-500 hover:bg-primary-600 text-primary-50 transition-colors duration-150 rounded-b-xl"
+        (click)="setLanguage('en')"
+      >
+        English
+      </li>
+    </ul>
+  </button>
+  <button
+    class="cursor-pointer outline-none bg-primary-500 p-2 rounded-2xl opacity-30 hover:opacity-100 transition-opacity duration-300"
+  >
+    <svg class="size-5 sm:size-6 md:size-7 text-primary-50" moon-icon></svg>
+  </button>
+</div>
