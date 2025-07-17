@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 })
 export class SidebarSocialMediaButtonComponent {
   @Input({ required: true }) text!: string;
+  @Input({ required: true }) socialName!: string;
 }
