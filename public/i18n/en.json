@@ -1,1 +1,8 @@
-{}
+{
+  "menu": {
+    "home": "Home",
+    "resume": "Resume",
+    "projects": "Projects",
+    "contact": "Contact"
+  }
+}
