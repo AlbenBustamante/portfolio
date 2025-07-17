@@ -4,5 +4,27 @@
     "resume": "Resumen",
     "projects": "Proyectos",
     "contact": "Contacto"
+  },
+  "socialMedia": {
+    "github": {
+      "name": "GitHub",
+      "value": "AlbenBustamante",
+      "url": "https://github.com/AlbenBustamante"
+    },
+    "linkedin": {
+      "name": "LinkedIn",
+      "value": "Alben Bustamante",
+      "url": "https://linkedin.com/in/albenbustamante"
+    },
+    "email": {
+      "name": "Correo Electrónico",
+      "value": "albenbustamante@outlook.com",
+      "url": "mailto:albenbustamante@outlook.com"
+    },
+    "phone": {
+      "name": "Teléfono",
+      "value": "(+57) 316 5574868",
+      "url": "https://wa.me/573165574868"
+    }
   }
 }

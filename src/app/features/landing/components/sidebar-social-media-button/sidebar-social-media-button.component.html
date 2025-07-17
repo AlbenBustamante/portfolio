@@ -1,19 +1,20 @@
-<button
-  class="cursor-pointer p-2 md:max-lg:p-3 hover:bg-primary-200 hover:scale-110 md:max-lg:hover:scale-105 rounded-full transition-all flex items-center gap-5 md:max-lg:w-full relative group"
+<a
+  class="cursor-pointer size-10 hover:bg-primary-200 hover:scale-110 md:max-lg:hover:scale-105 rounded-full transition-all flex items-center justify-center gap-5 md:max-lg:w-full relative group"
+  [href]="url | translate"
+  target="_blank"
 >
   <ng-content />
   <p
     class="hidden md:max-lg:block text-neutral-700 font-medium text-left overflow-ellipsis whitespace-nowrap overflow-hidden"
   >
-    {{ text }}
+    {{ value | translate }}
   </p>
   <div
     role="tooltip"
     class="invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute -top-14 left-[50%] -translate-x-1/2 px-4 py-2.5 bg-primary-100 rounded-4xl duration-300 text-sm md:max-lg:text-base font-medium"
   >
-    <p class="md:max-lg:hidden text-center text-nowrap">{{ text }}</p>
-    <p class="hidden md:max-lg:block text-center text-nowrap">
-      {{ socialName }}
+    <p class="text-center text-nowrap">
+      {{ socialName | translate }}
     </p>
   </div>
-</button>
+</a>
