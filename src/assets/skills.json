@@ -1,0 +1,16 @@
+{
+  "languages": [
+    "Java",
+    "JavaScript",
+    "TypeScript",
+    "SQL",
+    "HTML",
+    "CSS",
+    "Dart"
+  ],
+  "backend": ["Spring Boot", "Node.js", "Express.js"],
+  "frontend": ["Angular", "Tailwind CSS", "Bootstrap"],
+  "mobile": ["Flutter"],
+  "databases": ["PostgreSQL", "MySQL", "Firestore", "MongoDB"],
+  "tools": ["Git", "Docker"]
+}

@@ -31,6 +31,51 @@
         "value": "(+57) 316 5574868",
         "url": "https://wa.me/573165574868"
       }
+    },
+    "resume": {
+      "title": "Resumen",
+      "education": {
+        "title": "Educación"
+      },
+      "experience": {
+        "title": "Experiencia"
+      },
+      "certifications": {
+        "title": "Certificados"
+      },
+      "skills": {
+        "title": "Habilidades",
+        "languages": "Lenguajes de Programación",
+        "backend": "Desarrollo Backend",
+        "frontend": "Desarrollo Frontend",
+        "mobile": "Desarrollo Móvil",
+        "databases": "Bases de Datos",
+        "tools": "Herramientas"
+      }
+    },
+    "projects": {
+      "title": "Proyectos"
+    },
+    "contact": {
+      "title": "Contáctame",
+      "form": {
+        "name": {
+          "label": "Nombre",
+          "placeholder": "Tu nombre"
+        },
+        "email": {
+          "label": "Correo electrónico",
+          "placeholder": "ejemplo@mail.com"
+        },
+        "subject": {
+          "label": "Asunto",
+          "placeholder": ""
+        },
+        "message": {
+          "label": "Mensaje",
+          "placeholder": "Escribe tu mensaje aquí"
+        }
+      }
     }
   }
 }

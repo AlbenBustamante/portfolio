@@ -1,10 +1,10 @@
 <div class="flex flex-col gap-2">
   <label [for]="name" class="text-sm sm:text-base font-medium">
-    {{ label }}
+    {{ label | translate }}
   </label>
   <textarea
     [id]="name"
-    [placeholder]="placeholder"
+    [placeholder]="placeholder | translate"
     [formControl]="control"
     class="px-5 py-2 rounded-xl text-sm sm:text-base border-2 border-neutral-300 shadow ring-0 ring-primary-500 focus:shadow-lg focus:ring-2 focus:border-primary-100 text-neutral-700 transition-all placeholder:opacity-50 resize-none field-sizing-content min-h-48 sm:min-h-52 md:min-h-56"
     [autocomplete]="autocomplete"

@@ -62,4 +62,16 @@ export class ContactFormComponent {
   onClean() {
     this.form.reset();
   }
+
+  label(field: string) {
+    return `${this.formJson}.${field}.label`;
+  }
+
+  placeholder(field: string) {
+    return `${this.formJson}.${field}.placeholder`;
+  }
+
+  private get formJson() {
+    return 'landing.contact.form';
+  }
 }

@@ -1,25 +1,29 @@
 <form class="flex flex-col gap-5" [formGroup]="form" (ngSubmit)="onSubmit()">
   <div class="flex flex-col gap-5 md:grid md:grid-cols-2 md:gap-7">
     <app-input
-      label="Name"
+      [label]="label('name')"
       name="name"
-      placeholder="Your name"
+      [placeholder]="placeholder('name')"
       [control]="form.controls['name']"
       autocomplete="name"
     />
     <app-input
-      label="Email"
+      [label]="label('email')"
       name="email"
-      placeholder="example@mail.com"
+      [placeholder]="placeholder('email')"
       [control]="form.controls['email']"
       autocomplete="email"
     />
   </div>
-  <app-input label="Subject" name="title" [control]="form.controls['title']" />
+  <app-input
+    [label]="label('subject')"
+    name="title"
+    [control]="form.controls['title']"
+  />
   <app-textarea
-    label="Message"
+    [label]="label('message')"
     name="message"
-    placeholder="Write your message here"
+    [placeholder]="placeholder('message')"
     [control]="form.controls['message']"
   />
   <div class="w-full flex items-center justify-between gap-7">
