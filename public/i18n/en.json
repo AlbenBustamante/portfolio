@@ -5,30 +5,32 @@
     "projects": "Projects",
     "contact": "Contact"
   },
-  "introduction": {
-    "greeting": "Hey there, I'm",
-    "resume": "A Software Developer who builds efficient and scalable solutions with Java and Angular"
-  },
-  "socialMedia": {
-    "github": {
-      "name": "GitHub",
-      "value": "AlbenBustamante",
-      "url": "https://github.com/AlbenBustamante"
+  "landing": {
+    "introduction": {
+      "greeting": "Hey there, I'm",
+      "resume": "A Software Developer who builds efficient and scalable solutions with Java and Angular"
     },
-    "linkedin": {
-      "name": "LinkedIn",
-      "value": "Alben Bustamante",
-      "url": "https://linkedin.com/in/albenbustamante"
-    },
-    "email": {
-      "name": "Email",
-      "value": "albenbustamante@outlook.com",
-      "url": "mailto:albenbustamante@outlook.com"
-    },
-    "phone": {
-      "name": "Phone",
-      "value": "(+57) 316 5574868",
-      "url": "https://wa.me/573165574868"
+    "socialMedia": {
+      "github": {
+        "name": "GitHub",
+        "value": "AlbenBustamante",
+        "url": "https://github.com/AlbenBustamante"
+      },
+      "linkedin": {
+        "name": "LinkedIn",
+        "value": "Alben Bustamante",
+        "url": "https://linkedin.com/in/albenbustamante"
+      },
+      "email": {
+        "name": "Email",
+        "value": "albenbustamante@outlook.com",
+        "url": "mailto:albenbustamante@outlook.com"
+      },
+      "phone": {
+        "name": "Phone",
+        "value": "(+57) 316 5574868",
+        "url": "https://wa.me/573165574868"
+      }
     }
   }
 }
