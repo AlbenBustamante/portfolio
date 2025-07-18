@@ -5,6 +5,10 @@
     "projects": "Proyectos",
     "contact": "Contacto"
   },
+  "introduction": {
+    "greeting": "Hola, soy",
+    "resume": "Un Desarrollador de Software que construye soluciones eficientes y escalables con Java y Angular"
+  },
   "socialMedia": {
     "github": {
       "name": "GitHub",
