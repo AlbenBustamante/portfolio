@@ -8,7 +8,17 @@ import { TranslatePipe } from '@ngx-translate/core';
   styleUrl: './sidebar-social-media-button.component.css',
 })
 export class SidebarSocialMediaButtonComponent {
-  @Input({ required: true }) value!: string;
-  @Input({ required: true }) socialName!: string;
-  @Input({ required: true }) url!: string;
+  @Input({ required: true }) socialMedia!: string;
+
+  get value() {
+    return `landing.socialMedia.${this.socialMedia}.value`;
+  }
+
+  get socialName() {
+    return `landing.socialMedia.${this.socialMedia}.name`;
+  }
+
+  get url() {
+    return `landing.socialMedia.${this.socialMedia}.url`;
+  }
 }

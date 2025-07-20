@@ -9,45 +9,29 @@
         Alben Bustamante
       </h1>
       <p class="text-center text-primary-950 font-medium">
-        {{ "introduction.greeting" | translate }}
+        {{ "landing.introduction.greeting" | translate }}
       </p>
     </div>
   </header>
   <div class="border-y-2 border-primary-100 py-12">
     <p class="text-center text-lg text-primary-900 text-balance font-semibold">
-      {{ "introduction.resume" | translate }}
+      {{ "landing.introduction.resume" | translate }}
     </p>
   </div>
   <footer class="grid grid-cols-2 md:max-lg:grid-cols-1 gap-5 py-5 px-12">
     <div class="grid grid-cols-2 gap-5">
-      <app-sidebar-social-media-button
-        value="socialMedia.github.value"
-        socialName="socialMedia.github.name"
-        url="socialMedia.github.url"
-      >
+      <app-sidebar-social-media-button socialMedia="github">
         <svg class="size-6" github-icon></svg>
       </app-sidebar-social-media-button>
-      <app-sidebar-social-media-button
-        value="socialMedia.linkedin.value"
-        socialName="socialMedia.linkedin.name"
-        url="socialMedia.linkedin.url"
-      >
+      <app-sidebar-social-media-button socialMedia="linkedin">
         <svg class="size-6" linkedin-icon></svg>
       </app-sidebar-social-media-button>
     </div>
     <div class="grid grid-cols-2 gap-5">
-      <app-sidebar-social-media-button
-        value="socialMedia.email.value"
-        socialName="socialMedia.email.name"
-        url="socialMedia.email.url"
-      >
+      <app-sidebar-social-media-button socialMedia="email">
         <svg class="size-6" email-icon></svg>
       </app-sidebar-social-media-button>
-      <app-sidebar-social-media-button
-        value="socialMedia.phone.value"
-        socialName="socialMedia.phone.name"
-        url="socialMedia.phone.url"
-      >
+      <app-sidebar-social-media-button socialMedia="phone">
         <svg class="size-6" phone-icon></svg>
       </app-sidebar-social-media-button>
     </div>

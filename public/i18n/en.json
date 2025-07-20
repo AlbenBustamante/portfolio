@@ -5,30 +5,77 @@
     "projects": "Projects",
     "contact": "Contact"
   },
-  "introduction": {
-    "greeting": "Hey there, I'm",
-    "resume": "A Software Developer who builds efficient and scalable solutions with Java and Angular"
-  },
-  "socialMedia": {
-    "github": {
-      "name": "GitHub",
-      "value": "AlbenBustamante",
-      "url": "https://github.com/AlbenBustamante"
+  "landing": {
+    "introduction": {
+      "greeting": "Hey there, I'm",
+      "resume": "A Software Developer who builds efficient and scalable solutions with Java and Angular"
     },
-    "linkedin": {
-      "name": "LinkedIn",
-      "value": "Alben Bustamante",
-      "url": "https://linkedin.com/in/albenbustamante"
+    "socialMedia": {
+      "github": {
+        "name": "GitHub",
+        "value": "AlbenBustamante",
+        "url": "https://github.com/AlbenBustamante"
+      },
+      "linkedin": {
+        "name": "LinkedIn",
+        "value": "Alben Bustamante",
+        "url": "https://linkedin.com/in/albenbustamante"
+      },
+      "email": {
+        "name": "Email",
+        "value": "albenbustamante@outlook.com",
+        "url": "mailto:albenbustamante@outlook.com"
+      },
+      "phone": {
+        "name": "Phone",
+        "value": "(+57) 316 5574868",
+        "url": "https://wa.me/573165574868"
+      }
     },
-    "email": {
-      "name": "Email",
-      "value": "albenbustamante@outlook.com",
-      "url": "mailto:albenbustamante@outlook.com"
+    "resume": {
+      "title": "Resume",
+      "education": {
+        "title": "Education"
+      },
+      "experience": {
+        "title": "Experience"
+      },
+      "certifications": {
+        "title": "Certifications"
+      },
+      "skills": {
+        "title": "Skills",
+        "languages": "Programming Languages",
+        "backend": "Backend Development",
+        "frontend": "Frontend Development",
+        "mobile": "Mobile Development",
+        "databases": "Databases",
+        "tools": "Tools"
+      }
     },
-    "phone": {
-      "name": "Phone",
-      "value": "(+57) 316 5574868",
-      "url": "https://wa.me/573165574868"
+    "projects": {
+      "title": "Projects"
+    },
+    "contact": {
+      "title": "Get In Touch",
+      "form": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Your name"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "example@mail.com"
+        },
+        "subject": {
+          "label": "Subject",
+          "placeholder": ""
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Write your message here"
+        }
+      }
     }
   }
 }
