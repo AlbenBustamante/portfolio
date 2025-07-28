@@ -35,7 +35,19 @@
     "resume": {
       "title": "Resume",
       "education": {
-        "title": "Education"
+        "title": "Education",
+        "items": [
+          {
+            "degree": "Systems Engineering",
+            "institution": "Bicentenary University of Aragua",
+            "year": "2018"
+          },
+          {
+            "degree": "Bachelor's in Computer Science",
+            "institution": "Antonio Jose De Sucre",
+            "year": "2013 - 2017"
+          }
+        ]
       },
       "experience": {
         "title": "Experience"

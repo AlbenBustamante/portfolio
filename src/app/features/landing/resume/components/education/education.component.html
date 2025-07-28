@@ -1,16 +1,10 @@
 <app-resume-section headline="resume.education.title">
   <app-resume-items>
+    @for (education of ("landing.resume.education.items" | translate); track
+    $index) {
     <li>
-      <app-resume-item
-        headline="Amazon Junior Software Developer"
-        date="Current"
-      />
+      <app-education-item [education]="education" />
     </li>
-    <li>
-      <app-resume-item headline="Software Engineer" date="2018" />
-    </li>
-    <li>
-      <app-resume-item headline="Bachelor in Science" date="2017" />
-    </li>
+    }
   </app-resume-items>
 </app-resume-section>

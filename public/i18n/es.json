@@ -35,7 +35,19 @@
     "resume": {
       "title": "Resumen",
       "education": {
-        "title": "Educación"
+        "title": "Educación",
+        "items": [
+          {
+            "degree": "Ingeniería de Sistemas",
+            "institution": "Universidad Bicentenaria de Aragua",
+            "year": "2018"
+          },
+          {
+            "degree": "Bachiller en Ciencias de Computación",
+            "institution": "Antonio José de Sucre",
+            "year": "2013 - 2017"
+          }
+        ]
       },
       "experience": {
         "title": "Experiencia"
