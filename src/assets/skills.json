@@ -1,16 +1,22 @@
-{
-  "languages": [
-    "Java",
-    "JavaScript",
-    "TypeScript",
-    "SQL",
-    "HTML",
-    "CSS",
-    "Dart"
-  ],
-  "backend": ["Spring Boot", "Node.js", "Express.js"],
-  "frontend": ["Angular", "Tailwind CSS", "Bootstrap"],
-  "mobile": ["Flutter"],
-  "databases": ["PostgreSQL", "MySQL", "Firestore", "MongoDB"],
-  "tools": ["Git", "Docker"]
-}
+[
+  { "name": "Java", "category": "languages" },
+  { "name": "JavaScript", "category": "languages" },
+  { "name": "TypeScript", "category": "languages" },
+  { "name": "SQL", "category": "languages" },
+  { "name": "HTML", "category": "languages" },
+  { "name": "CSS", "category": "languages" },
+  { "name": "Dart", "category": "languages" },
+  { "name": "Spring Boot", "category": "backend" },
+  { "name": "Node.js", "category": "backend" },
+  { "name": "Express.js", "category": "backend" },
+  { "name": "Angular", "category": "frontend" },
+  { "name": "Tailwind CSS", "category": "frontend" },
+  { "name": "Bootstrap", "category": "frontend" },
+  { "name": "Flutter", "category": "mobile" },
+  { "name": "PostgreSQL", "category": "databases" },
+  { "name": "MySQL", "category": "databases" },
+  { "name": "Firestore", "category": "databases" },
+  { "name": "MongoDB", "category": "databases" },
+  { "name": "Git", "category": "tools" },
+  { "name": "Docker", "category": "tools" }
+]
