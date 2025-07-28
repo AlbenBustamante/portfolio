@@ -45,12 +45,12 @@
       },
       "skills": {
         "title": "Skills",
-        "languages": "Programming Languages",
+        "language": "Programming Languages",
         "backend": "Backend Development",
         "frontend": "Frontend Development",
         "mobile": "Mobile Development",
-        "databases": "Databases",
-        "tools": "Tools"
+        "database": "Databases",
+        "tool": "Tools"
       }
     },
     "projects": {

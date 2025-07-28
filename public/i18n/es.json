@@ -45,12 +45,12 @@
       },
       "skills": {
         "title": "Habilidades",
-        "languages": "Lenguajes de Programación",
+        "language": "Lenguajes de Programación",
         "backend": "Desarrollo Backend",
         "frontend": "Desarrollo Frontend",
         "mobile": "Desarrollo Móvil",
-        "databases": "Bases de Datos",
-        "tools": "Herramientas"
+        "database": "Bases de Datos",
+        "tool": "Herramientas"
       }
     },
     "projects": {
