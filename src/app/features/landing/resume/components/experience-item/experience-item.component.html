@@ -10,7 +10,9 @@
   </p>
   <ul class="list-disc flex flex-col gap-1">
     @for (keypoint of experience.keypoints; track keypoint) {
-    <li class="ml-5 font-medium text-gray-600 text-xs sm:text-sm md:text-base">
+    <li
+      class="ml-5 font-medium text-gray-600 text-xs sm:text-sm md:text-base text-pretty"
+    >
       {{ keypoint }}
     </li>
     }
