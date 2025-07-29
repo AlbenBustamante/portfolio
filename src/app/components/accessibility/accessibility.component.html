@@ -26,7 +26,8 @@
     </ul>
   </button>
   <button
-    class="cursor-pointer outline-none bg-primary-500 p-2 rounded-2xl opacity-30 hover:opacity-100 transition-opacity duration-300"
+    class="cursor-pointer outline-none bg-primary-500 dark:bg-black p-2 rounded-2xl opacity-30 hover:opacity-100 transition-opacity duration-300"
+    (click)="darkMode.set(!darkMode())"
   >
     <svg class="size-5 sm:size-6 md:size-7 text-primary-50" moon-icon></svg>
   </button>

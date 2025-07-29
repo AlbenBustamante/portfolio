@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, Input, signal, WritableSignal } from '@angular/core';
 import { MoonIconComponent } from '../icons/moon-icon/moon-icon.component';
 import { GlobeIconComponent } from '../icons/globe-icon/globe-icon.component';
 import { NgClass } from '@angular/common';
@@ -11,6 +11,7 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrl: './accessibility.component.css',
 })
 export class AccessibilityComponent {
+  @Input({ required: true }) darkMode!: WritableSignal<boolean>;
   readonly showLanguages = signal<boolean>(false);
 
   constructor(private readonly _translateService: TranslateService) {}
