@@ -50,7 +50,15 @@
         ]
       },
       "experience": {
-        "title": "Experiencia"
+        "title": "Experiencia",
+        "items": [
+          {
+            "position": "Desarrollador de Software",
+            "company": "Servinet Computers",
+            "year": "2023 - Presente",
+            "keypoints": []
+          }
+        ]
       },
       "certifications": {
         "title": "Certificados"

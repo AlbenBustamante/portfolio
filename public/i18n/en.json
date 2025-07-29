@@ -50,7 +50,15 @@
         ]
       },
       "experience": {
-        "title": "Experience"
+        "title": "Experience",
+        "items": [
+          {
+            "position": "Software Developer",
+            "company": "Servinet Computers",
+            "year": "2023 - Present",
+            "keypoints": []
+          }
+        ]
       },
       "certifications": {
         "title": "Certifications"

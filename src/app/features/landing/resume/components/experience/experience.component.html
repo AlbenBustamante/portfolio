@@ -1,10 +1,8 @@
 <app-resume-section headline="resume.experience.title">
   <app-resume-items>
-    <!--li>
-      <app-education-item headline="Servinet Computers" date="2024 - Current" />
-    </li>
-    <li>
-      <app-education-item headline="NoCountry" date="2021 - 2022" />
-    </li-->
+    @for (experience of ("landing.resume.experience.items" | translate); track
+    experience.position) {
+    <app-experience-item [experience]="experience" />
+    }
   </app-resume-items>
 </app-resume-section>

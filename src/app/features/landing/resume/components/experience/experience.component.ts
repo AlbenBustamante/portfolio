@@ -1,11 +1,17 @@
 import { Component } from '@angular/core';
-import { EducationItemComponent } from '../education-item/education-item.component';
 import { ResumeItemsComponent } from '../resume-items/resume-items.component';
 import { ResumeSectionComponent } from '../resume-section/resume-section.component';
+import { ExperienceItemComponent } from '../experience-item/experience-item.component';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-experience',
-  imports: [EducationItemComponent, ResumeItemsComponent, ResumeSectionComponent],
+  imports: [
+    TranslatePipe,
+    ResumeItemsComponent,
+    ResumeSectionComponent,
+    ExperienceItemComponent,
+  ],
   templateUrl: './experience.component.html',
   styleUrl: './experience.component.css',
 })
