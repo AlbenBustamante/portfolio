@@ -56,7 +56,12 @@
             "position": "Software Developer",
             "company": "Servinet Computers",
             "year": "2023 - Present",
-            "keypoints": []
+            "keypoints": [
+              "Developed a web system for managing employees, cash registers, and platforms of a banking correspondent.",
+              "Designed the relational database to guarantee integrity of data.",
+              "Programmed the business logic through a secure RESTful API with Java, Spring Boot and JWT.",
+              "Implemented a resposive and interactive user interface with Angular and Tailwind."
+            ]
           }
         ]
       },

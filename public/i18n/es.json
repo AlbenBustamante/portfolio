@@ -56,7 +56,12 @@
             "position": "Desarrollador de Software",
             "company": "Servinet Computers",
             "year": "2023 - Presente",
-            "keypoints": []
+            "keypoints": [
+              "Desarrollé un sistema web para la gestión de empleados, cajas y plataformas de un corresponsal bancario.",
+              "Diseñé la base de datos relacional para garantizar la integridad de los datos.",
+              "Programé la lógica de negocio mediante una API RESTful segura con Java, Spring Boot y JWT.",
+              "Implementé una interfaz de usuario responsiva e interactiva con Angular y Tailwind."
+            ]
           }
         ]
       },
