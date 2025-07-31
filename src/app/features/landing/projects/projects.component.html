@@ -1,8 +1,8 @@
 <app-landing-section-container headline="projects">
   <ul
-    class="grid max-lg:grid-cols-[repeat(auto-fit,_minmax(20.5rem,_1fr))] gap-x-7 gap-y-8"
+    class="grid max-lg:grid-cols-[repeat(auto-fit,_minmax(18.5rem,_1fr))] gap-x-7 gap-y-8"
   >
-    @for (project of projects(); track $index) {
+    @for (project of ("landing.projects.items" | translate); track $index) {
     <li>
       <app-project-item [project]="project" />
     </li>

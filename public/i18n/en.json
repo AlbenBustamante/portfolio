@@ -79,7 +79,22 @@
       }
     },
     "projects": {
-      "title": "Projects"
+      "title": "Projects",
+      "mainAction": "View more",
+      "items": [
+        {
+          "url": "todo_list",
+          "title": "ToDo List",
+          "sourceCode": "https://github.com/AlbenBustamante/todo_list",
+          "skills": ["Java", "Spring Boot", "JWT", "PostgreSQL"]
+        },
+        {
+          "url": "todo_list",
+          "title": "ToDo List",
+          "sourceCode": "https://github.com/AlbenBustamante/todo_list",
+          "skills": ["Java", "Spring Boot", "JWT", "PostgreSQL"]
+        }
+      ]
     },
     "contact": {
       "title": "Get In Touch",

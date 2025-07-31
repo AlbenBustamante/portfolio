@@ -79,7 +79,22 @@
       }
     },
     "projects": {
-      "title": "Proyectos"
+      "title": "Proyectos",
+      "mainAction": "Ver más",
+      "items": [
+        {
+          "url": "todo_list",
+          "title": "ToDo List",
+          "sourceCode": "https://github.com/AlbenBustamante/todo_list",
+          "skills": [
+            "REST API",
+            "Back-End Development",
+            "Java",
+            "Spring Boot",
+            "JWT"
+          ]
+        }
+      ]
     },
     "contact": {
       "title": "Contáctame",

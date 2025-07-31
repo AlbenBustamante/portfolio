@@ -1,4 +1,6 @@
 export interface IProject {
-  id: number;
-  name: string;
+  url: string;
+  title: string;
+  sourceCode: string;
+  skills: string[];
 }
