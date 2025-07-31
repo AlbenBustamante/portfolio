@@ -82,12 +82,6 @@
       "title": "Projects",
       "items": [
         {
-          "url": "todo_list",
-          "title": "ToDo List",
-          "sourceCode": "https://github.com/AlbenBustamante/todo_list",
-          "skills": ["Java", "Spring Boot", "JWT", "PostgreSQL"]
-        },
-        {
           "url": "book_now",
           "title": "Book Now",
           "sourceCode": "https://github.com/AlbenBustamante/book-now",
@@ -100,6 +94,42 @@
             "Angular",
             "Tailwind CSS"
           ]
+        },
+        {
+          "url": "fin_manage",
+          "title": "Fin Manage",
+          "sourceCode": "https://github.com/AlbenBustamante/fin-manage-app",
+          "skills": ["Dart", "Flutter", "Firestore"]
+        },
+        {
+          "url": "text_printer",
+          "title": "Text Printer",
+          "sourceCode": "https://github.com/AlbenBustamante/text-printer",
+          "skills": ["TypeScript", "Angular", "Tailwind CSS"]
+        },
+        {
+          "url": "cop_calculator",
+          "title": "COP Calculator",
+          "sourceCode": "https://github.com/AlbenBustamante/cop-calculator",
+          "skills": ["TypeScript", "Angular", "Tailwind CSS"]
+        },
+        {
+          "url": "fun_virtual_reading",
+          "title": "Fun Virtual Reading",
+          "sourceCode": "https://github.com/AlbenBustamante/fun_virtual_reading",
+          "skills": ["Java", "Spring Boot", "JWT", "PostgreSQL"]
+        },
+        {
+          "url": "todo_list",
+          "title": "ToDo List",
+          "sourceCode": "https://github.com/AlbenBustamante/todo_list",
+          "skills": ["Java", "Spring Boot", "JWT", "PostgreSQL"]
+        },
+        {
+          "url": "microblogging",
+          "title": "Microblogging",
+          "sourceCode": "https://github.com/AlbenBustamante/microblogging",
+          "skills": ["Java", "JDBC", "MySQL", "Swing"]
         }
       ]
     },
