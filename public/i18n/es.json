@@ -80,18 +80,25 @@
     },
     "projects": {
       "title": "Proyectos",
-      "mainAction": "Ver más",
       "items": [
         {
           "url": "todo_list",
           "title": "ToDo List",
           "sourceCode": "https://github.com/AlbenBustamante/todo_list",
+          "skills": ["Java", "Spring Boot", "JWT", "PostgreSQL"]
+        },
+        {
+          "url": "book_now",
+          "title": "Book Now",
+          "sourceCode": "https://github.com/AlbenBustamante/book-now",
           "skills": [
-            "REST API",
-            "Back-End Development",
             "Java",
             "Spring Boot",
-            "JWT"
+            "JWT",
+            "PostgreSQL",
+            "TypeScript",
+            "Angular",
+            "Tailwind CSS"
           ]
         }
       ]

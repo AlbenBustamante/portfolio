@@ -80,7 +80,6 @@
     },
     "projects": {
       "title": "Projects",
-      "mainAction": "View more",
       "items": [
         {
           "url": "todo_list",
@@ -89,10 +88,18 @@
           "skills": ["Java", "Spring Boot", "JWT", "PostgreSQL"]
         },
         {
-          "url": "todo_list",
-          "title": "ToDo List",
-          "sourceCode": "https://github.com/AlbenBustamante/todo_list",
-          "skills": ["Java", "Spring Boot", "JWT", "PostgreSQL"]
+          "url": "book_now",
+          "title": "Book Now",
+          "sourceCode": "https://github.com/AlbenBustamante/book-now",
+          "skills": [
+            "Java",
+            "Spring Boot",
+            "JWT",
+            "PostgreSQL",
+            "TypeScript",
+            "Angular",
+            "Tailwind CSS"
+          ]
         }
       ]
     },
