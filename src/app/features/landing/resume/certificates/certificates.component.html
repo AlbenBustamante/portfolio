@@ -1,1 +1,9 @@
-<p>certificates works!</p>
+<app-resume-section headline="resume.certificates.title">
+  <ul>
+    @for (certificate of certificates; track $index) {
+    <li>
+      <a [href]="certificate.url" target="_blank">{{ certificate | json }}</a>
+    </li>
+    }
+  </ul>
+</app-resume-section>
