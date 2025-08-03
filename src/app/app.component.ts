@@ -1,7 +1,7 @@
 import { Component, HostBinding, signal } from '@angular/core';
-import { NavbarComponent } from './components/navbar/navbar.component';
+import { NavbarComponent } from '@components/navbar/navbar.component';
 import { RouterOutlet } from '@angular/router';
-import { AccessibilityComponent } from './components/accessibility/accessibility.component';
+import { AccessibilityComponent } from '@components/accessibility/accessibility.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
