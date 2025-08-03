@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { LandingSectionContainerComponent } from '../components/landing-section-container/landing-section-container.component';
-import { EducationComponent } from './components/education/education.component';
-import { ExperienceComponent } from './components/experience/experience.component';
-import { SkillsComponent } from './components/skills/skills.component';
+import { EducationComponent } from './education/education.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { SkillsComponent } from './skills/skills.component';
+import { CertificatesComponent } from './certificates/certificates.component';
 
 @Component({
   selector: 'app-resume',
@@ -11,6 +12,7 @@ import { SkillsComponent } from './components/skills/skills.component';
     EducationComponent,
     ExperienceComponent,
     SkillsComponent,
+    CertificatesComponent,
   ],
   templateUrl: './resume.component.html',
   styleUrl: './resume.component.css',

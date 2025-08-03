@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { ResumeItemsComponent } from '../resume-items/resume-items.component';
-import { ResumeSectionComponent } from '../resume-section/resume-section.component';
-import { ExperienceItemComponent } from '../experience-item/experience-item.component';
 import { TranslatePipe } from '@ngx-translate/core';
+import { ResumeItemsComponent } from '../components/resume-items/resume-items.component';
+import { ResumeSectionComponent } from '../components/resume-section/resume-section.component';
+import { ExperienceItemComponent } from './experience-item/experience-item.component';
 
 @Component({
   selector: 'app-experience',

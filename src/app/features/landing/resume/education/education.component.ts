@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { EducationItemComponent } from '../education-item/education-item.component';
-import { ResumeItemsComponent } from '../resume-items/resume-items.component';
-import { ResumeSectionComponent } from '../resume-section/resume-section.component';
 import { TranslatePipe } from '@ngx-translate/core';
+import { ResumeItemsComponent } from '../components/resume-items/resume-items.component';
+import { ResumeSectionComponent } from '../components/resume-section/resume-section.component';
+import { EducationItemComponent } from './education-item/education-item.component';
 
 @Component({
   selector: 'app-education',

@@ -1,7 +1,7 @@
 import { Component, computed, Input } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
-import { SkillsData } from '../skills/skills.data';
 import { SkillItemComponent } from '../skill-item/skill-item.component';
+import { SkillsData } from '../../skills.data';
 
 @Component({
   selector: 'app-skill-card',
