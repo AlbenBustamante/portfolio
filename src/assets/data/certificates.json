@@ -2,6 +2,8 @@
   {
     "title": "Programming with Java",
     "url": "https://coursera.org/share/c7396b9bf99db47d2fde9013b46c1146",
-    "institute": "Amazon"
+    "institute": "Amazon",
+    "imagePath": "assets/images/certificates/programming_with_java_amazon.jpg",
+    "imageAlt": "programming_with_java_amazon_certificate"
   }
 ]
