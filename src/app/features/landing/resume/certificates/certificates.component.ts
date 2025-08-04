@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { ResumeSectionComponent } from '../components/resume-section/resume-section.component';
 import { CertificateService } from '@core/services/certificate.service';
+import { CertificateItemComponent } from './certificate-item/certificate-item.component';
 
 @Component({
   selector: 'app-certificates',
-  imports: [ResumeSectionComponent],
+  imports: [ResumeSectionComponent, CertificateItemComponent],
   templateUrl: './certificates.component.html',
   styleUrl: './certificates.component.css',
 })

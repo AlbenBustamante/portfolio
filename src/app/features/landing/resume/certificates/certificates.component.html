@@ -1,25 +1,7 @@
 <app-resume-section headline="resume.certificates.title">
-  <ul class="flex items-center justify-start overflow-x-auto">
+  <ul class="flex items-center gap-2 overflow-x-auto pt-2 pb-5">
     @for (certificate of certificates; track $index) {
-    <li class="grid place-items-center">
-      <a [href]="certificate.url" target="_blank" class="w-full max-w-sm">
-        <figure>
-          <img
-            [src]="certificate.imagePath"
-            [alt]="certificate.imageAlt"
-            class="object-contain aspect-video"
-          />
-          <figcaption
-            class="text-center flex flex-col gap-0.5 font-medium text-lg text-primary-700"
-          >
-            {{ certificate.title }}
-            <span class="text-base text-primary-800">{{
-              certificate.institute
-            }}</span>
-          </figcaption>
-        </figure>
-      </a>
-    </li>
+    <app-certificate-item [certificate]="certificate" />
     }
   </ul>
 </app-resume-section>

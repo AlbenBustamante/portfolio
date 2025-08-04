@@ -1,0 +1,23 @@
+<li class="grid place-items-center">
+  <a
+    [href]="certificate.url"
+    target="_blank"
+    class="min-w-xs w-full max-w-sm hover:scale-105 transition-transform duration-150"
+  >
+    <figure class="flex flex-col gap-2">
+      <img
+        [src]="certificate.imagePath"
+        [alt]="certificate.imageAlt"
+        class="object-contain aspect-video"
+      />
+      <figcaption
+        class="text-center flex flex-col gap-0.5 font-medium text-lg sm:text-xl text-primary-700"
+      >
+        {{ certificate.title }}
+        <span class="text-base sm:text-lg text-primary-800">
+          {{ certificate.institute }}
+        </span>
+      </figcaption>
+    </figure>
+  </a>
+</li>
