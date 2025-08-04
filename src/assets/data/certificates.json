@@ -5,5 +5,19 @@
     "institute": "Amazon",
     "imagePath": "assets/images/certificates/programming_with_java_amazon.jpg",
     "imageAlt": "programming_with_java_amazon_certificate"
+  },
+  {
+    "title": "Responsive Web Design",
+    "url": "https://www.freecodecamp.org/certification/AlbenBustamante/responsive-web-design",
+    "institute": "freeCodeCamp",
+    "imagePath": "assets/images/certificates/responsive_web_design_freecodecamp.png",
+    "imageAlt": "responsive_web_design_freecodecamp_certificate"
+  },
+  {
+    "title": "Metodología de la Programación de Sistemas Informáticos",
+    "url": "https://certificados.sena.edu.co/CertificadoDigital/com.sena.consultacer",
+    "institute": "SENA",
+    "imagePath": "assets/images/certificates/metodologia_de_la_programacion_de_sistemas_informaticos_sena.jpg",
+    "imageAlt": "metodologia_de_la_programacion_de_sistemas_informaticos_sena"
   }
 ]

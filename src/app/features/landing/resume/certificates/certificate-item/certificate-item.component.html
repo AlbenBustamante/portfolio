@@ -10,10 +10,12 @@
         [alt]="certificate.imageAlt"
         class="object-contain aspect-video"
       />
-      <figcaption
-        class="text-center flex flex-col gap-0.5 font-medium text-lg sm:text-xl text-primary-700"
-      >
-        {{ certificate.title }}
+      <figcaption class="text-center flex flex-col gap-0.5 font-medium">
+        <span
+          class="text-lg sm:text-xl text-primary-700 line-clamp-1 overflow-ellipsis"
+        >
+          {{ certificate.title }}
+        </span>
         <span class="text-base sm:text-lg text-primary-800">
           {{ certificate.institute }}
         </span>
