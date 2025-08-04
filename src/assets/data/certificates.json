@@ -14,6 +14,20 @@
     "imageAlt": "responsive_web_design_freecodecamp_certificate"
   },
   {
+    "title": "Angular 17",
+    "url": "https://platzi.com/p/albenbustamante/curso/8352-course/diploma/detalle/",
+    "institute": "Platzi",
+    "imagePath": "assets/images/certificates/angular_17.jpg",
+    "imageAlt": "angular_17_certificate"
+  },
+  {
+    "title": "Git & GitHub",
+    "url": "https://platzi.com/p/albenbustamante/curso/1557-course/diploma/detalle/",
+    "institute": "Platzi",
+    "imagePath": "assets/images/certificates/git_github.jpg",
+    "imageAlt": "git_github_certificate"
+  },
+  {
     "title": "Metodología de la Programación de Sistemas Informáticos",
     "url": "https://certificados.sena.edu.co/CertificadoDigital/com.sena.consultacer",
     "institute": "SENA",
