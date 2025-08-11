@@ -93,43 +93,52 @@
             "TypeScript",
             "Angular",
             "Tailwind CSS"
-          ]
+          ],
+          "description": "Web system to book services from providers."
         },
         {
           "url": "fin_manage",
           "title": "Fin Manage",
           "sourceCode": "https://github.com/AlbenBustamante/fin-manage-app",
-          "skills": ["Dart", "Flutter", "Firestore"]
+          "skills": ["Dart", "Flutter", "Firestore"],
+          "description": "Mobile application to manage personal finances."
         },
         {
           "url": "text_printer",
           "title": "Text Printer",
           "sourceCode": "https://github.com/AlbenBustamante/text-printer",
-          "skills": ["TypeScript", "Angular", "Tailwind CSS"]
+          "skills": ["TypeScript", "Angular", "Tailwind CSS"],
+          "photoUrl": "assets/images/projects/text-printer.png",
+          "description": "Print short texts ideal for quick notes."
         },
         {
           "url": "cop_calculator",
           "title": "COP Calculator",
           "sourceCode": "https://github.com/AlbenBustamante/cop-calculator",
-          "skills": ["TypeScript", "Angular", "Tailwind CSS"]
+          "skills": ["TypeScript", "Angular", "Tailwind CSS"],
+          "photoUrl": "assets/images/projects/cop-calculator.png",
+          "description": "Cash calculator for Colombian currency."
         },
         {
           "url": "fun_virtual_reading",
           "title": "Fun Virtual Reading",
           "sourceCode": "https://github.com/AlbenBustamante/fun_virtual_reading",
-          "skills": ["Java", "Spring Boot", "JWT", "PostgreSQL"]
+          "skills": ["Java", "Spring Boot", "JWT", "PostgreSQL"],
+          "description": "Functional system to manage virtual books and share reviews."
         },
         {
           "url": "todo_list",
           "title": "ToDo List",
           "sourceCode": "https://github.com/AlbenBustamante/todo_list",
-          "skills": ["Java", "Spring Boot", "JWT", "PostgreSQL"]
+          "skills": ["Java", "Spring Boot", "JWT", "PostgreSQL"],
+          "description": "REST API to manage personal tasks."
         },
         {
           "url": "microblogging",
           "title": "Microblogging",
           "sourceCode": "https://github.com/AlbenBustamante/microblogging",
-          "skills": ["Java", "JDBC", "MySQL", "Swing"]
+          "skills": ["Java", "JDBC", "MySQL", "Swing"],
+          "description": "Desktop application for sharing short posts with other users."
         }
       ]
     },

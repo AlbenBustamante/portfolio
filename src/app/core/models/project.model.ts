@@ -3,4 +3,6 @@ export interface IProject {
   title: string;
   sourceCode: string;
   skills: string[];
+  photoUrl: string;
+  description: string;
 }
