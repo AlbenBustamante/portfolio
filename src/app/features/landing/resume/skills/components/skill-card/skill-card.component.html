@@ -1,12 +1,14 @@
 <article
-  class="flex flex-col gap-5 px-5 py-6 rounded-2xl shadow shadow-primary-300 hover:-translate-y-0.5 hover:shadow-md transition-all"
+  class="flex flex-col gap-5 p-7 rounded-2xl shadow shadow-primary-300 hover:-translate-y-0.5 hover:shadow-md transition-all"
 >
-  <h4 class="text-left text-lg sm:text-xl md:text-2xl font-semibold">
+  <h4
+    class="text-center text-lg sm:text-xl md:text-2xl font-bold text-primary-700"
+  >
     {{ value | translate }}
   </h4>
-  <ul class="flex items-center justify-start flex-wrap gap-3.5">
+  <ul class="flex items-center justify-center flex-wrap gap-y-4 gap-6">
     @for (skill of skills(); track skill.name) {
-    <li><app-skill-item [skill]="skill.name" /></li>
+    <app-skill-item [skill]="skill.name" />
     }
   </ul>
 </article>
