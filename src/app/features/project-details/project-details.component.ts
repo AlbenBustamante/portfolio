@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { IProjectDetail } from '@core/models/project.model';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-project-details',
@@ -9,8 +11,23 @@ import { ActivatedRoute } from '@angular/router';
 })
 export default class ProjectDetailsComponent {
   private readonly _url;
+  readonly project = signal<IProjectDetail | undefined>(undefined);
 
-  constructor(private readonly _route: ActivatedRoute) {
+  constructor(
+    private readonly _route: ActivatedRoute,
+    private readonly _translateService: TranslateService
+  ) {
     this._url = this._route.snapshot.paramMap.get('url');
+  }
+
+  ngOnInit() {
+    this._translateService.stream('project-details').subscribe({
+      next: (projects) => {
+        const _projects = projects as IProjectDetail[];
+        this.project.set(
+          _projects.find((project) => project.url === this._url)
+        );
+      },
+    });
   }
 }
