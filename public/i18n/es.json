@@ -84,7 +84,6 @@
         {
           "url": "book_now",
           "title": "Book Now",
-          "sourceCode": "https://github.com/AlbenBustamante/book-now",
           "skills": [
             "Java",
             "Spring Boot",
@@ -99,14 +98,12 @@
         {
           "url": "fin_manage",
           "title": "Fin Manage",
-          "sourceCode": "https://github.com/AlbenBustamante/fin-manage-app",
           "skills": ["Dart", "Flutter", "Firestore"],
           "description": "Aplicación móvil para gestionar finanzas personales."
         },
         {
           "url": "text_printer",
           "title": "Text Printer",
-          "sourceCode": "https://github.com/AlbenBustamante/text-printer",
           "skills": ["TypeScript", "Angular", "Tailwind CSS"],
           "photoUrl": "assets/images/projects/text-printer.png",
           "description": "Imprime textos cortos ideal para notas rápidas."
@@ -114,7 +111,6 @@
         {
           "url": "cop_calculator",
           "title": "COP Calculator",
-          "sourceCode": "https://github.com/AlbenBustamante/cop-calculator",
           "skills": ["TypeScript", "Angular", "Tailwind CSS"],
           "photoUrl": "assets/images/projects/cop-calculator.png",
           "description": "Calculadora de billetes y monedas del cono monetario de Colombia."
@@ -122,21 +118,18 @@
         {
           "url": "fun_virtual_reading",
           "title": "Fun Virtual Reading",
-          "sourceCode": "https://github.com/AlbenBustamante/fun_virtual_reading",
           "skills": ["Java", "Spring Boot", "JWT", "PostgreSQL"],
           "description": "Sistema funcional para gestionar libros virtuales y compartir valoraciones."
         },
         {
           "url": "todo_list",
           "title": "ToDo List",
-          "sourceCode": "https://github.com/AlbenBustamante/todo_list",
           "skills": ["Java", "Spring Boot", "JWT", "PostgreSQL"],
           "description": "API Rest para gestionar tareas personales."
         },
         {
           "url": "microblogging",
           "title": "Microblogging",
-          "sourceCode": "https://github.com/AlbenBustamante/microblogging",
           "skills": ["Java", "JDBC", "MySQL", "Swing"],
           "description": "Aplicación de escritorio para compartir publicaciones cortas con otros usuarios."
         }
@@ -163,5 +156,78 @@
         }
       }
     }
-  }
+  },
+  "project-details": [
+    {
+      "url": "book_now",
+      "title": "Book Now",
+      "skills": [
+        "Java",
+        "Spring Boot",
+        "JWT",
+        "PostgreSQL",
+        "TypeScript",
+        "Angular",
+        "Tailwind CSS"
+      ],
+      "description": "Sistema web para reservar servicios de proveedores.",
+      "media": [],
+      "liveDemoUrl": "https://booknow1.vercel.app/",
+      "sourceCode": "https://github.com/AlbenBustamante/book-now"
+    },
+    {
+      "url": "fin_manage",
+      "title": "Fin Manage",
+      "skills": ["Dart", "Flutter", "Firestore"],
+      "description": "Aplicación móvil para gestionar finanzas personales.",
+      "media": [],
+      "liveDemoUrl": "",
+      "sourceCode": "https://github.com/AlbenBustamante/fin-manage-app"
+    },
+    {
+      "url": "text_printer",
+      "title": "Text Printer",
+      "skills": ["TypeScript", "Angular", "Tailwind CSS"],
+      "description": "Imprime textos cortos ideal para notas rápidas.",
+      "media": ["assets/images/projects/text-printer.png"],
+      "liveDemoUrl": "https://textprinter.vercel.app/home",
+      "sourceCode": "https://github.com/AlbenBustamante/text-printer"
+    },
+    {
+      "url": "cop_calculator",
+      "title": "COP Calculator",
+      "skills": ["TypeScript", "Angular", "Tailwind CSS"],
+      "description": "Calculadora de billetes y monedas del cono monetario de Colombia.",
+      "media": ["assets/images/projects/cop-calculator.png"],
+      "liveDemoUrl": "https://cop-calculator.netlify.app/",
+      "sourceCode": "https://github.com/AlbenBustamante/cop-calculator"
+    },
+    {
+      "url": "fun_virtual_reading",
+      "title": "Fun Virtual Reading",
+      "skills": ["Java", "Spring Boot", "JWT", "PostgreSQL"],
+      "description": "Sistema funcional para gestionar libros virtuales y compartir valoraciones.",
+      "media": [],
+      "liveDemoUrl": "",
+      "sourceCode": "https://github.com/AlbenBustamante/fun_virtual_reading"
+    },
+    {
+      "url": "todo_list",
+      "title": "ToDo List",
+      "skills": ["Java", "Spring Boot", "JWT", "PostgreSQL"],
+      "description": "API Rest para gestionar tareas personales.",
+      "media": [],
+      "liveDemoUrl": "",
+      "sourceCode": "https://github.com/AlbenBustamante/todo_list"
+    },
+    {
+      "url": "microblogging",
+      "title": "Microblogging",
+      "skills": ["Java", "JDBC", "MySQL", "Swing"],
+      "description": "Aplicación de escritorio para compartir publicaciones cortas con otros usuarios.",
+      "media": [],
+      "liveDemoUrl": "",
+      "sourceCodeUrl": "https://github.com/AlbenBustamante/microblogging"
+    }
+  ]
 }
