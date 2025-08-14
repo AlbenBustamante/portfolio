@@ -12,6 +12,7 @@ import { TranslateService } from '@ngx-translate/core';
 export default class ProjectDetailsComponent {
   private readonly _url;
   readonly project = signal<IProjectDetail | undefined>(undefined);
+  readonly selectedMedia = signal<string>('');
 
   constructor(
     private readonly _route: ActivatedRoute,
@@ -24,9 +25,12 @@ export default class ProjectDetailsComponent {
     this._translateService.stream('project-details').subscribe({
       next: (projects) => {
         const _projects = projects as IProjectDetail[];
+
         this.project.set(
           _projects.find((project) => project.url === this._url)
         );
+
+        this.selectedMedia.set(this.project()?.media[0] ?? '');
       },
     });
   }
