@@ -3,18 +3,14 @@ import { Routes } from '@angular/router';
 export default [
   {
     path: '',
-    loadComponent: () => import('./home/home.component'),
+    loadChildren: () => import('./me/me.routes'),
   },
   {
-    path: 'about-me',
-    loadComponent: () => import('./about-me/about-me.component'),
+    path: 'old',
+    loadChildren: () => import('./old/old.routes'),
   },
   {
-    path: 'projects',
-    loadComponent: () => import('./projects/projects.component'),
-  },
-  {
-    path: 'hire-me',
-    loadComponent: () => import('./hire-me/hire-me.component'),
+    path: '**',
+    loadComponent: () => import('./page-not-found/page-not-found.component'),
   },
 ] as Routes;
