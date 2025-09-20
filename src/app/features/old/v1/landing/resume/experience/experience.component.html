@@ -1,0 +1,8 @@
+<app-resume-section headline="resume.experience.title">
+  <app-resume-items>
+    @for (experience of ("old.v1.landing.resume.experience.items" | translate);
+    track experience.position) {
+    <app-experience-item [experience]="experience" />
+    }
+  </app-resume-items>
+</app-resume-section>

@@ -1,0 +1,10 @@
+<app-resume-section headline="resume.education.title">
+  <app-resume-items>
+    @for (education of ("old.v1.landing.resume.education.items" | translate);
+    track $index) {
+    <li>
+      <app-education-item [education]="education" />
+    </li>
+    }
+  </app-resume-items>
+</app-resume-section>

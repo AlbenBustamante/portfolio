@@ -1,0 +1,12 @@
+import { Injectable } from '@angular/core';
+import { Skill } from '@features/old/v1/core/models/skill.model';
+import skills from '@assets/data/skills.json';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class SkillService {
+  getSkills() {
+    return skills as Skill[];
+  }
+}

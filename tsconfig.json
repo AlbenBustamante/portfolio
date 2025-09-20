@@ -21,12 +21,11 @@
     "paths": {
       "@assets/*": ["assets/*"],
       "@core/*": ["app/core/*"],
+      "@environments/*": ["environments/*"],
       "@models/*": ["app/core/models/*"],
       "@services/*": ["app/core/services/*"],
       "@components/*": ["app/components/*"],
-      "@features/*": ["app/features/*"],
-      "@landing/*": ["app/features/landing/*"],
-      "@projectDetail/*": ["app/project-details/*"]
+      "@features/*": ["app/features/*"]
     }
   },
   "angularCompilerOptions": {

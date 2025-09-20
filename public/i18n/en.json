@@ -1,86 +1,165 @@
 {
-  "menu": {
-    "home": "Home",
-    "resume": "Resume",
-    "projects": "Projects",
-    "contact": "Contact"
-  },
-  "landing": {
-    "introduction": {
-      "greeting": "Hey there, I'm",
-      "resume": "A Software Developer who builds efficient and scalable solutions with Java and Angular"
-    },
-    "socialMedia": {
-      "github": {
-        "name": "GitHub",
-        "value": "AlbenBustamante",
-        "url": "https://github.com/AlbenBustamante"
+  "old": {
+    "v1": {
+      "menu": {
+        "home": "Home",
+        "resume": "Resume",
+        "projects": "Projects",
+        "contact": "Contact"
       },
-      "linkedin": {
-        "name": "LinkedIn",
-        "value": "Alben Bustamante",
-        "url": "https://linkedin.com/in/albenbustamante"
-      },
-      "email": {
-        "name": "Email",
-        "value": "albenbustamante@outlook.com",
-        "url": "mailto:albenbustamante@outlook.com"
-      },
-      "phone": {
-        "name": "Phone",
-        "value": "(+57) 316 5574868",
-        "url": "https://wa.me/573165574868"
-      }
-    },
-    "resume": {
-      "title": "Resume",
-      "education": {
-        "title": "Education",
-        "items": [
-          {
-            "degree": "Systems Engineering",
-            "institution": "Bicentenary University of Aragua",
-            "year": "2018"
+      "landing": {
+        "introduction": {
+          "greeting": "Hey there, I'm",
+          "resume": "A Software Developer who builds efficient and scalable solutions with Java and Angular"
+        },
+        "socialMedia": {
+          "github": {
+            "name": "GitHub",
+            "value": "AlbenBustamante",
+            "url": "https://github.com/AlbenBustamante"
           },
-          {
-            "degree": "Bachelor of Science",
-            "institution": "Antonio Jose De Sucre",
-            "year": "2013 - 2017"
+          "linkedin": {
+            "name": "LinkedIn",
+            "value": "Alben Bustamante",
+            "url": "https://linkedin.com/in/albenbustamante"
+          },
+          "email": {
+            "name": "Email",
+            "value": "albenbustamante@outlook.com",
+            "url": "mailto:albenbustamante@outlook.com"
+          },
+          "phone": {
+            "name": "Phone",
+            "value": "(+57) 316 5574868",
+            "url": "https://wa.me/573165574868"
           }
-        ]
-      },
-      "experience": {
-        "title": "Experience",
-        "items": [
-          {
-            "position": "Software Developer",
-            "company": "Servinet Computers",
-            "year": "2023 - Present",
-            "keypoints": [
-              "Developed a web system for managing employees, cash registers, and platforms of a banking correspondent.",
-              "Designed the relational database to guarantee integrity of data.",
-              "Programmed the business logic through a secure RESTful API with Java, Spring Boot and JWT.",
-              "Implemented a resposive and interactive user interface with Angular and Tailwind."
+        },
+        "resume": {
+          "title": "Resume",
+          "education": {
+            "title": "Education",
+            "items": [
+              {
+                "degree": "Systems Engineering",
+                "institution": "Bicentenary University of Aragua",
+                "year": "2018"
+              },
+              {
+                "degree": "Bachelor of Science",
+                "institution": "Antonio Jose De Sucre",
+                "year": "2013 - 2017"
+              }
             ]
+          },
+          "experience": {
+            "title": "Experience",
+            "items": [
+              {
+                "position": "Software Developer",
+                "company": "Servinet Computers",
+                "year": "2023 - Present",
+                "keypoints": [
+                  "Developed a web system for managing employees, cash registers, and platforms of a banking correspondent.",
+                  "Designed the relational database to guarantee integrity of data.",
+                  "Programmed the business logic through a secure RESTful API with Java, Spring Boot and JWT.",
+                  "Implemented a resposive and interactive user interface with Angular and Tailwind."
+                ]
+              }
+            ]
+          },
+          "certificates": {
+            "title": "Certificates"
+          },
+          "skills": {
+            "title": "Skills",
+            "language": "Programming Languages",
+            "backend": "Backend Development",
+            "frontend": "Frontend Development",
+            "mobile": "Mobile Development",
+            "database": "Databases",
+            "tool": "Tools"
           }
-        ]
+        },
+        "projects": {
+          "title": "Projects",
+          "items": [
+            {
+              "url": "book_now",
+              "title": "Book Now",
+              "skills": [
+                "Java",
+                "Spring Boot",
+                "JWT",
+                "PostgreSQL",
+                "TypeScript",
+                "Angular",
+                "Tailwind CSS"
+              ],
+              "description": "Web system to book services from providers."
+            },
+            {
+              "url": "fin_manage",
+              "title": "Fin Manage",
+              "skills": ["Dart", "Flutter", "Firestore"],
+              "description": "Mobile application to manage personal finances."
+            },
+            {
+              "url": "text_printer",
+              "title": "Text Printer",
+              "skills": ["TypeScript", "Angular", "Tailwind CSS"],
+              "photoUrl": "assets/images/projects/text-printer.png",
+              "description": "Print short texts ideal for quick notes."
+            },
+            {
+              "url": "cop_calculator",
+              "title": "COP Calculator",
+              "skills": ["TypeScript", "Angular", "Tailwind CSS"],
+              "photoUrl": "assets/images/projects/cop-calculator.png",
+              "description": "Cash calculator for Colombian currency."
+            },
+            {
+              "url": "fun_virtual_reading",
+              "title": "Fun Virtual Reading",
+              "skills": ["Java", "Spring Boot", "JWT", "PostgreSQL"],
+              "description": "Functional system to manage virtual books and share reviews."
+            },
+            {
+              "url": "todo_list",
+              "title": "ToDo List",
+              "skills": ["Java", "Spring Boot", "JWT", "PostgreSQL"],
+              "description": "REST API to manage personal tasks."
+            },
+            {
+              "url": "microblogging",
+              "title": "Microblogging",
+              "skills": ["Java", "JDBC", "MySQL", "Swing"],
+              "description": "Desktop application for sharing short posts with other users."
+            }
+          ]
+        },
+        "contact": {
+          "title": "Get In Touch",
+          "form": {
+            "name": {
+              "label": "Name",
+              "placeholder": "Your name"
+            },
+            "email": {
+              "label": "Email",
+              "placeholder": "example@mail.com"
+            },
+            "subject": {
+              "label": "Subject",
+              "placeholder": ""
+            },
+            "message": {
+              "label": "Message",
+              "placeholder": "Write your message here"
+            }
+          }
+        }
       },
-      "certificates": {
-        "title": "Certificates"
-      },
-      "skills": {
-        "title": "Skills",
-        "language": "Programming Languages",
-        "backend": "Backend Development",
-        "frontend": "Frontend Development",
-        "mobile": "Mobile Development",
-        "database": "Databases",
-        "tool": "Tools"
-      }
-    },
-    "projects": {
-      "title": "Projects",
-      "items": [
+      "project-details": [
         {
           "url": "book_now",
           "title": "Book Now",
@@ -93,141 +172,66 @@
             "Angular",
             "Tailwind CSS"
           ],
-          "description": "Web system to book services from providers."
+          "description": "Web system to book services from providers.",
+          "media": [],
+          "liveDemoUrl": "https://booknow1.vercel.app/",
+          "sourceCode": "https://github.com/AlbenBustamante/book-now"
         },
         {
           "url": "fin_manage",
           "title": "Fin Manage",
           "skills": ["Dart", "Flutter", "Firestore"],
-          "description": "Mobile application to manage personal finances."
+          "description": "Mobile application to manage personal finances.",
+          "media": [],
+          "liveDemoUrl": "",
+          "sourceCode": "https://github.com/AlbenBustamante/fin-manage-app"
         },
         {
           "url": "text_printer",
           "title": "Text Printer",
           "skills": ["TypeScript", "Angular", "Tailwind CSS"],
-          "photoUrl": "assets/images/projects/text-printer.png",
-          "description": "Print short texts ideal for quick notes."
+          "description": "Print short texts ideal for quick notes.",
+          "media": ["assets/images/projects/text-printer.png"],
+          "liveDemoUrl": "https://textprinter.vercel.app/home",
+          "sourceCode": "https://github.com/AlbenBustamante/text-printer"
         },
         {
           "url": "cop_calculator",
           "title": "COP Calculator",
           "skills": ["TypeScript", "Angular", "Tailwind CSS"],
-          "photoUrl": "assets/images/projects/cop-calculator.png",
-          "description": "Cash calculator for Colombian currency."
+          "description": "Cash calculator for Colombian currency.",
+          "media": ["assets/images/projects/cop-calculator.png"],
+          "liveDemoUrl": "https://cop-calculator.netlify.app/",
+          "sourceCode": "https://github.com/AlbenBustamante/cop-calculator"
         },
         {
           "url": "fun_virtual_reading",
           "title": "Fun Virtual Reading",
           "skills": ["Java", "Spring Boot", "JWT", "PostgreSQL"],
-          "description": "Functional system to manage virtual books and share reviews."
+          "description": "Functional system to manage virtual books and share reviews.",
+          "media": [],
+          "liveDemoUrl": "",
+          "sourceCode": "https://github.com/AlbenBustamante/fun_virtual_reading"
         },
         {
           "url": "todo_list",
           "title": "ToDo List",
           "skills": ["Java", "Spring Boot", "JWT", "PostgreSQL"],
-          "description": "REST API to manage personal tasks."
+          "description": "REST API to manage personal tasks.",
+          "media": [],
+          "liveDemoUrl": "",
+          "sourceCode": "https://github.com/AlbenBustamante/todo_list"
         },
         {
           "url": "microblogging",
           "title": "Microblogging",
           "skills": ["Java", "JDBC", "MySQL", "Swing"],
-          "description": "Desktop application for sharing short posts with other users."
+          "description": "Desktop application for sharing short posts with other users.",
+          "media": [],
+          "liveDemoUrl": "",
+          "sourceCodeUrl": "https://github.com/AlbenBustamante/microblogging"
         }
       ]
-    },
-    "contact": {
-      "title": "Get In Touch",
-      "form": {
-        "name": {
-          "label": "Name",
-          "placeholder": "Your name"
-        },
-        "email": {
-          "label": "Email",
-          "placeholder": "example@mail.com"
-        },
-        "subject": {
-          "label": "Subject",
-          "placeholder": ""
-        },
-        "message": {
-          "label": "Message",
-          "placeholder": "Write your message here"
-        }
-      }
     }
-  },
-  "project-details": [
-    {
-      "url": "book_now",
-      "title": "Book Now",
-      "skills": [
-        "Java",
-        "Spring Boot",
-        "JWT",
-        "PostgreSQL",
-        "TypeScript",
-        "Angular",
-        "Tailwind CSS"
-      ],
-      "description": "Web system to book services from providers.",
-      "media": [],
-      "liveDemoUrl": "https://booknow1.vercel.app/",
-      "sourceCode": "https://github.com/AlbenBustamante/book-now"
-    },
-    {
-      "url": "fin_manage",
-      "title": "Fin Manage",
-      "skills": ["Dart", "Flutter", "Firestore"],
-      "description": "Mobile application to manage personal finances.",
-      "media": [],
-      "liveDemoUrl": "",
-      "sourceCode": "https://github.com/AlbenBustamante/fin-manage-app"
-    },
-    {
-      "url": "text_printer",
-      "title": "Text Printer",
-      "skills": ["TypeScript", "Angular", "Tailwind CSS"],
-      "description": "Print short texts ideal for quick notes.",
-      "media": ["assets/images/projects/text-printer.png"],
-      "liveDemoUrl": "https://textprinter.vercel.app/home",
-      "sourceCode": "https://github.com/AlbenBustamante/text-printer"
-    },
-    {
-      "url": "cop_calculator",
-      "title": "COP Calculator",
-      "skills": ["TypeScript", "Angular", "Tailwind CSS"],
-      "description": "Cash calculator for Colombian currency.",
-      "media": ["assets/images/projects/cop-calculator.png"],
-      "liveDemoUrl": "https://cop-calculator.netlify.app/",
-      "sourceCode": "https://github.com/AlbenBustamante/cop-calculator"
-    },
-    {
-      "url": "fun_virtual_reading",
-      "title": "Fun Virtual Reading",
-      "skills": ["Java", "Spring Boot", "JWT", "PostgreSQL"],
-      "description": "Functional system to manage virtual books and share reviews.",
-      "media": [],
-      "liveDemoUrl": "",
-      "sourceCode": "https://github.com/AlbenBustamante/fun_virtual_reading"
-    },
-    {
-      "url": "todo_list",
-      "title": "ToDo List",
-      "skills": ["Java", "Spring Boot", "JWT", "PostgreSQL"],
-      "description": "REST API to manage personal tasks.",
-      "media": [],
-      "liveDemoUrl": "",
-      "sourceCode": "https://github.com/AlbenBustamante/todo_list"
-    },
-    {
-      "url": "microblogging",
-      "title": "Microblogging",
-      "skills": ["Java", "JDBC", "MySQL", "Swing"],
-      "description": "Desktop application for sharing short posts with other users.",
-      "media": [],
-      "liveDemoUrl": "",
-      "sourceCodeUrl": "https://github.com/AlbenBustamante/microblogging"
-    }
-  ]
+  }
 }

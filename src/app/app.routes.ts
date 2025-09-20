@@ -1,11 +1,13 @@
 import { Routes } from '@angular/router';
-import { LandingComponent } from './features/landing/landing.component';
 
 export const routes: Routes = [
-  { path: '', component: LandingComponent },
   {
-    path: 'project/:url',
+    path: 'old',
+    loadChildren: () => import('./features/old/old.routes'),
+  },
+  {
+    path: '**',
     loadComponent: () =>
-      import('./features/project-details/project-details.component'),
+      import('./features/page-not-found/page-not-found.component'),
   },
 ];
