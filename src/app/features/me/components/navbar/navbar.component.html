@@ -13,11 +13,11 @@
     </button>
   </div>
   <nav
-    class="fixed inset-0 min-h-dvh bg-primary-950 z-50 duration-500"
-    [ngClass]="{ '-translate-x-full': !showNavbar() }"
+    class="max-sm:fixed max-sm:inset-0 max-sm:min-h-dvh max-sm:bg-primary-950 max-sm:z-50 max-sm:duration-500 w-full"
+    [ngClass]="{ 'max-sm:-translate-x-full': !showNavbar() }"
   >
     <button
-      class="absolute top-5 right-5 cursor-pointer"
+      class="sm:hidden absolute top-5 right-5 cursor-pointer"
       (click)="showNavbar.set(false)"
     >
       <svg
@@ -25,29 +25,31 @@
         class="stroke-2 stroke-primary-500 hover:stroke-primary-400 size-12 duration-150"
       ></svg>
     </button>
-    <ul class="flex flex-col gap-2 items-center justify-center size-full">
+    <ul
+      class="flex max-sm:flex-col gap-2 items-center justify-center size-full"
+    >
       <app-navbar-item
         text="Home"
-        route="/"
-        class="w-full"
+        route="/home"
+        class="max-sm:w-full"
         (onClick)="showNavbar.set(false)"
       />
       <app-navbar-item
         text="About Me"
         route="/about-me"
-        class="w-full"
+        class="max-sm:w-full"
         (onClick)="showNavbar.set(false)"
       />
       <app-navbar-item
         text="Projects"
         route="/projects"
-        class="w-full"
+        class="max-sm:w-full"
         (onClick)="showNavbar.set(false)"
       />
       <app-navbar-item
         text="Hire Me"
         route="/hire-me"
-        class="w-full"
+        class="max-sm:w-full"
         (onClick)="showNavbar.set(false)"
       />
     </ul>

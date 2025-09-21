@@ -1,8 +1,9 @@
-<li class="flex items-center justify-center w-full text-center">
+<li class="flex items-center justify-center w-full">
   <a
     [routerLink]="route()"
+    routerLinkActive="sm:border-b-4 border-accent-500"
     (click)="onClick.emit()"
-    class="text-primary-50 text-3xl px-5 py-2 w-full flex justify-center hover:scale-125 duration-200"
+    class="text-primary-50 text-3xl sm:text-lg md:text-xl px-5 py-2 w-full flex justify-center max-sm:hover:scale-125 max-sm:duration-200 sm:duration-300 sm:h-20 sm:items-center sm:border-b sm:border-accent-950"
   >
     {{ text() }}
   </a>

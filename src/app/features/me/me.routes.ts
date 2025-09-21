@@ -7,6 +7,11 @@ export default [
     children: [
       {
         path: '',
+        redirectTo: 'home',
+        pathMatch: 'full',
+      },
+      {
+        path: 'home',
         loadComponent: () => import('./home/home.component'),
       },
       {
