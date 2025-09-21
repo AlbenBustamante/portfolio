@@ -1,10 +1,30 @@
 <header
   class="sticky top-0 left-0 right-0 h-20 bg-primary-950 border-b border-accent-950 flex items-center justify-center px-3 z-40"
 >
-  <button class="flex items-center justify-start w-full h-20">
-    <svg menu-icon class="stroke-2 stroke-primary-500 size-14"></svg>
-  </button>
-  <nav class="fixed inset-0 min-h-dvh bg-primary-700 z-50">
+  <div class="sm:hidden">
+    <button
+      class="flex items-center justify-start w-full h-20 cursor-pointer"
+      (click)="showNavbar.set(true)"
+    >
+      <svg
+        menu-icon
+        class="stroke-2 stroke-primary-500 hover:stroke-primary-400 size-14 duration-150"
+      ></svg>
+    </button>
+  </div>
+  <nav
+    class="fixed inset-0 min-h-dvh bg-primary-950 z-50 duration-500"
+    [ngClass]="{ '-translate-x-full': !showNavbar() }"
+  >
+    <button
+      class="absolute top-5 right-5 cursor-pointer"
+      (click)="showNavbar.set(false)"
+    >
+      <svg
+        close-menu-icon
+        class="stroke-2 stroke-primary-500 hover:stroke-primary-400 size-12 duration-150"
+      ></svg>
+    </button>
     <ul class="flex flex-col gap-2 items-center justify-center size-full">
       <app-navbar-item text="Home" route="/" class="w-full" />
       <app-navbar-item text="About Me" route="/about-me" class="w-full" />
