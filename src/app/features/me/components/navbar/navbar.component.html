@@ -26,10 +26,30 @@
       ></svg>
     </button>
     <ul class="flex flex-col gap-2 items-center justify-center size-full">
-      <app-navbar-item text="Home" route="/" class="w-full" />
-      <app-navbar-item text="About Me" route="/about-me" class="w-full" />
-      <app-navbar-item text="Projects" route="/projects" class="w-full" />
-      <app-navbar-item text="Hire Me" route="/hire-me" class="w-full" />
+      <app-navbar-item
+        text="Home"
+        route="/"
+        class="w-full"
+        (onClick)="showNavbar.set(false)"
+      />
+      <app-navbar-item
+        text="About Me"
+        route="/about-me"
+        class="w-full"
+        (onClick)="showNavbar.set(false)"
+      />
+      <app-navbar-item
+        text="Projects"
+        route="/projects"
+        class="w-full"
+        (onClick)="showNavbar.set(false)"
+      />
+      <app-navbar-item
+        text="Hire Me"
+        route="/hire-me"
+        class="w-full"
+        (onClick)="showNavbar.set(false)"
+      />
     </ul>
   </nav>
 </header>

@@ -1,7 +1,8 @@
 <li class="flex items-center justify-center w-full text-center">
   <a
     [routerLink]="route()"
-    class="text-primary-50 text-3xl px-5 py-2 w-full flex justify-center"
+    (click)="onClick.emit()"
+    class="text-primary-50 text-3xl px-5 py-2 w-full flex justify-center hover:scale-125 duration-200"
   >
     {{ text() }}
   </a>

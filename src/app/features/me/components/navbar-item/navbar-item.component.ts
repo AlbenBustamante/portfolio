@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -8,6 +8,7 @@ import { RouterLink } from '@angular/router';
   styleUrl: './navbar-item.component.css',
 })
 export class NavbarItemComponent {
+  readonly onClick = output<void>();
   readonly text = input.required<string>();
   readonly route = input.required<string>();
 }
