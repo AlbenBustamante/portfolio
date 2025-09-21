@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-me',
-  imports: [],
+  imports: [NavbarComponent, RouterOutlet],
   templateUrl: './me.component.html',
-  styleUrl: './me.component.css'
+  styleUrl: './me.component.css',
 })
-export class MeComponent {
-
-}
+export default class MeComponent {}
