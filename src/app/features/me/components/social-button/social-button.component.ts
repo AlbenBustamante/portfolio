@@ -8,4 +8,5 @@ import { Component, input } from '@angular/core';
 })
 export class SocialButtonComponent {
   readonly url = input.required<string>();
+  readonly socialName = input.required<string>();
 }
