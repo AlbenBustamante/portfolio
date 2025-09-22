@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from './components/header/header.component';
+import { SkillsAndTechnologies } from './skills-and-technologies/skills-and-technologies.component';
 
 @Component({
   selector: 'app-about-me',
-  imports: [HeaderComponent],
+  imports: [HeaderComponent, SkillsAndTechnologies],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.css',
 })
