@@ -50,6 +50,12 @@
   @apply outline-none;
 }
 
+:root {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary-500) var(--color-primary-900);
+  scrollbar-arrow-color: none;
+}
+
 body {
   @apply font-default text-gray-700 bg-primary-900;
 }
