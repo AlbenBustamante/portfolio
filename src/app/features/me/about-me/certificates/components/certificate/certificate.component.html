@@ -1,0 +1,13 @@
+<li class="flex items-center w-full">
+  <a
+    [href]="certificate().url"
+    target="_blank"
+    class="flex flex-col gap-px w-full text-accent-50 px-3.5 py-2 bg-primary-700 rounded-2xl hover:underline underline-offset-4 text-lg"
+  >
+    <b>{{ certificate().title }}</b>
+    <span>
+      {{ certificate().institute }} -
+      <span class="italic">{{ certificate().date }}</span>
+    </span>
+  </a>
+</li>
