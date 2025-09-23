@@ -1,8 +1,4 @@
-<form
-  [formGroup]="form"
-  (ngSubmit)="onSubmit()"
-  class="flex flex-col gap-6 bg-primary-800 p-3 rounded-xl ring-2 ring-primary-700 hover:ring-primary-600 duration-500 shadow-[0_0_15px_5px_var(--color-primary-800)] hover:shadow-primary-700"
->
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="flex flex-col gap-6">
   <app-input
     name="name"
     label="Full Name"
@@ -19,7 +15,7 @@
   <app-input
     name="subject"
     label="Subject"
-    placeholder="Type why are you contacting me"
+    placeholder="Type your subject here"
     [control]="form.controls.subject"
   />
   <app-text-area
