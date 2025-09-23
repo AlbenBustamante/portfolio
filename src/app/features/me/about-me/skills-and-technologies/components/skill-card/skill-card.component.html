@@ -1,0 +1,16 @@
+<app-card>
+  <article class="flex flex-col gap-7">
+    <header class="border-b-2 border-primary-700">
+      <h3
+        class="text-primary-50 text-2xl sm:text-3xl text-center font-semibold"
+      >
+        {{ headline() }}
+      </h3>
+    </header>
+    <div class="flex items-center justify-center gap-7 flex-wrap">
+      @for (skill of skills(); track $index) {
+      <app-skill [skillName]="skill" />
+      }
+    </div>
+  </article>
+</app-card>

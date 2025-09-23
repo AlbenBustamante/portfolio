@@ -1,25 +1,37 @@
 <section class="flex flex-col gap-7">
   <app-subtitle headline="Skills & Technologies" />
   <div
-    class="w-full flex items-center justify-center gap-x-5 gap-y-3.5 flex-wrap"
+    class="w-full grid grid-cols-[repeat(auto-fit,_minmax(19rem,_1fr))] lg:grid-cols-2 gap-x-12 gap-y-9"
   >
-    <app-skill skillName="Java"></app-skill>
-    <app-skill skillName="JavaScript"></app-skill>
-    <app-skill skillName="TypeScript"></app-skill>
-    <app-skill skillName="SQL"></app-skill>
-    <app-skill skillName="HTML"></app-skill>
-    <app-skill skillName="CSS"></app-skill>
-    <app-skill skillName="Dart"></app-skill>
-    <app-skill skillName="Spring Boot"></app-skill>
-    <app-skill skillName="Angular"></app-skill>
-    <app-skill skillName="Tailwind CSS"></app-skill>
-    <app-skill skillName="Flutter"></app-skill>
-    <app-skill skillName="Bootstrap"></app-skill>
-    <app-skill skillName="PostgreSQL"></app-skill>
-    <app-skill skillName="MySQL"></app-skill>
-    <app-skill skillName="Firestore"></app-skill>
-    <app-skill skillName="MongoDB"></app-skill>
-    <app-skill skillName="Git"></app-skill>
-    <app-skill skillName="Docker"></app-skill>
+    <app-skill-card
+      class="max-w-xs lg:max-w-md mx-auto"
+      headline="Back-End Development"
+      [skills]="[
+        'Java',
+        'JavaScript',
+        'TypeScript',
+        'SQL',
+        'Spring Boot',
+        'PostgreSQL',
+        'MySQL',
+        'Firestore',
+        'MongoDB'
+      ]"
+    />
+    <app-skill-card
+      class="max-w-xs lg:max-w-md mx-auto"
+      headline="Front-End Development"
+      [skills]="['HTML', 'CSS', 'Angular', 'Tailwind CSS', 'Bootstrap']"
+    />
+    <app-skill-card
+      class="max-w-xs lg:max-w-md mx-auto"
+      headline="Mobile Development"
+      [skills]="['Dart', 'Flutter']"
+    />
+    <app-skill-card
+      class="max-w-xs lg:max-w-md mx-auto"
+      headline="Tools & Platforms"
+      [skills]="['Git', 'Docker', 'Intellij IDEA', 'VSCode', 'Linux']"
+    />
   </div>
 </section>
