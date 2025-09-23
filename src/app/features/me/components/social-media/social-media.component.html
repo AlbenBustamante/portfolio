@@ -1,4 +1,11 @@
-<div class="flex items-center justify-between gap-2">
+<div
+  #container
+  class="flex"
+  [ngClass]="{
+    'items-center justify-between gap-x-2': axis() === 'x',
+    'flex-col gap-y-7': axis() === 'y'
+  }"
+>
   <app-social-button
     url="https://github.com/AlbenBustamante"
     socialName="GitHub"
