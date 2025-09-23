@@ -14,7 +14,7 @@ export class FormComponent {
 
   readonly form = this._fb.group({
     name: ['', Validators.required],
-    lastName: ['', Validators.required],
+    email: ['', [Validators.required, Validators.email]],
     subject: ['', Validators.required],
     message: ['', Validators.required],
   });

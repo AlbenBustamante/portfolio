@@ -8,6 +8,7 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
   styleUrl: './input.component.css',
 })
 export class InputComponent {
+  readonly type = input<'text' | 'email'>('text');
   readonly label = input.required<string>();
   readonly name = input.required<string>();
   readonly placeholder = input.required<string>();

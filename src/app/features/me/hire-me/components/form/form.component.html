@@ -3,20 +3,19 @@
   (ngSubmit)="onSubmit()"
   class="flex flex-col gap-6 bg-primary-800 p-3 rounded-xl ring-2 ring-primary-700 hover:ring-primary-600 duration-500 shadow-[0_0_15px_5px_var(--color-primary-800)] hover:shadow-primary-700"
 >
-  <div class="grid grid-cols-2 gap-5">
-    <app-input
-      name="name"
-      label="Name"
-      placeholder="E.g: John"
-      [control]="form.controls.name"
-    />
-    <app-input
-      name="lastName"
-      label="Last Name"
-      placeholder="E.g: Doe"
-      [control]="form.controls.lastName"
-    />
-  </div>
+  <app-input
+    name="name"
+    label="Full Name"
+    placeholder="E.g: John Doe"
+    [control]="form.controls.name"
+  />
+  <app-input
+    name="email"
+    type="email"
+    label="Email"
+    placeholder="yourmail@example.com"
+    [control]="form.controls.email"
+  />
   <app-input
     name="subject"
     label="Subject"
