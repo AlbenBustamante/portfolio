@@ -1,0 +1,38 @@
+<form
+  [formGroup]="form"
+  (ngSubmit)="onSubmit()"
+  class="flex flex-col gap-6 bg-primary-800 p-3 rounded-xl"
+>
+  <div class="grid grid-cols-2 gap-5">
+    <app-input
+      name="name"
+      label="Name"
+      placeholder="E.g: John"
+      [control]="form.controls.name"
+    />
+    <app-input
+      name="lastName"
+      label="Last Name"
+      placeholder="E.g: Doe"
+      [control]="form.controls.lastName"
+    />
+  </div>
+  <app-input
+    name="subject"
+    label="Subject"
+    placeholder="Type why are you contacting me"
+    [control]="form.controls.subject"
+  />
+  <app-text-area
+    name="message"
+    label="Message"
+    placeholder="Please, write your message here"
+    [control]="form.controls.message"
+  />
+  <button
+    type="submit"
+    class="px-5 py-2 rounded-xl bg-accent-700 text-accent-50 cursor-pointer hover:text-primary-700 hover:bg-primary-200 duration-200"
+  >
+    Send message
+  </button>
+</form>
