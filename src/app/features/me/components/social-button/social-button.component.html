@@ -1,11 +1,23 @@
 <div class="group relative">
-  <a [href]="url()" target="_blank">
+  <a
+    [href]="url()"
+    target="_blank"
+    [ngClass]="{
+      'flex items-center gap-5 text-primary-400 font-light hover:text-accent-500 duration-200':
+        axis() === 'y'
+    }"
+  >
     <ng-content />
+    @if (axis() === 'y') {
+    <span>{{ displayName() }}</span>
+    }
   </a>
+  @if (axis() === 'x') {
   <span
     class="invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute -bottom-10 left-1/2 right-1/2 -translate-x-1/2 bg-primary-300 text-primary-900 text-center text-sm sm:text-base px-2 sm:px-3 py-1 rounded-3xl w-20 sm:w-24 duration-300"
     role="tooltip"
   >
     {{ socialName() }}
   </span>
+  }
 </div>
