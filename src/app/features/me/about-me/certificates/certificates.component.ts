@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { SubtitleComponent } from '@features/me/components/subtitle/subtitle.component';
+import { SubtitleComponent } from '@components/subtitle/subtitle.component';
 import { CertificateComponent } from './components/certificate/certificate.component';
 import { Certificate } from './components/certificate/certificate.model';
 

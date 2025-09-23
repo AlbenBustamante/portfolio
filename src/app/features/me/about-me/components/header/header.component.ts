@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TitleComponent } from '@features/me/components/title/title.component';
+import { TitleComponent } from '@components/title/title.component';
 
 @Component({
   selector: 'app-header',

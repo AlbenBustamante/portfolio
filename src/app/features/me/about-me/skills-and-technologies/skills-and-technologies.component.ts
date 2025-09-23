@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SubtitleComponent } from '@features/me/components/subtitle/subtitle.component';
+import { SubtitleComponent } from '@components/subtitle/subtitle.component';
 import { SkillComponent } from './skill/skill.component';
 
 @Component({
