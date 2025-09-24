@@ -2,8 +2,6 @@ import { Component, HostListener, signal } from '@angular/core';
 import { FormComponent } from './components/form/form.component';
 import { TitleComponent } from '@components/title/title.component';
 import { SocialMediaComponent } from '@components/social-media/social-media.component';
-import { SubtitleComponent } from '@components/subtitle/subtitle.component';
-import { CardComponent } from '@components/card/card.component';
 import { HireMeCardComponent } from './components/hire-me-card/hire-me-card.component';
 
 @Component({
@@ -12,8 +10,6 @@ import { HireMeCardComponent } from './components/hire-me-card/hire-me-card.comp
     FormComponent,
     TitleComponent,
     SocialMediaComponent,
-    SubtitleComponent,
-    CardComponent,
     HireMeCardComponent,
   ],
   templateUrl: './hire-me.component.html',
