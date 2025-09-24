@@ -4,6 +4,7 @@ import { TitleComponent } from '@components/title/title.component';
 import { SocialMediaComponent } from '@components/social-media/social-media.component';
 import { SubtitleComponent } from '@components/subtitle/subtitle.component';
 import { CardComponent } from '@components/card/card.component';
+import { HireMeCardComponent } from './components/hire-me-card/hire-me-card.component';
 
 @Component({
   selector: 'app-hire-me',
@@ -13,6 +14,7 @@ import { CardComponent } from '@components/card/card.component';
     SocialMediaComponent,
     SubtitleComponent,
     CardComponent,
+    HireMeCardComponent,
   ],
   templateUrl: './hire-me.component.html',
   styleUrl: './hire-me.component.css',

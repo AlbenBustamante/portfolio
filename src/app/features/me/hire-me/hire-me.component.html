@@ -1,19 +1,11 @@
 <main class="p-7 flex flex-col gap-7 w-full max-w-[82rem] mx-auto">
   <app-title headline="Let's work together" />
   <div class="grid gap-y-12 gap-x-7 lg:grid-cols-3">
-    <app-card>
-      <section>
-        <app-subtitle headline="My Contact Media" />
-        <hr class="mt-3 mb-7 border-primary-600" />
-        <app-social-media [axis]="socialMediaAxis()" />
-      </section>
-    </app-card>
-    <app-card class="lg:col-span-2">
-      <section>
-        <app-subtitle headline="Send me a Message" />
-        <hr class="mt-3 mb-7 border-primary-600" />
-        <app-form />
-      </section>
-    </app-card>
+    <app-hire-me-card headline="My Contact Media">
+      <app-social-media [axis]="socialMediaAxis()" />
+    </app-hire-me-card>
+    <app-hire-me-card headline="My Contact Media" class="lg:col-span-2">
+      <app-form />
+    </app-hire-me-card>
   </div>
 </main>
