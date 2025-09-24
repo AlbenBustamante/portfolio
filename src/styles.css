@@ -52,7 +52,7 @@
 
 :root {
   scrollbar-width: thin;
-  scrollbar-color: var(--color-primary-500) var(--color-primary-900);
+  scrollbar-color: var(--color-primary-500) var(--color-primary-950);
   scrollbar-arrow-color: none;
 }
 
