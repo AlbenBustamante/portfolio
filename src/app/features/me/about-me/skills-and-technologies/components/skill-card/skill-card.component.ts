@@ -1,10 +1,9 @@
 import { Component, input } from '@angular/core';
 import { CardComponent } from '@components/card/card.component';
-import { SkillComponent } from '../skill/skill.component';
 
 @Component({
   selector: 'app-skill-card',
-  imports: [CardComponent, SkillComponent],
+  imports: [CardComponent],
   templateUrl: './skill-card.component.html',
   styleUrl: './skill-card.component.css',
 })

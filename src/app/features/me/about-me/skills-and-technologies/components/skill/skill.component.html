@@ -1,8 +1,12 @@
 <div
-  class="flex items-center gap-2.5 bg-primary-300 px-3 py-1.5 rounded-xl w-fit"
+  class="flex flex-col items-center justify-center gap-y-1.5 bg-primary-700 px-2 py-2.5 rounded-3xl size-full"
 >
-  <ng-content />
-  <span class="text-lg text-primary-900 font-semibold cursor-default">
+  <div class="size-11 sm:size-12 drop-shadow-xs drop-shadow-primary-600">
+    <ng-content />
+  </div>
+  <span
+    class="text-sm sm:text-base text-center text-primary-100 font-semibold cursor-default"
+  >
     {{ skillName() }}
   </span>
 </div>
