@@ -21,8 +21,8 @@ import { Component } from '@angular/core';
       fill="#DD2C00"
     />
     <svg:g filter="url(#filter0_d_47_3681)">
-      <circle cx="100" cy="90" r="30" fill="white" />
-      <path
+      <svg:circle cx="100" cy="90" r="30" fill="white" />
+      <svg:path
         fill-rule="evenodd"
         clip-rule="evenodd"
         d="M100 91.5L86.5 97.5V91.5L100 85.5L113.5 91.5V96.75V95.625V97.5L100 91.5ZM100 75L113.5 81V87L100 81L86.5 87V81L100 75ZM105.062 96.75L111.812 99.75L100 105V99L105.062 96.75Z"
@@ -30,7 +30,7 @@ import { Component } from '@angular/core';
       />
     </svg:g>
     <svg:defs>
-      <filter
+      <svg:filter
         id="filter0_d_47_3681"
         x="68"
         y="58.6704"
@@ -39,32 +39,32 @@ import { Component } from '@angular/core';
         filterUnits="userSpaceOnUse"
         color-interpolation-filters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-        <feColorMatrix
+        <svg:feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <svg:feColorMatrix
           in="SourceAlpha"
           type="matrix"
           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
           result="hardAlpha"
         />
-        <feOffset dy="0.670408" />
-        <feGaussianBlur stdDeviation="1" />
-        <feComposite in2="hardAlpha" operator="out" />
-        <feColorMatrix
+        <svg:feOffset dy="0.670408" />
+        <svg:feGaussianBlur stdDeviation="1" />
+        <svg:feComposite in2="hardAlpha" operator="out" />
+        <svg:feColorMatrix
           type="matrix"
           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"
         />
-        <feBlend
+        <svg:feBlend
           mode="normal"
           in2="BackgroundImageFix"
           result="effect1_dropShadow_47_3681"
         />
-        <feBlend
+        <svg:feBlend
           mode="normal"
           in="SourceGraphic"
           in2="effect1_dropShadow_47_3681"
           result="shape"
         />
-      </filter>
+      </svg:filter>
     </svg:defs>
   `,
   host: {
