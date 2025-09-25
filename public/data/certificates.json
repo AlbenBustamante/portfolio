@@ -1,5 +1,13 @@
 [
   {
+    "title": "English B1",
+    "date": "2024",
+    "institute": "EF SET",
+    "url": "https://cert.efset.org/H7FWG1",
+    "imageUrl": "images/certificates/efset_englishb1.png",
+    "featured": true
+  },
+  {
     "title": "Data Structures and Algorithms",
     "date": "2025",
     "institute": "Coursera / Amazon",
@@ -32,7 +40,7 @@
     "featured": "false"
   },
   {
-    "title": "Curso de Angular: Creación de Aplicaciones Web",
+    "title": "Angular Course: Web Applications Development",
     "date": "2024",
     "institute": "Platzi",
     "url": "https://platzi.com/p/albenbustamante/curso/8352-course/diploma/detalle/",
@@ -48,7 +56,7 @@
     "featured": true
   },
   {
-    "title": "Java SE: SQL y Bases de Datos",
+    "title": "Java SE: SQL & Databases",
     "date": "2024",
     "institute": "Platzi",
     "url": "https://platzi.com/p/albenbustamante/curso/8048-course/diploma/detalle/",
@@ -56,7 +64,7 @@
     "featured": false
   },
   {
-    "title": "Curso Profesional de Git y GitHub",
+    "title": "Git & GitHub Professional Course",
     "date": "2021",
     "institute": "Platzi",
     "url": "https://platzi.com/p/albenbustamante/curso/1557-course/diploma/detalle/",
@@ -64,7 +72,7 @@
     "featured": true
   },
   {
-    "title": "Curso de Java SE Orientado a Objetos",
+    "title": "Java SE Course Object-Oriented",
     "date": "2021",
     "institute": "Platzi",
     "url": "https://platzi.com/p/albenbustamante/curso/1629-course/diploma/detalle/",
@@ -72,7 +80,7 @@
     "featured": false
   },
   {
-    "title": "Curso de Introducción a Java",
+    "title": "Introduction Course to Java",
     "date": "2021",
     "institute": "Platzi",
     "url": "https://platzi.com/p/albenbustamante/curso/1631-course/diploma/detalle/",
