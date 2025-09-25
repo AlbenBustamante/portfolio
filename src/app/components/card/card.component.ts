@@ -1,9 +1,12 @@
-import { Component } from '@angular/core';
+import { NgClass } from '@angular/common';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-card',
-  imports: [],
+  imports: [NgClass],
   templateUrl: './card.component.html',
   styleUrl: './card.component.css',
 })
-export class CardComponent {}
+export class CardComponent {
+  readonly padding = input<'sm' | 'base'>('base');
+}

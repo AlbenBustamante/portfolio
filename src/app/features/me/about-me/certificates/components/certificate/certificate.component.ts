@@ -1,9 +1,10 @@
 import { Component, input } from '@angular/core';
 import { Certificate } from './certificate.model';
+import { CardComponent } from '@components/card/card.component';
 
 @Component({
   selector: 'app-certificate',
-  imports: [],
+  imports: [CardComponent],
   templateUrl: './certificate.component.html',
   styleUrl: './certificate.component.css',
 })
