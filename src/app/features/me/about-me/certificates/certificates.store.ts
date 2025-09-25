@@ -1,4 +1,4 @@
-import { signalStore, withState } from '@ngrx/signals';
+import { patchState, signalStore, withMethods, withState } from '@ngrx/signals';
 import { Certificate } from './components/certificate/certificate.model';
 
 type State = {
@@ -36,4 +36,11 @@ const initialState: State = {
   filter: { query: 'featured', order: 'asc' },
 };
 
-export const CertificateStore = signalStore(withState(initialState));
+export const CertificateStore = signalStore(
+  withState(initialState),
+  withMethods((store) => ({
+    updateQuery: (query: 'featured' | 'all') => {
+      patchState(store, (state) => ({ filter: { ...state.filter, query } }));
+    },
+  }))
+);

@@ -2,20 +2,22 @@
   <app-subtitle headline="Certificates" />
   <ul class="flex items-center justify-center cursor-default">
     <li
-      class="px-5 py-2 text-primary-100 rounded-l-3xl"
+      class="px-5 py-2 text-primary-100 rounded-l-3xl duration-100"
       [ngClass]="
         store.filter.query() === 'featured'
           ? 'bg-primary-700'
           : 'bg-primary-800'
       "
+      (click)="store.updateQuery('featured')"
     >
       Featured
     </li>
     <li
-      class="px-5 py-2 text-primary-100 rounded-r-3xl"
+      class="px-5 py-2 text-primary-100 rounded-r-3xl duration-100"
       [ngClass]="
         store.filter.query() === 'all' ? 'bg-primary-700' : 'bg-primary-800'
       "
+      (click)="store.updateQuery('all')"
     >
       Show All
     </li>
