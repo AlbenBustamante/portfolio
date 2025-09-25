@@ -9,5 +9,4 @@ import { CardComponent } from '@components/card/card.component';
 })
 export class SkillCardComponent {
   readonly headline = input.required<string>();
-  readonly skills = input<string[]>();
 }
