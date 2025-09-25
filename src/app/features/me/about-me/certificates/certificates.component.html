@@ -9,7 +9,7 @@
     </li>
   </ul>
   <ul class="flex flex-col gap-y-7">
-    @for (certificate of certificates(); track $index) {
+    @for (certificate of store.certificates(); track $index) {
     <app-certificate [certificate]="certificate" />
     }
   </ul>
