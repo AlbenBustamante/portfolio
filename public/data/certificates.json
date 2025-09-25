@@ -13,7 +13,7 @@
     "institute": "Coursera / Amazon",
     "url": "https://coursera.org/share/107cd5f0ac4a436485dd6bd12a9e0569",
     "imageUrl": "images/certificates/coursera_amazon_java_algorithms.jpeg",
-    "featured": "false"
+    "featured": false
   },
   {
     "title": "Programming with Java",
@@ -21,7 +21,7 @@
     "institute": "Coursera / Amazon",
     "url": "https://coursera.org/share/c7396b9bf99db47d2fde9013b46c1146",
     "imageUrl": "images/certificates/coursera_amazon_java_programming.jpeg",
-    "featured": "false"
+    "featured": false
   },
   {
     "title": "Introduction to Software Development",
@@ -29,7 +29,7 @@
     "institute": "Coursera / Amazon",
     "url": "https://coursera.org/share/8b805adacff148d322f31d757214ec06",
     "imageUrl": "images/certificates/coursera_amazon_java_introduction.jpeg",
-    "featured": "false"
+    "featured": false
   },
   {
     "title": "Methodology of Computing Systems Programming",
@@ -37,7 +37,7 @@
     "institute": "SENA",
     "url": "https://certificados.sena.edu.co/CertificadoDigital/com.sena.consultacer",
     "imageUrl": "images/certificates/sena_introduction.jpg",
-    "featured": "false"
+    "featured": false
   },
   {
     "title": "Angular Course: Web Applications Development",
