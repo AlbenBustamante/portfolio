@@ -1,5 +1,29 @@
 [
   {
+    "title": "Data Structures and Algorithms",
+    "date": "2025",
+    "institute": "Coursera / Amazon",
+    "url": "https://coursera.org/share/107cd5f0ac4a436485dd6bd12a9e0569",
+    "imageUrl": "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~XDWY5DF0UXY0/CERTIFICATE_LANDING_PAGE~XDWY5DF0UXY0.jpeg",
+    "featured": "false"
+  },
+  {
+    "title": "Programming with Java",
+    "date": "2025",
+    "institute": "Coursera / Amazon",
+    "url": "https://coursera.org/share/c7396b9bf99db47d2fde9013b46c1146",
+    "imageUrl": "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~79I3W85P3BJ1/CERTIFICATE_LANDING_PAGE~79I3W85P3BJ1.jpeg",
+    "featured": "false"
+  },
+  {
+    "title": "Introduction to Software Development",
+    "date": "2025",
+    "institute": "Coursera / Amazon",
+    "url": "https://coursera.org/share/8b805adacff148d322f31d757214ec06",
+    "imageUrl": "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~FMKI0E3BUNS3/CERTIFICATE_LANDING_PAGE~FMKI0E3BUNS3.jpeg",
+    "featured": "false"
+  },
+  {
     "title": "Curso de Angular: Creación de Aplicaciones Web",
     "date": "2024",
     "institute": "Platzi",
