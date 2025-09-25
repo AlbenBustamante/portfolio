@@ -5,8 +5,9 @@ import {
   withMethods,
   withState,
 } from '@ngrx/signals';
-import { Certificate } from './components/certificate/certificate.model';
-import { computed } from '@angular/core';
+import { Certificate } from './models/certificate.model';
+import { computed, inject } from '@angular/core';
+import { CertificateService } from './services/certificate.service';
 
 type State = {
   certificates: Certificate[];
@@ -14,32 +15,7 @@ type State = {
 };
 
 const initialState: State = {
-  certificates: [
-    {
-      title: 'Curso de Angular: Creación de Aplicaciones Web',
-      date: '2024',
-      institute: 'Platzi',
-      url: 'https://platzi.com/p/albenbustamante/curso/8352-course/diploma/detalle/',
-      imageUrl: 'images/certificates/platzi_angular17.png',
-      featured: true,
-    },
-    {
-      title: 'Responsive Web Design',
-      date: '2023',
-      institute: 'freeCodeCamp',
-      url: 'https://www.freecodecamp.org/certification/albenbustamante/responsive-web-design',
-      imageUrl: 'images/certificates/freeCodeCamp_responsivewebdesign.png',
-      featured: true,
-    },
-    {
-      title: 'Java SE: SQL y Bases de Datos',
-      date: '2024',
-      institute: 'Platzi',
-      url: 'https://platzi.com/p/albenbustamante/curso/8048-course/diploma/detalle/',
-      imageUrl: 'images/certificates/platzi_javasesql.png',
-      featured: false,
-    },
-  ],
+  certificates: [],
   filter: { query: 'featured', order: 'asc' },
 };
 
@@ -56,7 +32,10 @@ export const CertificateStore = signalStore(
       );
     }),
   })),
-  withMethods((store) => ({
+  withMethods((store, service = inject(CertificateService)) => ({
+    fetchAll: () => {
+      patchState(store, (_) => ({ certificates: service.certificates }));
+    },
     updateQuery: (query: 'featured' | 'all') => {
       patchState(store, (state) => ({ filter: { ...state.filter, query } }));
     },

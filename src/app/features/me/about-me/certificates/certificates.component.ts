@@ -13,4 +13,8 @@ import { NgClass } from '@angular/common';
 })
 export class CertificatesComponent {
   readonly store = inject(CertificateStore);
+
+  constructor() {
+    this.store.fetchAll();
+  }
 }

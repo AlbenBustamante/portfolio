@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { Certificate } from './certificate.model';
+import { Certificate } from '../../models/certificate.model';
 import { CardComponent } from '@components/card/card.component';
 
 @Component({

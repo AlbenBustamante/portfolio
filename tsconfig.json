@@ -20,12 +20,13 @@
     "module": "ES2022",
     "paths": {
       "@assets/*": ["assets/*"],
+      "@components/*": ["app/components/*"],
       "@core/*": ["app/core/*"],
       "@environments/*": ["environments/*"],
+      "@features/*": ["app/features/*"],
       "@models/*": ["app/core/models/*"],
-      "@services/*": ["app/core/services/*"],
-      "@components/*": ["app/components/*"],
-      "@features/*": ["app/features/*"]
+      "@public/*": ["../public/*"],
+      "@services/*": ["app/core/services/*"]
     }
   },
   "angularCompilerOptions": {

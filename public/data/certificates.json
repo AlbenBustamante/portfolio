@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Curso de Angular: Creación de Aplicaciones Web",
+    "date": "2024",
+    "institute": "Platzi",
+    "url": "https://platzi.com/p/albenbustamante/curso/8352-course/diploma/detalle/",
+    "imageUrl": "images/certificates/platzi_angular17.png",
+    "featured": true
+  },
+  {
+    "title": "Responsive Web Design",
+    "date": "2023",
+    "institute": "freeCodeCamp",
+    "url": "https://www.freecodecamp.org/certification/albenbustamante/responsive-web-design",
+    "imageUrl": "images/certificates/freeCodeCamp_responsivewebdesign.png",
+    "featured": true
+  },
+  {
+    "title": "Java SE: SQL y Bases de Datos",
+    "date": "2024",
+    "institute": "Platzi",
+    "url": "https://platzi.com/p/albenbustamante/curso/8048-course/diploma/detalle/",
+    "imageUrl": "images/certificates/platzi_javasesql.png",
+    "featured": false
+  }
+]
