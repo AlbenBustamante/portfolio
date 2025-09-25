@@ -3,4 +3,6 @@ export interface Certificate {
   date: string;
   institute: string;
   url: string;
+  imageUrl: string;
+  featured: boolean;
 }

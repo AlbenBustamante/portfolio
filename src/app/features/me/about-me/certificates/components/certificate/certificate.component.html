@@ -7,15 +7,17 @@
     <app-card padding="sm">
       <article class="flex items-center gap-5">
         <img
-          src="https://www.landuse-ca.org/wp-content/uploads/2019/04/no-photo-available.png"
+          [src]="certificate().imageUrl"
           alt="certificate"
-          class="aspect-video object-cover w-1/3 max-w-52 h-auto rounded-lg"
+          class="aspect-video object-contain w-1/3 max-w-52 h-auto rounded-lg border-2 border-primary-700"
         />
-        <div class="flex flex-col gap-px w-2/3">
-          <b class="text-base sm:text-lg">{{ certificate().title }}</b>
-          <span class="text-sm sm:text-base">
+        <div class="flex flex-col gap-1 w-2/3">
+          <b class="text-base sm:text-lg leading-5">
+            {{ certificate().title }}
+          </b>
+          <span class="text-sm sm:text-base text-primary-200">
             {{ certificate().institute }} -
-            <i>{{ certificate().date }}</i>
+            <i class="text-primary-300">{{ certificate().date }}</i>
           </span>
         </div>
       </article>
