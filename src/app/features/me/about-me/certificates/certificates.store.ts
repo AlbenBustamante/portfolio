@@ -1,5 +1,12 @@
-import { patchState, signalStore, withMethods, withState } from '@ngrx/signals';
+import {
+  patchState,
+  signalStore,
+  withComputed,
+  withMethods,
+  withState,
+} from '@ngrx/signals';
 import { Certificate } from './components/certificate/certificate.model';
+import { computed } from '@angular/core';
 
 type State = {
   certificates: Certificate[];
@@ -38,6 +45,17 @@ const initialState: State = {
 
 export const CertificateStore = signalStore(
   withState(initialState),
+  withComputed(({ certificates, filter }) => ({
+    sortedCertificates: computed(() => {
+      if (filter.query() === 'all') {
+        return certificates();
+      }
+
+      return certificates().filter(
+        (certificate) => certificate.featured === true
+      );
+    }),
+  })),
   withMethods((store) => ({
     updateQuery: (query: 'featured' | 'all') => {
       patchState(store, (state) => ({ filter: { ...state.filter, query } }));
