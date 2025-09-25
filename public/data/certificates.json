@@ -4,7 +4,7 @@
     "date": "2025",
     "institute": "Coursera / Amazon",
     "url": "https://coursera.org/share/107cd5f0ac4a436485dd6bd12a9e0569",
-    "imageUrl": "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~XDWY5DF0UXY0/CERTIFICATE_LANDING_PAGE~XDWY5DF0UXY0.jpeg",
+    "imageUrl": "images/certificates/coursera_amazon_java_algorithms.jpeg",
     "featured": "false"
   },
   {
@@ -12,7 +12,7 @@
     "date": "2025",
     "institute": "Coursera / Amazon",
     "url": "https://coursera.org/share/c7396b9bf99db47d2fde9013b46c1146",
-    "imageUrl": "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~79I3W85P3BJ1/CERTIFICATE_LANDING_PAGE~79I3W85P3BJ1.jpeg",
+    "imageUrl": "images/certificates/coursera_amazon_java_programming.jpeg",
     "featured": "false"
   },
   {
@@ -20,7 +20,15 @@
     "date": "2025",
     "institute": "Coursera / Amazon",
     "url": "https://coursera.org/share/8b805adacff148d322f31d757214ec06",
-    "imageUrl": "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~FMKI0E3BUNS3/CERTIFICATE_LANDING_PAGE~FMKI0E3BUNS3.jpeg",
+    "imageUrl": "images/certificates/coursera_amazon_java_introduction.jpeg",
+    "featured": "false"
+  },
+  {
+    "title": "Methodology of Computing Systems Programming",
+    "date": "2025",
+    "institute": "SENA",
+    "url": "https://certificados.sena.edu.co/CertificadoDigital/com.sena.consultacer",
+    "imageUrl": "images/certificates/sena_introduction.jpg",
     "featured": "false"
   },
   {
@@ -45,6 +53,30 @@
     "institute": "Platzi",
     "url": "https://platzi.com/p/albenbustamante/curso/8048-course/diploma/detalle/",
     "imageUrl": "images/certificates/platzi_javasesql.png",
+    "featured": false
+  },
+  {
+    "title": "Curso Profesional de Git y GitHub",
+    "date": "2021",
+    "institute": "Platzi",
+    "url": "https://platzi.com/p/albenbustamante/curso/1557-course/diploma/detalle/",
+    "imageUrl": "images/certificates/platzi_git.png",
+    "featured": true
+  },
+  {
+    "title": "Curso de Java SE Orientado a Objetos",
+    "date": "2021",
+    "institute": "Platzi",
+    "url": "https://platzi.com/p/albenbustamante/curso/1629-course/diploma/detalle/",
+    "imageUrl": "images/certificates/platzi_javaseoop.png",
+    "featured": false
+  },
+  {
+    "title": "Curso de Introducción a Java",
+    "date": "2021",
+    "institute": "Platzi",
+    "url": "https://platzi.com/p/albenbustamante/curso/1631-course/diploma/detalle/",
+    "imageUrl": "images/certificates/platzi_javase.png",
     "featured": false
   }
 ]
