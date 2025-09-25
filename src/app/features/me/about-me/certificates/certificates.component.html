@@ -1,10 +1,22 @@
 <section class="flex flex-col gap-7 w-full max-w-6xl mx-auto">
   <app-subtitle headline="Certificates" />
   <ul class="flex items-center justify-center cursor-default">
-    <li class="bg-primary-700 px-5 py-2 text-primary-100 rounded-l-3xl">
+    <li
+      class="px-5 py-2 text-primary-100 rounded-l-3xl"
+      [ngClass]="
+        store.filter.query() === 'featured'
+          ? 'bg-primary-700'
+          : 'bg-primary-800'
+      "
+    >
       Featured
     </li>
-    <li class="bg-primary-800 px-5 py-2 text-primary-100 rounded-r-3xl">
+    <li
+      class="px-5 py-2 text-primary-100 rounded-r-3xl"
+      [ngClass]="
+        store.filter.query() === 'all' ? 'bg-primary-700' : 'bg-primary-800'
+      "
+    >
       Show All
     </li>
   </ul>
