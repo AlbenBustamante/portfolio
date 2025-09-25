@@ -1,5 +1,13 @@
 <section class="flex flex-col gap-7 w-full max-w-6xl mx-auto">
   <app-subtitle headline="Certificates" />
+  <ul class="flex items-center justify-center cursor-default">
+    <li class="bg-primary-700 px-5 py-2 text-primary-100 rounded-l-3xl">
+      Featured
+    </li>
+    <li class="bg-primary-800 px-5 py-2 text-primary-100 rounded-r-3xl">
+      Show All
+    </li>
+  </ul>
   <ul class="flex flex-col gap-y-7">
     @for (certificate of certificates(); track $index) {
     <app-certificate [certificate]="certificate" />
