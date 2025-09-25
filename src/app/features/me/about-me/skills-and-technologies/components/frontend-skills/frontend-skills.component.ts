@@ -8,6 +8,7 @@ import { TSIconComponent } from '../icons/ts-icon/ts-icon.component';
 import { AngularIconComponent } from '../icons/angular-icon/angular-icon.component';
 import { TailwindIconComponent } from '../icons/tailwind-icon/tailwind-icon.component';
 import { BootstrapIconComponent } from '../icons/bootstrap-icon/bootstrap-icon.component';
+import { NgRxIconComponent } from '../icons/ngrx-icon/ngrx-icon.component';
 
 @Component({
   selector: 'app-frontend-skills',
@@ -21,6 +22,7 @@ import { BootstrapIconComponent } from '../icons/bootstrap-icon/bootstrap-icon.c
     AngularIconComponent,
     TailwindIconComponent,
     BootstrapIconComponent,
+    NgRxIconComponent,
   ],
   templateUrl: './frontend-skills.component.html',
   styleUrl: './frontend-skills.component.css',
