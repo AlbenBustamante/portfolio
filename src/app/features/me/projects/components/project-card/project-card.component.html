@@ -1,7 +1,14 @@
 <app-card padding="sm">
   <article class="w-full">
-    <app-project-card-header />
-    <app-project-card-content />
+    <app-project-card-header
+      [headline]="project().title"
+      [thumbnail]="project().thumbnail"
+    />
+    <app-project-card-content
+      [description]="project().lang.description.en"
+      [category]="project().category"
+      [skills]="project().skills"
+    />
     <footer
       class="pt-3 sm:pt-4 md:pt-5 text-primary-300 w-full flex items-center justify-between gap-3.5"
     >

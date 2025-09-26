@@ -8,22 +8,22 @@
       suscipit quasi.
     </p>
   </header>
-  <section class="flex flex-col gap-y-7 items-center">
+  <section class="flex flex-col gap-y-7 items-center w-3/4 mx-auto">
     <app-subtitle headline="Featured Projects" />
-    <app-project-card class="w-full max-w-88" />
+    <div class="flex items-center gap-x-16 lg:gap-x-12 overflow-x-scroll">
+      @for (project of store.featured(); track $index) {
+      <app-project-card class="w-full min-w-84 max-w-88" [project]="project" />
+      }
+    </div>
   </section>
   <section class="flex flex-col gap-y-7 items-center">
     <app-subtitle headline="All My Projects" />
     <div
-      class="w-full grid grid-cols-[repeat(auto-fit,_minmax(20rem,_1fr))] place-items-center gap-x-16 lg:gap-12 gap-y-12"
+      class="w-full grid grid-cols-[repeat(auto-fit,_minmax(20rem,_1fr))] place-items-center gap-x-16 lg:gap-x-12 gap-y-12"
     >
-      <app-project-card class="w-full max-w-88" />
-      <app-project-card class="w-full max-w-88" />
-      <app-project-card class="w-full max-w-88" />
-      <app-project-card class="w-full max-w-88" />
-      <app-project-card class="w-full max-w-88" />
-      <app-project-card class="w-full max-w-88" />
-      <app-project-card class="w-full max-w-88" />
+      @for (project of store.noFeatured(); track $index) {
+      <app-project-card class="w-full max-w-88" [project]="project" />
+      }
     </div>
   </section>
 </main>

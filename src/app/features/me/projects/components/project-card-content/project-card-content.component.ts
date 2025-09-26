@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-project-card-content',
@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './project-card-content.component.css',
 })
 export class ProjectCardContentComponent {
-  readonly skills = ['Java', 'Spring Boot', 'Angular'];
+  readonly description = input.required<string>();
+  readonly category = input.required<string>();
+  readonly skills = input.required<string[]>();
 }
