@@ -11,11 +11,11 @@
   <section class="flex flex-col gap-y-7 items-center">
     <app-subtitle headline="Featured Projects" />
     <ul
-      class="flex items-center gap-x-16 lg:gap-x-12 w-full max-w-sm mx-auto overflow-x-auto snap-x snap-mandatory py-8 px-6 carousel"
+      class="flex items-center gap-x-16 lg:gap-x-12 w-full max-w-md lg:container mx-auto overflow-x-auto snap-x snap-mandatory py-8 px-6 carousel"
     >
       @for (project of store.featured(); track $index) {
       <li class="flex-[0_0_100%] snap-center carousel-item">
-        <app-project-card [project]="project" />
+        <app-project-card [project]="project" axis="x" />
       </li>
       }
     </ul>
