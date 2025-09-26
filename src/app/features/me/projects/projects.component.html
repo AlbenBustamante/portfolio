@@ -8,13 +8,17 @@
       suscipit quasi.
     </p>
   </header>
-  <section class="flex flex-col gap-y-7 items-center w-3/4 mx-auto">
+  <section class="flex flex-col gap-y-7 items-center">
     <app-subtitle headline="Featured Projects" />
-    <div class="flex items-center gap-x-16 lg:gap-x-12 overflow-x-scroll">
+    <ul
+      class="flex items-center gap-x-16 lg:gap-x-12 w-full max-w-sm mx-auto overflow-x-auto snap-x snap-mandatory py-8 px-6 carousel"
+    >
       @for (project of store.featured(); track $index) {
-      <app-project-card class="w-full min-w-84 max-w-88" [project]="project" />
+      <li class="flex-[0_0_100%] snap-center carousel-item">
+        <app-project-card [project]="project" />
+      </li>
       }
-    </div>
+    </ul>
   </section>
   <section class="flex flex-col gap-y-7 items-center">
     <app-subtitle headline="All My Projects" />
