@@ -3,12 +3,29 @@
     <div
       class="flex flex-col items-center md:grid md:grid-cols-3 gap-x-7 gap-y-9"
     >
-      <div class="text-center flex flex-col gap-y-3">
-        <p class="text-primary-200">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi amet
-          tenetur est ut id corporis soluta aperiam, laudantium nihil mollitia.
-        </p>
-      </div>
+      <header class="text-center flex flex-col gap-y-3">
+        <div class="text-center flex flex-col gap-y-1.5">
+          <h6 class="text-primary-50 text-lg">
+            <b>Alben Bustamante</b>
+          </h6>
+          <p class="text-primary-200">Software Developer</p>
+        </div>
+        <div class="w-full flex items-center justify-center gap-x-5">
+          <app-footer-social-link url="https://github.com/AlbenBustamante">
+            <svg github-icon></svg>
+          </app-footer-social-link>
+          <app-footer-social-link
+            url="https://linkedin.com/in/albenbustamante/"
+          >
+            <svg linkedin-icon></svg>
+          </app-footer-social-link>
+          <app-footer-social-link
+            url="https://discordapp.com/users/429028705533165580"
+          >
+            <svg discord-icon></svg>
+          </app-footer-social-link>
+        </div>
+      </header>
       <nav class="text-center flex flex-col gap-y-3">
         <p class="text-primary-100 text-lg"><b>Explore</b></p>
         <ul class="text-primary-300 flex flex-col gap-y-2.5">
