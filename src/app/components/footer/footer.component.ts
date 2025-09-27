@@ -1,18 +1,16 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
-import { GithubIconComponent } from '@components/icons/github-icon/github-icon.component';
-import { FooterSocialLinkComponent } from '@components/footer-social-link/footer-social-link.component';
-import { LinkedinIconComponent } from '@components/icons/linkedin-icon/linkedin-icon.component';
-import { DiscordIconComponent } from '@components/icons/discord-icon/discord-icon.component';
+import { FooterHeaderComponent } from '@components/footer-header/footer-header.component';
+import { FooterNavigationComponent } from '@components/footer-navigation/footer-navigation.component';
+import { FooterContactComponent } from '@components/footer-contact/footer-contact.component';
+import { FooterCopyrightComponent } from '@components/footer-copyright/footer-copyright.component';
 
 @Component({
   selector: 'app-footer',
   imports: [
-    RouterLink,
-    GithubIconComponent,
-    FooterSocialLinkComponent,
-    LinkedinIconComponent,
-    DiscordIconComponent,
+    FooterHeaderComponent,
+    FooterNavigationComponent,
+    FooterContactComponent,
+    FooterCopyrightComponent,
   ],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.css',

@@ -3,92 +3,11 @@
     <div
       class="flex flex-col items-center md:grid md:grid-cols-3 gap-x-7 gap-y-9"
     >
-      <header class="text-center md:text-left flex flex-col gap-y-3">
-        <div class="flex flex-col gap-y-1.5">
-          <h6 class="text-primary-50 text-lg">
-            <b>Alben Bustamante</b>
-          </h6>
-          <p class="text-primary-200">Software Developer</p>
-        </div>
-        <div
-          class="w-full flex items-center justify-center md:justify-start gap-x-5"
-        >
-          <app-footer-social-link url="https://github.com/AlbenBustamante">
-            <svg github-icon></svg>
-          </app-footer-social-link>
-          <app-footer-social-link
-            url="https://linkedin.com/in/albenbustamante/"
-          >
-            <svg linkedin-icon></svg>
-          </app-footer-social-link>
-          <app-footer-social-link
-            url="https://discordapp.com/users/429028705533165580"
-          >
-            <svg discord-icon></svg>
-          </app-footer-social-link>
-        </div>
-      </header>
-      <nav class="text-center flex flex-col gap-y-3">
-        <p class="text-primary-100 text-lg"><b>Explore</b></p>
-        <ul class="text-primary-300 flex flex-col gap-y-2.5">
-          <li>
-            <a routerLink="/home" class="hover:text-accent-500 duration-300"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a routerLink="/about-me" class="hover:text-accent-500 duration-300"
-              >About</a
-            >
-          </li>
-          <li>
-            <a routerLink="/projects" class="hover:text-accent-500 duration-300"
-              >Projects</a
-            >
-          </li>
-          <li>
-            <a routerLink="/hire-me" class="hover:text-accent-500 duration-300"
-              >Hire</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <div class="text-center md:text-right flex flex-col gap-y-1.5">
-        <p class="text-primary-100 text-lg"><b>Get In Touch</b></p>
-        <ul class="text-primary-300 flex flex-col gap-y-1.5">
-          <li>
-            <a
-              href="mailto:albenbustamante@outlook.com"
-              class="hover:text-accent-500 duration-300"
-            >
-              albenbustamante&#64;outlook.com
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://wa.me/573165574868"
-              class="hover:text-accent-500 duration-300"
-              >+57 3165574868</a
-            >
-          </li>
-        </ul>
-      </div>
+      <app-footer-header />
+      <app-footer-navigation />
+      <app-footer-contact />
     </div>
     <hr class="border-primary-900" />
-    <div class="text-center flex flex-col gap-y-1.5">
-      <p class="cursor-default text-primary-400">
-        Website made by Alben Bustamante
-      </p>
-      <p class="text-primary-100">
-        Copyright &copy; 2025 |
-        <a
-          class="link text-primary-300 hover:text-accent-500 duration-300"
-          href="https://github.com/AlbenBustamante/portfolio"
-          target="_blank"
-        >
-          Source Code
-        </a>
-      </p>
-    </div>
+    <app-footer-copyright />
   </div>
 </footer>
