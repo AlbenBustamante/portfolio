@@ -1,12 +1,9 @@
 <section class="flex flex-col gap-7">
   <app-subtitle headline="Experience" />
-  <app-bullet-content
-    headline="Job Title 1"
-    [keypoints]="['jskldf', 'jksdf', 'jakdlf']"
+  @for (item of store.experiences(); track $index; let i = $index) {
+  <app-experience-item
+    [experience]="item"
+    [border]="i !== store.experiences().length - 1"
   />
-  <app-bullet-content
-    class="-mt-4"
-    headline="Job Title 2"
-    [keypoints]="['jskldf', 'jksdf', 'jakdlf']"
-  />
+  }
 </section>
