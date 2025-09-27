@@ -1,12 +1,10 @@
 <section class="flex flex-col gap-7">
   <app-subtitle headline="Education" />
-  <app-bullet-content
-    headline="Education Title 1"
-    [keypoints]="['jskldf', 'jksdf', 'jakdlf']"
+  @for (item of store.educations(); track $index; let i = $index) {
+  <app-education-item
+    [education]="item"
+    [border]="i !== store.educations().length - 1"
+    [ngClass]="{ '-mt-1.5': i > 0 }"
   />
-  <app-bullet-content
-    class="-mt-4"
-    headline="Education Title 2"
-    [keypoints]="['jskldf', 'jksdf', 'jakdlf']"
-  />
+  }
 </section>
