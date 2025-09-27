@@ -13,4 +13,6 @@ export interface Project {
   skills: string[];
   lang: Lang;
   featured: boolean;
+  sourceCode: string;
+  liveDemo: string;
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { GithubIconComponent } from '@components/icons/github-icon/github-icon.component';
 
 @Component({
@@ -7,4 +7,6 @@ import { GithubIconComponent } from '@components/icons/github-icon/github-icon.c
   templateUrl: './source-code-button.component.html',
   styleUrl: './source-code-button.component.css',
 })
-export class SourceCodeButtonComponent {}
+export class SourceCodeButtonComponent {
+  readonly url = input.required<string>();
+}
