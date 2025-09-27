@@ -11,7 +11,9 @@
         "es": ""
       }
     },
-    "featured": true
+    "featured": true,
+    "sourceCode": "https://github.com/AlbenBustamante/book-now",
+    "liveDemo": "https://booknow1.vercel.app/"
   },
   {
     "id": "fin-manage",
@@ -25,7 +27,9 @@
         "es": ""
       }
     },
-    "featured": true
+    "featured": true,
+    "sourceCode": "https://github.com/AlbenBustamante/fin-manage-app",
+    "liveDemo": "https://github.com/AlbenBustamante/fin-manage-app"
   },
   {
     "id": "text-printer",
@@ -39,7 +43,9 @@
         "es": ""
       }
     },
-    "featured": false
+    "featured": false,
+    "sourceCode": "https://github.com/AlbenBustamante/text-printer",
+    "liveDemo": "https://textprinter.vercel.app/home"
   },
   {
     "id": "cop-calculator",
@@ -53,7 +59,9 @@
         "es": ""
       }
     },
-    "featured": false
+    "featured": false,
+    "sourceCode": "https://github.com/AlbenBustamante/cop-calculator",
+    "liveDemo": "https://cop-calculator.netlify.app/"
   },
   {
     "id": "fun-virtual-reading-api",
@@ -67,7 +75,9 @@
         "es": ""
       }
     },
-    "featured": false
+    "featured": false,
+    "sourceCode": "https://github.com/AlbenBustamante/fun-virtual-reading-api",
+    "liveDemo": "https://github.com/AlbenBustamante/fun-virtual-reading-api"
   },
   {
     "id": "to-do-list-api",
@@ -81,7 +91,9 @@
         "es": ""
       }
     },
-    "featured": false
+    "featured": false,
+    "sourceCode": "https://github.com/AlbenBustamante/todo_list",
+    "liveDemo": "https://github.com/AlbenBustamante/todo_list/blob/main/README.md"
   },
   {
     "id": "microblogging",
@@ -95,6 +107,8 @@
         "es": ""
       }
     },
-    "featured": true
+    "featured": true,
+    "sourceCode": "https://github.com/AlbenBustamante/microblogging",
+    "liveDemo": "https://github.com/AlbenBustamante/microblogging"
   }
 ]
