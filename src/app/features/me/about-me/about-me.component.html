@@ -3,11 +3,13 @@
 >
   <app-header />
   <app-skills-and-technologies />
-  <div
-    class="relative w-[calc(100dvw_-_5px)] max-w-none left-1/2 -ml-[50dvw] flex flex-col gap-7 md:grid md:grid-cols-2 bg-primary-950 p-7 sm:p-9 md:p-11"
-  >
-    <app-experience />
-    <app-education />
+  <div class="w-dvw relative left-1/2 -translate-x-1/2 bg-primary-950">
+    <div
+      class="container mx-auto flex flex-col gap-7 md:grid md:grid-cols-2 px-7 py-12 sm:px-9 sm:py-14 md:px-11 md:py-16"
+    >
+      <app-experience />
+      <app-education />
+    </div>
   </div>
   <app-certificates />
 </main>
