@@ -1,13 +1,14 @@
 <app-bullet-content
+  container="border"
   [headline]="experience().occupation"
   [subheadline]="experience().company"
   [year]="experience().year"
-  [border]="border()"
+  [bulletBorder]="false"
 >
   <p class="text-primary-200 text-sm sm:text-base">
     {{ experience().description }}
   </p>
-  <ul class="flex items-center gap-x-3.5 gap-y-4 flex-wrap">
+  <ul class="flex items-center gap-x-3.5 gap-y-4 flex-wrap pb-2">
     @for (skill of experience().skills; track $index) {
     <li
       class="text-primary-300 text-xs sm:text-sm px-3.5 py-2 bg-primary-900 rounded-3xl ring ring-primary-800 cursor-default hover:bg-primary-800 hover:ring-primary-700 duration-300"

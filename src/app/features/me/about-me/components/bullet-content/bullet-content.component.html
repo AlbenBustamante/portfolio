@@ -1,10 +1,17 @@
 <div class="flex gap-2 relative">
+  @if (container() === 'bullet') {
   <div
     class="absolute w-0.5 left-3 -translate-x-1/2 top-6 -bottom-10 bg-amber-500 z-20"
-    [ngClass]="{ hidden: !border() }"
+    [ngClass]="{ hidden: !bulletBorder() }"
   ></div>
   <app-bullet />
-  <article class="flex flex-col gap-y-5">
+  }
+  <article
+    class="flex flex-col gap-y-5"
+    [ngClass]="{
+      'border-l-4 border-accent-500 pl-4': container() === 'border'
+    }"
+  >
     <header class="flex flex-col gap-y-0.5">
       <h3 class="text-primary-50 text-xl sm:text-2xl">
         <b>{{ headline() }}</b>

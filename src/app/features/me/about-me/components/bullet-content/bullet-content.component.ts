@@ -9,7 +9,8 @@ import { NgClass } from '@angular/common';
   styleUrl: './bullet-content.component.css',
 })
 export class BulletContentComponent {
-  readonly border = input<boolean>(true);
+  readonly bulletBorder = input.required<boolean>();
+  readonly container = input.required<'bullet' | 'border'>();
   readonly headline = input.required<string>();
   readonly subheadline = input<string>();
   readonly year = input<string>();

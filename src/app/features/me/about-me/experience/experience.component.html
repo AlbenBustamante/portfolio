@@ -1,9 +1,6 @@
 <section class="flex flex-col gap-7">
   <app-subtitle headline="Experience" />
   @for (item of store.experiences(); track $index; let i = $index) {
-  <app-experience-item
-    [experience]="item"
-    [border]="i !== store.experiences().length - 1"
-  />
+  <app-experience-item [experience]="item" />
   }
 </section>

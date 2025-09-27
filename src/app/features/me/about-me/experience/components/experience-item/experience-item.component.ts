@@ -10,5 +10,4 @@ import { BulletContentComponent } from '@features/me/about-me/components/bullet-
 })
 export class ExperienceItemComponent {
   readonly experience = input.required<Experience>();
-  readonly border = input.required<boolean>();
 }
