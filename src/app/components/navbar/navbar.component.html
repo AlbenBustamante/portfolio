@@ -2,7 +2,7 @@
   class="fixed top-0 left-0 right-0 bg-primary-950 border-b border-accent-950 flex items-center justify-center px-3 z-40 duration-500"
   [ngClass]="{
     'opacity-100 h-20': !adjust(),
-    'opacity-65 h-16': adjust() && !showNavbar()
+    'bg-transparent h-16 backdrop-blur-sm': adjust() && !showNavbar()
   }"
 >
   <div class="sm:hidden">
