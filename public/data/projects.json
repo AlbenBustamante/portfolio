@@ -103,7 +103,7 @@
     "skills": ["Java", "JDBC", "MySQL", "Swing"],
     "lang": {
       "description": {
-        "en": "",
+        "en": "Built a desktop application that allows users to post thoughts through little texts, watch content from other users and search posts by keywords.",
         "es": ""
       }
     },
