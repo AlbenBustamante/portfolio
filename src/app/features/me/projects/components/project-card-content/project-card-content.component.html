@@ -1,13 +1,15 @@
 <div class="border-b-2 border-primary-600">
-  <p
-    class="text-primary-100 py-1.5 text-pretty text-sm sm:text-base"
-    [ngClass]="{
-      'line-clamp-3 lg:line-clamp-2': axis() === 'x',
-      'line-clamp-3': axis() === 'y'
-    }"
-  >
-    {{ description() }}
-  </p>
+  <div class="py-2">
+    <p
+      class="text-primary-100 text-pretty text-sm sm:text-base"
+      [ngClass]="{
+        'line-clamp-3 lg:line-clamp-2': axis() === 'x',
+        'line-clamp-3': axis() === 'y'
+      }"
+    >
+      {{ description() }}
+    </p>
+  </div>
   <div
     class="w-full"
     [ngClass]="{
@@ -18,9 +20,9 @@
     <div
       class="flex items-center justify-around"
       [ngClass]="{
-        'max-lg:py-1 max-lg:border-t max-lg:border-primary-600 w-full lg:w-2/5':
+        'max-lg:py-1.5 max-lg:border-t max-lg:border-primary-600 w-full lg:w-2/5':
           axis() === 'x',
-        'py-1 border-t border-primary-600 w-full': axis() === 'y'
+        'py-1.5 border-t border-primary-600 w-full': axis() === 'y'
       }"
     >
       <p
