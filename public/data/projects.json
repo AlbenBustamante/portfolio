@@ -7,7 +7,7 @@
     "skills": ["Java", "Spring Boot", "Angular", "NgRx"],
     "lang": {
       "description": {
-        "en": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ex architecto perferendis eveniet id.",
+        "en": "Developing a web-based application that allows customers to schedule appointments with providers and use their services, post a review and automate a ranking of the bests providers.",
         "es": ""
       }
     },
@@ -23,7 +23,7 @@
     "skills": ["Dart", "Firestore", "Flutter", "BLoC Flutter"],
     "lang": {
       "description": {
-        "en": "",
+        "en": "Coded a native Android & iOS application to manage personal finances, allowing to store records such as expenses and income, automatizing balances and reports.",
         "es": ""
       }
     },
