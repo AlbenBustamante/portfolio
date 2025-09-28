@@ -1,7 +1,7 @@
 <main
   class="container mx-auto p-3 sm:p-4 md:p-5 pb-10 sm:pb-10 md:pb-10 flex flex-col gap-10 sm:gap-12 md:gap-14"
 >
-  <app-header />
+  <app-header [description]="store.description()" />
   <app-skills-and-technologies />
   <div class="w-dvw relative left-1/2 -translate-x-1/2 bg-primary-950">
     <div

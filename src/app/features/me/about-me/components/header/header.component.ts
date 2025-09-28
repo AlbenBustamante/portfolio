@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { TitleComponent } from '@components/title/title.component';
 
 @Component({
@@ -7,4 +7,6 @@ import { TitleComponent } from '@components/title/title.component';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  readonly description = input.required<string[]>();
+}
