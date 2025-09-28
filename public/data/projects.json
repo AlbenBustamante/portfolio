@@ -4,7 +4,7 @@
     "thumbnail": "https://images.unsplash.com/photo-1586672806791-3a67d24186c0?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y292ZXIlMjBhcnR8ZW58MHx8MHx8fDA%3D",
     "title": "BookNow",
     "category": "Full-Stack",
-    "skills": ["Java", "Spring Boot", "Angular"],
+    "skills": ["Java", "Spring Boot", "Angular", "NgRx"],
     "lang": {
       "description": {
         "en": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ex architecto perferendis eveniet id.",
@@ -20,7 +20,7 @@
     "thumbnail": "https://images.unsplash.com/photo-1586672806791-3a67d24186c0?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y292ZXIlMjBhcnR8ZW58MHx8MHx8fDA%3D",
     "title": "Fin Manage",
     "category": "Mobile",
-    "skills": ["Dart", "Firestore", "Flutter"],
+    "skills": ["Dart", "Firestore", "Flutter", "BLoC Flutter"],
     "lang": {
       "description": {
         "en": "",
@@ -39,7 +39,7 @@
     "skills": ["TypeScript", "Angular", "Tailwind CSS"],
     "lang": {
       "description": {
-        "en": "",
+        "en": "Designed a website and implemented a dependency to print little texts like quick notes or impromptu invoices.",
         "es": ""
       }
     },
@@ -55,7 +55,7 @@
     "skills": ["TypeScript", "Angular", "Tailwind CSS"],
     "lang": {
       "description": {
-        "en": "",
+        "en": "Designed a website that calculates totality based by denomination cash amount, useful for business with high cash flow in Colombia.",
         "es": ""
       }
     },
@@ -71,7 +71,7 @@
     "skills": ["Java", "Spring Boot", "PostgreSQL", "JWT"],
     "lang": {
       "description": {
-        "en": "",
+        "en": "Developed a secure RESTful API to simulate a virtual library where users can post books, create collections and share reviews.",
         "es": ""
       }
     },
@@ -87,7 +87,7 @@
     "skills": ["Java", "Spring Boot", "PostgreSQL", "JWT"],
     "lang": {
       "description": {
-        "en": "",
+        "en": "Crafted a RESTful API to manage personal tasks creating to-do lists and filtering by status, category or tags.",
         "es": ""
       }
     },
