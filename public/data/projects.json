@@ -13,7 +13,8 @@
     },
     "featured": true,
     "sourceCode": "https://github.com/AlbenBustamante/book-now",
-    "liveDemo": "https://booknow1.vercel.app/"
+    "liveDemo": "https://booknow1.vercel.app/",
+    "status": "IN_PROGRESS"
   },
   {
     "id": "fin-manage",
@@ -29,7 +30,8 @@
     },
     "featured": true,
     "sourceCode": "https://github.com/AlbenBustamante/fin-manage-app",
-    "liveDemo": "https://github.com/AlbenBustamante/fin-manage-app"
+    "liveDemo": "https://github.com/AlbenBustamante/fin-manage-app",
+    "status": "COMPLETED"
   },
   {
     "id": "text-printer",
@@ -45,7 +47,8 @@
     },
     "featured": false,
     "sourceCode": "https://github.com/AlbenBustamante/text-printer",
-    "liveDemo": "https://textprinter.vercel.app/home"
+    "liveDemo": "https://textprinter.vercel.app/home",
+    "status": "ONLINE"
   },
   {
     "id": "cop-calculator",
@@ -61,7 +64,8 @@
     },
     "featured": false,
     "sourceCode": "https://github.com/AlbenBustamante/cop-calculator",
-    "liveDemo": "https://cop-calculator.netlify.app/"
+    "liveDemo": "https://cop-calculator.netlify.app/",
+    "status": "ONLINE"
   },
   {
     "id": "fun-virtual-reading-api",
@@ -77,7 +81,8 @@
     },
     "featured": false,
     "sourceCode": "https://github.com/AlbenBustamante/fun-virtual-reading-api",
-    "liveDemo": "https://github.com/AlbenBustamante/fun-virtual-reading-api"
+    "liveDemo": "https://github.com/AlbenBustamante/fun-virtual-reading-api",
+    "status": "COMPLETED"
   },
   {
     "id": "to-do-list-api",
@@ -93,7 +98,8 @@
     },
     "featured": false,
     "sourceCode": "https://github.com/AlbenBustamante/todo_list",
-    "liveDemo": "https://github.com/AlbenBustamante/todo_list/blob/main/README.md"
+    "liveDemo": "https://github.com/AlbenBustamante/todo_list/blob/main/README.md",
+    "status": "COMPLETED"
   },
   {
     "id": "microblogging",
@@ -109,6 +115,7 @@
     },
     "featured": true,
     "sourceCode": "https://github.com/AlbenBustamante/microblogging",
-    "liveDemo": "https://github.com/AlbenBustamante/microblogging"
+    "liveDemo": "https://github.com/AlbenBustamante/microblogging",
+    "status": "COMPLETED"
   }
 ]

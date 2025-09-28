@@ -15,26 +15,40 @@
         axis() === 'x'
     }"
   >
-    <p
-      class="text-accent-500 text-center py-1 text-pretty text-sm sm:text-base"
+    <div
+      class="flex items-center justify-around"
       [ngClass]="{
-        'max-lg:border-t max-lg:border-primary-600 w-full lg:w-1/4':
+        'max-lg:py-1 max-lg:border-t max-lg:border-primary-600 w-full lg:w-2/5':
           axis() === 'x',
-        'border-t border-primary-600 w-full': axis() === 'y'
+        'py-1 border-t border-primary-600 w-full': axis() === 'y'
       }"
     >
-      {{ category() }}
-    </p>
+      <p
+        class="py-0.5 px-2 sm:px-3 text-xs sm:text-sm rounded-xl cursor-default"
+        [ngClass]="{
+          'bg-green-900 text-green-50': status() === 'ONLINE',
+          'bg-blue-900 text-blue-50': status() === 'COMPLETED',
+          'bg-yellow-900 text-yellow-50': status() === 'IN_PROGRESS',
+        }"
+      >
+        {{ status() | projectStatus }}
+      </p>
+      <p class="text-accent-500 text-center text-pretty text-sm sm:text-base">
+        {{ category() }}
+      </p>
+    </div>
     <ul
-      class="py-2.5 text-primary-300 flex items-center justify-around text-xs sm:text-sm"
+      class="text-primary-300 flex items-center justify-around text-xs sm:text-sm"
       [ngClass]="{
-        'max-lg:border-t max-lg:border-primary-600 w-full lg:w-3/4':
+        'max-lg:py-2.5 lg:py-1.5 max-lg:border-t max-lg:border-primary-600 w-full lg:w-3/5':
           axis() === 'x',
-        'border-t border-primary-600 w-full': axis() === 'y'
+        'py-2.5 border-t border-primary-600 w-full': axis() === 'y'
       }"
     >
       @for (skill of skills(); track $index; let i = $index) {
-      <li class="py-1 px-2 sm:px-2.5 bg-primary-700 rounded-xl">
+      <li
+        class="py-1 px-2 sm:px-2.5 bg-primary-700 inset-ring-2 inset-ring-primary-700 hover:inset-ring-primary-600 duration-200 rounded-xl cursor-default"
+      >
         {{ skill }}
       </li>
       }

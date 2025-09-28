@@ -1,3 +1,5 @@
+import { ProjectStatus } from './project-status.enum';
+
 type Lang = {
   description: {
     en: string;
@@ -15,4 +17,5 @@ export interface Project {
   featured: boolean;
   sourceCode: string;
   liveDemo: string;
+  status: ProjectStatus;
 }
