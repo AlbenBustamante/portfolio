@@ -17,8 +17,8 @@
     </button>
   </div>
   <nav
-    class="max-sm:fixed max-sm:inset-0 max-sm:min-h-dvh max-sm:bg-primary-950 max-sm:z-50 max-sm:duration-500 w-full"
-    [ngClass]="{ 'max-sm:-translate-x-full': !showNavbar() }"
+    class="max-sm:fixed max-sm:inset-0 max-sm:min-h-dvh max-sm:bg-primary-950 max-sm:z-50 max-sm:duration-500 w-full max-sm:-translate-x-full"
+    [ngClass]="{ 'max-sm:translate-none': showNavbar() }"
   >
     <button
       class="sm:hidden absolute top-5 right-5 cursor-pointer"

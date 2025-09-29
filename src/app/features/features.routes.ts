@@ -11,6 +11,6 @@ export default [
   },
   {
     path: '**',
-    loadComponent: () => import('./page-not-found/page-not-found.component'),
+    redirectTo: '',
   },
 ] as Routes;
