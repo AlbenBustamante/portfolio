@@ -3,6 +3,7 @@
     name="name"
     label="Full Name"
     placeholder="E.g: John Doe"
+    autocomplete="name"
     [control]="form.controls.name"
   />
   <app-input
@@ -10,6 +11,7 @@
     type="email"
     label="Email"
     placeholder="yourmail@example.com"
+    autocomplete="email"
     [control]="form.controls.email"
   />
   <app-input
@@ -26,7 +28,7 @@
   />
   <button
     type="submit"
-    class="px-5 py-2 rounded-xl bg-accent-700 text-white cursor-pointer hover:text-accent-50 hover:bg-accent-600 active:bg-accent-800 duration-200 disabled:bg-accent-900"
+    class="px-5 py-2 rounded-xl bg-accent-600 text-white text-sm sm:text-base cursor-pointer hover:text-accent-50 hover:bg-accent-500 active:bg-accent-700 duration-200 disabled:bg-accent-800"
     [disabled]="store.loading()"
   >
     {{ store.loading() ? "Sending message..." : "Send message" }}
