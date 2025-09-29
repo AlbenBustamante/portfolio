@@ -19,6 +19,7 @@ import { NgClass } from '@angular/common';
   styleUrl: './project-card.component.css',
 })
 export class ProjectCardComponent {
+  readonly loading = input<'eager' | 'lazy'>('eager');
   readonly axis = input<'x' | 'y'>('y');
   readonly project = input.required<Project>();
 }
