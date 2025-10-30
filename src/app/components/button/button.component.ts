@@ -22,9 +22,9 @@ export class ButtonComponent {
     return {
       normal: {
         primary:
-          'text-white bg-primary-700 hover:bg-primary-800 active:bg-primary-800 disabled:bg-primary-900 hover:text-primary-50 focus:ring-4 focus:ring-primary-500 focus:hover:ring-primary-600 focus:active:ring-primary-700 shadow shadow-primary-900/75',
+          'text-white bg-primary-700 hover:ring-2 hover:ring-primary-600 hover:shadow-[0_0_10px_2px_var(--color-primary-800)] hover:shadow-primary-700 hover:scale-[1.02] active:bg-primary-800 active:shadow-primary-800 active:ring-primary-700 transition-[box-shadow,scale,background-color] duration-500',
         accent:
-          'text-white bg-accent-700 hover:bg-accent-800 active:bg-accent-800 disabled:bg-accent-900 hover:text-accent-50 focus:ring-4 focus:ring-accent-600 focus:hover:ring-accent-700 focus:active:ring-accent-800 shadow shadow-accent-900/75',
+          'text-white bg-accent-700 hover:ring-2 hover:ring-accent-600 hover:shadow-[0_0_10px_2px_var(--color-accent-800)] hover:shadow-accent-700 hover:scale-[1.02] active:bg-accent-800 active:shadow-accent-800 active:ring-accent-700 transition-[box-shadow,scale,background-color] duration-500',
       },
       outlined: {
         primary:

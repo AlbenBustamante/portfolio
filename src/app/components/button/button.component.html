@@ -1,7 +1,7 @@
 <button
   [type]="type()"
   [disabled]="disabled()"
-  class="px-6 py-2 text-sm sm:text-base md:text-lg cursor-pointer duration-200"
+  class="px-6 py-2 text-sm sm:text-base md:text-lg cursor-pointer"
   [ngClass]="design"
   (click)="disabled() ? undefined : onClick.emit()"
 >
