@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { SocialMediaComponent } from '@components/social-media/social-media.component';
+import { DividerComponent } from '@components/divider/divider.component';
 
 @Component({
   selector: 'app-home',
-  imports: [SocialMediaComponent],
+  imports: [SocialMediaComponent, DividerComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
