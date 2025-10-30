@@ -6,9 +6,14 @@ export default [
     path: '',
     loadComponent: () => import('./v1.component'),
     children: [
-      { path: '', component: LandingComponent },
+      {
+        path: '',
+        title: 'v1 - Software Developer',
+        component: LandingComponent,
+      },
       {
         path: 'project/:url',
+        title: 'v1 - Project Details',
         loadComponent: () =>
           import('./project-details/project-details.component'),
       },

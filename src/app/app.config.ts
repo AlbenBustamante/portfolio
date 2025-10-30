@@ -6,6 +6,7 @@ import {
 import {
   PreloadAllModules,
   provideRouter,
+  TitleStrategy,
   withPreloading,
 } from '@angular/router';
 
@@ -14,6 +15,7 @@ import { routes } from './app.routes';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, provideHttpClient } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { AppTitleStrategyService } from '@core/strategies/app-title-strategy.service';
 
 const httpLoaderFactory = (http: HttpClient) =>
   new TranslateHttpLoader(http, './i18n/', '.json');
@@ -32,5 +34,6 @@ export const appConfig: ApplicationConfig = {
         },
       }),
     ]),
+    { provide: TitleStrategy, useClass: AppTitleStrategyService },
   ],
 };

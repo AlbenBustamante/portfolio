@@ -13,18 +13,22 @@ export default [
       },
       {
         path: 'home',
+        title: 'Software Developer',
         loadComponent: () => import('./home/home.component'),
       },
       {
         path: 'about-me',
+        title: 'About Me',
         loadComponent: () => import('./about-me/about-me.component'),
       },
       {
         path: 'projects',
+        title: 'Projects',
         loadComponent: () => import('./projects/projects.component'),
       },
       {
         path: 'hire-me',
+        title: 'Hire Me',
         loadComponent: () => import('./hire-me/hire-me.component'),
       },
     ],
