@@ -3,7 +3,11 @@ import {
   importProvidersFrom,
   provideZoneChangeDetection,
 } from '@angular/core';
-import { provideRouter } from '@angular/router';
+import {
+  PreloadAllModules,
+  provideRouter,
+  withPreloading,
+} from '@angular/router';
 
 import { routes } from './app.routes';
 
@@ -17,7 +21,7 @@ const httpLoaderFactory = (http: HttpClient) =>
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
-    provideRouter(routes),
+    provideRouter(routes, withPreloading(PreloadAllModules)),
     provideHttpClient(),
     importProvidersFrom([
       TranslateModule.forRoot({
