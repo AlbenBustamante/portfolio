@@ -2,29 +2,16 @@
   class="container mx-auto min-h-[calc(100dvh_-_5rem)] grid place-items-center p-3 sm:p-4 md:p-5"
 >
   <article class="flex flex-col gap-y-7">
-    <header class="flex flex-col gap-y-5 text-center">
-      <h1
-        class="text-gray-100 text-4xl sm:text-5xl lg:text-6xl flex flex-col gap-y-2.5 font-semibold"
-      >
-        Hey there! I'm
-        <span
-          class="text-6xl sm:text-7xl lg:text-8xl text-accent-500 font-semibold"
-        >
-          Alben Bustamante
-        </span>
-      </h1>
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl text-primary-200">
-        > Software Developer
-      </h2>
-    </header>
+    <app-header />
     <app-divider />
     <div class="flex flex-col gap-y-5 px-3 w-full max-w-xl mx-auto">
       <app-social-media />
-      <button
-        class="text-base sm:text-lg border-2 border-accent-500 text-primary-50 w-full px-5 py-1.5 rounded-xl shadow-xs shadow-accent-900 cursor-pointer hover:ring-accent-500 hover:ring-1 hover:shadow-md hover:scale-105 duration-300"
-      >
-        View Resume
-      </button>
+    </div>
+    <div class="flex items-center justify-end">
+      <div class="flex items-center gap-x-5">
+        <app-button label="Download CV" variant="outlined" />
+        <app-button label="About Me" color="accent" />
+      </div>
     </div>
   </article>
 </main>
