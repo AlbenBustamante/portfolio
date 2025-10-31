@@ -26,11 +26,12 @@
     placeholder="Please, write your message here"
     [control]="form.controls.message"
   />
-  <button
-    type="submit"
-    class="px-5 py-2 rounded-xl bg-accent-600 text-white text-sm sm:text-base cursor-pointer hover:text-accent-50 hover:bg-accent-500 active:bg-accent-700 duration-200 disabled:bg-accent-800"
-    [disabled]="store.loading()"
-  >
-    {{ store.loading() ? "Sending message..." : "Send message" }}
-  </button>
+  <div class="w-full">
+    <app-button
+      [label]="store.loading() ? 'Sending message...' : 'Send message'"
+      color="accent"
+      [disabled]="store.loading()"
+      [fluid]="true"
+    />
+  </div>
 </form>

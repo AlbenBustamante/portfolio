@@ -6,10 +6,16 @@ import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 import { formatDate } from '@angular/common';
 import { environment } from '@environments/environment.development';
 import { FormStore } from './form.store';
+import { ButtonComponent } from '@components/button/button.component';
 
 @Component({
   selector: 'app-form',
-  imports: [InputComponent, ReactiveFormsModule, TextAreaComponent],
+  imports: [
+    InputComponent,
+    ReactiveFormsModule,
+    TextAreaComponent,
+    ButtonComponent,
+  ],
   templateUrl: './form.component.html',
   styleUrl: './form.component.css',
   providers: [FormStore],
