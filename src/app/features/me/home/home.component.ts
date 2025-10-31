@@ -3,6 +3,7 @@ import { SocialMediaComponent } from '@components/social-media/social-media.comp
 import { DividerComponent } from '@components/divider/divider.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ActionsComponent } from './components/actions/actions.component';
+import { ContainerComponent } from '@components/container/container.component';
 
 @Component({
   selector: 'app-home',
@@ -11,6 +12,7 @@ import { ActionsComponent } from './components/actions/actions.component';
     DividerComponent,
     HeaderComponent,
     ActionsComponent,
+    ContainerComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',

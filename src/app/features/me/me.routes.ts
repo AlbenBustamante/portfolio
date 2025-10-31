@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import MeComponent from './me.component';
+import HomeComponent from './home/home.component';
 
 export default [
   {
@@ -14,7 +15,7 @@ export default [
       {
         path: 'home',
         title: 'Software Developer',
-        loadComponent: () => import('./home/home.component'),
+        component: HomeComponent,
       },
       {
         path: 'about-me',

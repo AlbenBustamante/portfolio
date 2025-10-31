@@ -3,10 +3,16 @@ import { TitleComponent } from '@components/title/title.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { SubtitleComponent } from '@components/subtitle/subtitle.component';
 import { ProjectStore } from './projects.store';
+import { ContainerComponent } from '@components/container/container.component';
 
 @Component({
   selector: 'app-projects',
-  imports: [TitleComponent, ProjectCardComponent, SubtitleComponent],
+  imports: [
+    TitleComponent,
+    ProjectCardComponent,
+    SubtitleComponent,
+    ContainerComponent,
+  ],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css',
   providers: [ProjectStore],

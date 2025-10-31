@@ -5,6 +5,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
 import { CertificatesComponent } from './certificates/certificates.component';
 import { AboutMeStore } from './about-me.store';
+import { ContainerComponent } from '@components/container/container.component';
 
 @Component({
   selector: 'app-about-me',
@@ -14,6 +15,7 @@ import { AboutMeStore } from './about-me.store';
     ExperienceComponent,
     EducationComponent,
     CertificatesComponent,
+    ContainerComponent,
   ],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.css',
