@@ -1,6 +1,7 @@
 {
   "id": "book-now",
   "title": "BookNow",
+  "gallery": ["1.jpeg", "2.jpeg"],
   "category": "Full-Stack",
   "skills": ["Java", "Spring Boot", "Angular", "NgRx"],
   "lang": {

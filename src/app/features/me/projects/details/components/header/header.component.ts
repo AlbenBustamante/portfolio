@@ -18,4 +18,5 @@ import { HeaderSectionComponent } from '../header-section/header-section.compone
 })
 export class HeaderComponent {
   readonly project = input.required<ProjectDetailModel | null>();
+  readonly gallery = input.required<string[]>();
 }
