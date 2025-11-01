@@ -24,7 +24,6 @@ export default [
       },
       {
         path: 'projects',
-        title: 'Projects',
         loadChildren: () => import('./projects/projects.routes'),
       },
       {

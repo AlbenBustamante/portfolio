@@ -1,7 +1,7 @@
 import { inject } from '@angular/core';
 import { patchState, signalStore, withMethods, withState } from '@ngrx/signals';
-import { GetProjectService } from './get-project.service';
-import { ProjectDetailModel } from './model';
+import { GetProjectService } from '../../../../core/services/get-project.service';
+import { ProjectDetailModel } from '../../../../core/models/project-detail.model';
 
 type State = {
   project: ProjectDetailModel | null;

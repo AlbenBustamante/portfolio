@@ -2,7 +2,7 @@ import { Component, input } from '@angular/core';
 import { TitleComponent } from '../title/title.component';
 import { OpenLiveDemoComponent } from '../open-live-demo/open-live-demo.component';
 import { SourceCodeButtonComponent } from '../source-code-button/source-code-button.component';
-import { ProjectDetailModel } from '../../model';
+import { ProjectDetailModel } from '../../../../../../core/models/project-detail.model';
 
 @Component({
   selector: 'app-header',

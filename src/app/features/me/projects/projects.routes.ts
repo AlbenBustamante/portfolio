@@ -4,6 +4,7 @@ import ProjectsComponent from './projects.component';
 export default [
   {
     path: '',
+    title: 'Projects',
     component: ProjectsComponent,
   },
   {
