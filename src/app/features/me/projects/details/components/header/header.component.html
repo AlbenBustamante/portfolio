@@ -9,9 +9,22 @@
     class="flex flex-col xl:justify-between gap-y-6 xl:w-2/5 border-2 border-primary-800 rounded-xl p-5"
   >
     <app-title [headline]="project()?.title" class="max-xl:hidden" />
-    <p class="text-left text-pretty text-base sm:text-lg">
-      {{ project()?.lang?.en?.description ?? "" }}
-    </p>
+    <app-header-section headline="Description">
+      <p class="text-left text-pretty text-base sm:text-lg leading-6">
+        {{ project()?.lang?.en?.description ?? "" }}
+      </p>
+    </app-header-section>
+    <app-header-section headline="Technologies">
+      <ul class="flex items-center gap-x-2.5 gap-y-3 flex-wrap">
+        @for (skill of project()?.skills ?? []; track $index) {
+        <li
+          class="text-sm sm:text-base rounded-3xl bg-primary-800 px-3.5 py-1 cursor-default inset-ring inset-ring-primary-700 hover:inset-ring-primary-600 ring hover:ring-2 ring-primary-600 hover:ring-primary-500 duration-300"
+        >
+          {{ skill }}
+        </li>
+        }
+      </ul>
+    </app-header-section>
     <div class="flex items-center justify-center xl:justify-end gap-x-5">
       <app-open-live-demo [url]="project()?.liveDemo" />
       <app-source-code-button [url]="project()?.sourceCode" />
