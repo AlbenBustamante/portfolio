@@ -29,20 +29,23 @@ export const ProjectStore = signalStore(
   })),
   withMethods((store, service = inject(ProjectService)) => ({
     fetchAll: () => {
-      const projects = service.projects.map((project) => {
-        if (!project.thumbnail) {
-          project.thumbnail =
-            'https://images.unsplash.com/photo-1586672806791-3a67d24186c0?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y292ZXIlMjBhcnR8ZW58MHx8MHx8fDA%3D';
-        } else {
-          project.thumbnail = `/images/projects/${project.thumbnail}`;
-        }
+      service.getAll().subscribe({
+        next: (projects) => {
+          projects.map((project) => {
+            const thumbnail = project.thumbnail;
 
-        console.log({ project });
+            project.thumbnail =
+              thumbnail === null
+                ? 'https://images.unsplash.com/photo-1586672806791-3a67d24186c0?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y292ZXIlMjBhcnR8ZW58MHx8MHx8fDA%3D'
+                : `/images/projects/${thumbnail}`;
 
-        return project;
+            return project;
+          });
+
+          patchState(store, (_) => ({ projects }));
+        },
+        error: (err) => console.warn(err),
       });
-
-      patchState(store, (_) => ({ projects }));
     },
   }))
 );
