@@ -1,15 +1,17 @@
 <app-container>
-  <header class="flex flex-col gap-y-6">
+  <header class="flex flex-col gap-y-6 lg:flex-row gap-x-8">
     <div
-      class="aspect-video w-full max-w-xl mx-auto h-auto bg-accent-900 rounded-xl"
+      class="aspect-video w-full max-w-2xl mx-auto h-auto bg-accent-900 rounded-xl lg:w-3/5"
     ></div>
-    <app-title [headline]="store.project().title" />
-    <p class="text-left text-pretty text-sm sm:text-base">
-      {{ store.project().lang.description.en }}
-    </p>
-    <div class="flex items-center justify-center gap-x-5">
-      <app-open-live-demo [url]="store.project().liveDemo" />
-      <app-source-code-button [url]="store.project().sourceCode" />
+    <div class="flex flex-col lg:justify-between gap-y-6 lg:w-2/5">
+      <app-title [headline]="store.project().title" />
+      <p class="text-left text-pretty text-sm sm:text-base">
+        {{ store.project().lang.description.en }}
+      </p>
+      <div class="flex items-center justify-center lg:justify-end gap-x-5">
+        <app-open-live-demo [url]="store.project().liveDemo" />
+        <app-source-code-button [url]="store.project().sourceCode" />
+      </div>
     </div>
   </header>
 </app-container>
