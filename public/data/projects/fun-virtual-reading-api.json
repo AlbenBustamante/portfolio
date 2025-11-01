@@ -1,0 +1,15 @@
+{
+  "id": "fun-virtual-reading-api",
+  "title": "Fun Virtual Reading API",
+  "category": "Back-End",
+  "skills": ["Java", "Spring Boot", "PostgreSQL", "JWT"],
+  "lang": {
+    "description": {
+      "en": "Developed a secure RESTful API to simulate a virtual library where users can post books, create collections and share reviews.",
+      "es": ""
+    }
+  },
+  "sourceCode": "https://github.com/AlbenBustamante/fun-virtual-reading-api",
+  "liveDemo": "https://github.com/AlbenBustamante/fun-virtual-reading-api",
+  "status": "COMPLETED"
+}

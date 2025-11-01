@@ -1,0 +1,15 @@
+{
+  "id": "to-do-list-api",
+  "title": "ToDo List API",
+  "category": "Back-End",
+  "skills": ["Java", "Spring Boot", "PostgreSQL", "JWT"],
+  "lang": {
+    "description": {
+      "en": "Crafted a RESTful API to manage personal tasks creating to-do lists and filtering by status, category or tags.",
+      "es": ""
+    }
+  },
+  "sourceCode": "https://github.com/AlbenBustamante/todo_list",
+  "liveDemo": "https://github.com/AlbenBustamante/todo_list/blob/main/README.md",
+  "status": "COMPLETED"
+}
