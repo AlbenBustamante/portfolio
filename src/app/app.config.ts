@@ -7,6 +7,7 @@ import {
   PreloadAllModules,
   provideRouter,
   TitleStrategy,
+  withComponentInputBinding,
   withPreloading,
 } from '@angular/router';
 
@@ -23,7 +24,11 @@ const httpLoaderFactory = (http: HttpClient) =>
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
-    provideRouter(routes, withPreloading(PreloadAllModules)),
+    provideRouter(
+      routes,
+      withPreloading(PreloadAllModules),
+      withComponentInputBinding()
+    ),
     provideHttpClient(),
     importProvidersFrom([
       TranslateModule.forRoot({
