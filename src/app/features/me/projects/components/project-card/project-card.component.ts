@@ -5,15 +5,17 @@ import { SourceCodeButtonComponent } from '../source-code-button/source-code-but
 import { ProjectCardContentComponent } from '../project-card-content/project-card-content.component';
 import { Project } from '../../models/project.model';
 import { NgClass } from '@angular/common';
+import { ButtonComponent } from '@components/button/button.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-project-card',
   imports: [
     NgClass,
-    OpenLiveDemoComponent,
     CardComponent,
-    SourceCodeButtonComponent,
     ProjectCardContentComponent,
+    ButtonComponent,
+    RouterLink,
   ],
   templateUrl: './project-card.component.html',
   styleUrl: './project-card.component.css',

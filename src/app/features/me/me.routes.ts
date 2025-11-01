@@ -25,7 +25,7 @@ export default [
       {
         path: 'projects',
         title: 'Projects',
-        loadComponent: () => import('./projects/projects.component'),
+        loadChildren: () => import('./projects/projects.routes'),
       },
       {
         path: 'hire-me',

@@ -29,14 +29,14 @@
         [category]="project().category"
         [skills]="project().skills"
       />
-      <footer
-        class="pt-3 sm:pt-4 md:pt-5 text-primary-300 w-full flex items-center justify-between gap-3.5"
-        [ngClass]="{
-          '': axis() === 'x'
-        }"
-      >
-        <app-source-code-button [url]="project().sourceCode" />
-        <app-open-live-demo [url]="project().liveDemo" />
+      <footer class="pt-3 sm:pt-4 md:pt-5">
+        <app-button
+          label="View project"
+          color="accent"
+          rounded="3xl"
+          [fluid]="true"
+          [routerLink]="['.', project().id]"
+        />
       </footer>
     </div>
   </article>
