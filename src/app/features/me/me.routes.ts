@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 import MeComponent from './me.component';
-import HomeComponent from './home/home.component';
 
 export default [
   {
@@ -9,13 +8,8 @@ export default [
     children: [
       {
         path: '',
-        redirectTo: 'home',
-        pathMatch: 'full',
-      },
-      {
-        path: 'home',
         title: 'Software Developer',
-        component: HomeComponent,
+        loadComponent: () => import('./home/home.component'),
       },
       {
         path: 'about-me',

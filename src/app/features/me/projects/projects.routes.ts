@@ -1,11 +1,10 @@
 import { Routes } from '@angular/router';
-import ProjectsComponent from './projects.component';
 
 export default [
   {
     path: '',
     title: 'Projects',
-    component: ProjectsComponent,
+    loadComponent: () => import('./projects.component'),
   },
   {
     path: ':id',
