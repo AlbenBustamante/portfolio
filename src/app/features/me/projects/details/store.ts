@@ -1,13 +1,14 @@
 import { inject } from '@angular/core';
 import { patchState, signalStore, withMethods, withState } from '@ngrx/signals';
 import { GetProjectService } from './get-project.service';
+import { ProjectDetailModel } from './model';
 
 type State = {
-  project: any;
+  project: ProjectDetailModel | null;
 };
 
 const initialState: State = {
-  project: {},
+  project: null,
 };
 
 export const Store = signalStore(

@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { ProjectDetailModel } from './model';
 
 @Injectable({
   providedIn: 'root',
@@ -10,6 +11,6 @@ export class GetProjectService {
   constructor(private readonly _http: HttpClient) {}
 
   get(id: string) {
-    return this._http.get(`${this._url}/${id}.json`);
+    return this._http.get<ProjectDetailModel>(`${this._url}/${id}.json`);
   }
 }

@@ -4,9 +4,11 @@
   "category": "Front-End",
   "skills": ["TypeScript", "Angular", "Tailwind CSS"],
   "lang": {
-    "description": {
-      "en": "Designed a website and implemented a dependency to print little texts like quick notes or impromptu invoices.",
-      "es": ""
+    "en": {
+      "description": "Designed a website and implemented a dependency to print little texts like quick notes or impromptu invoices."
+    },
+    "es": {
+      "description": "Designed a website and implemented a dependency to print little texts like quick notes or impromptu invoices."
     }
   },
   "sourceCode": "https://github.com/AlbenBustamante/text-printer",

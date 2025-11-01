@@ -4,9 +4,11 @@
   "category": "Mobile",
   "skills": ["Dart", "Firestore", "Flutter", "BLoC Flutter"],
   "lang": {
-    "description": {
-      "en": "Coded a native Android & iOS application to manage personal finances, allowing to store records such as expenses and income, automatizing balances and reports.",
-      "es": ""
+    "en": {
+      "description": "Coded a native Android & iOS application to manage personal finances, allowing to store records such as expenses and income, automatizing balances and reports."
+    },
+    "es": {
+      "description": "Coded a native Android & iOS application to manage personal finances, allowing to store records such as expenses and income, automatizing balances and reports."
     }
   },
   "sourceCode": "https://github.com/AlbenBustamante/fin-manage-app",

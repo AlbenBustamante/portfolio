@@ -8,5 +8,5 @@ import { GithubIconComponent } from '@components/icons/github-icon/github-icon.c
   styleUrl: './source-code-button.component.css',
 })
 export class SourceCodeButtonComponent {
-  readonly url = input.required<string>();
+  readonly url = input.required<string | undefined>();
 }

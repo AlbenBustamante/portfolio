@@ -7,5 +7,5 @@ import { Component, input } from '@angular/core';
   styleUrl: './open-live-demo.component.css',
 })
 export class OpenLiveDemoComponent {
-  readonly url = input.required<string>();
+  readonly url = input.required<string | undefined>();
 }
