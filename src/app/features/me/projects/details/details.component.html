@@ -1,3 +1,15 @@
-<pre>
-  <code>{{store.project() | json}}</code>
-</pre>
+<app-container>
+  <header class="flex flex-col gap-y-6">
+    <div
+      class="aspect-video w-full max-w-xl mx-auto h-auto bg-accent-900 rounded-xl"
+    ></div>
+    <app-title [headline]="store.project().title" />
+    <p class="text-left text-pretty text-sm sm:text-base">
+      {{ store.project().lang.description.en }}
+    </p>
+    <div class="flex items-center justify-center gap-x-5">
+      <app-open-live-demo [url]="store.project().liveDemo" />
+      <app-source-code-button [url]="store.project().sourceCode" />
+    </div>
+  </header>
+</app-container>
