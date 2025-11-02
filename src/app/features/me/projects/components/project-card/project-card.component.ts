@@ -1,17 +1,13 @@
 import { Component, input } from '@angular/core';
-import { OpenLiveDemoComponent } from '../../details/components/open-live-demo/open-live-demo.component';
 import { CardComponent } from '@components/card/card.component';
-import { SourceCodeButtonComponent } from '../../details/components/source-code-button/source-code-button.component';
 import { ProjectCardContentComponent } from '../project-card-content/project-card-content.component';
 import { Project } from '../../models/project.model';
-import { NgClass } from '@angular/common';
 import { ButtonComponent } from '@components/button/button.component';
 import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-project-card',
   imports: [
-    NgClass,
     CardComponent,
     ProjectCardContentComponent,
     ButtonComponent,
@@ -22,6 +18,5 @@ import { RouterLink } from '@angular/router';
 })
 export class ProjectCardComponent {
   readonly loading = input<'eager' | 'lazy'>('eager');
-  readonly axis = input<'x' | 'y'>('y');
   readonly project = input.required<Project>();
 }

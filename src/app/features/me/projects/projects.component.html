@@ -8,30 +8,12 @@
       suscipit quasi.
     </p-->
   </header>
-  <section class="flex flex-col gap-y-7 items-center">
-    <app-subtitle headline="Featured" />
-    <ul
-      class="flex items-center gap-x-16 lg:gap-x-12 w-full max-w-md lg:container mx-auto overflow-x-auto snap-x snap-mandatory py-11 px-5 sm:px-6 md:px-7 carousel"
-    >
-      @for (project of store.featured(); track $index) {
-      <li class="flex-[0_0_100%] snap-center carousel-item">
-        <app-project-card [project]="project" axis="x" />
-      </li>
-      }
-    </ul>
-  </section>
-  <section class="flex flex-col gap-y-7 items-center">
-    <app-subtitle headline="All My Projects" />
-    <div
-      class="w-full grid grid-cols-[repeat(auto-fit,_minmax(19rem,_1fr))] place-items-center gap-x-16 lg:gap-x-12 gap-y-12"
-    >
-      @for (project of store.noFeatured(); track $index) {
-      <app-project-card
-        loading="lazy"
-        class="w-full max-w-88"
-        [project]="project"
-      />
-      }
-    </div>
-  </section>
+  <app-projects-section
+    headline="Featured Work"
+    [projects]="store.featured()"
+  />
+  <app-projects-section
+    headline="Experiments"
+    [projects]="store.noFeatured()"
+  />
 </app-container>

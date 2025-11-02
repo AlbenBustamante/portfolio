@@ -10,7 +10,6 @@ import { ProjectStatusPipe } from '../../pipes/project-status.pipe';
   styleUrl: './project-card-content.component.css',
 })
 export class ProjectCardContentComponent {
-  readonly axis = input<'x' | 'y'>('y');
   readonly description = input.required<string>();
   readonly status = input.required<ProjectStatus>();
   readonly category = input.required<string>();

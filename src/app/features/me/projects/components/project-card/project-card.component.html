@@ -1,43 +1,30 @@
 <app-card padding="sm">
-  <article
-    class="w-full"
-    [ngClass]="{
-      'lg:flex lg:items-center lg:gap-x-3 lg:relative': axis() === 'x'
-    }"
-  >
+  <article>
     <img
       [src]="project().thumbnail"
-      alt="a project's screenshot image"
+      alt="a project's screenshot"
       [loading]="loading()"
       class="aspect-video object-cover rounded-xl border-2 border-primary-700"
-      [ngClass]="{ 'lg:w-2/5 lg:h-auto': axis() === 'x' }"
     />
-    <div [ngClass]="{ 'lg:w-3/5': axis() === 'x' }">
-      <h3
-        class="border-b-2 border-primary-600 text-center text-xl sm:text-2xl text-primary-50 font-semibold"
-        [ngClass]="{
-          'pt-2.5 pb-2.5 lg:pt-0': axis() === 'x',
-          'py-2.5': axis() === 'y'
-        }"
-      >
-        {{ project().title }}
-      </h3>
-      <app-project-card-content
-        [axis]="axis()"
-        [description]="project().lang.description.en"
-        [status]="project().status"
-        [category]="project().category"
-        [skills]="project().skills"
+    <h3
+      class="border-b-2 border-primary-600 text-center text-xl sm:text-2xl text-primary-50 font-semibold py-2.5"
+    >
+      {{ project().title }}
+    </h3>
+    <app-project-card-content
+      [description]="project().lang.description.en"
+      [status]="project().status"
+      [category]="project().category"
+      [skills]="project().skills"
+    />
+    <footer class="pt-3 sm:pt-4 md:pt-5">
+      <app-button
+        label="View project"
+        color="accent"
+        rounded="3xl"
+        [fluid]="true"
+        [routerLink]="['.', project().id]"
       />
-      <footer class="pt-3 sm:pt-4 md:pt-5">
-        <app-button
-          label="View project"
-          color="accent"
-          rounded="3xl"
-          [fluid]="true"
-          [routerLink]="['.', project().id]"
-        />
-      </footer>
-    </div>
+    </footer>
   </article>
 </app-card>
