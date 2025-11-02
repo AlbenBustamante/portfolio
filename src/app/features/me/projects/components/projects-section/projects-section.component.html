@@ -4,11 +4,9 @@
     class="w-full grid grid-cols-[repeat(auto-fit,_minmax(19rem,_1fr))] place-items-center gap-x-16 lg:gap-x-12 gap-y-12"
   >
     @for (project of projects(); track $index) {
-    <app-project-card
-      loading="lazy"
-      class="w-full max-w-88"
-      [project]="project"
-    />
+    <a [routerLink]="['.', project.id]" class="w-full max-w-88">
+      <app-project-card loading="lazy" [project]="project" />
+    </a>
     }
   </div>
 </section>

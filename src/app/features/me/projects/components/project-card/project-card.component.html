@@ -1,30 +1,27 @@
-<app-card padding="sm">
-  <article>
-    <img
-      [src]="project().thumbnail"
-      alt="a project's screenshot"
-      [loading]="loading()"
-      class="aspect-video object-cover rounded-xl border-2 border-primary-700"
-    />
-    <h3
-      class="border-b-2 border-primary-600 text-center text-xl sm:text-2xl text-primary-50 font-semibold py-2.5"
-    >
-      {{ project().title }}
-    </h3>
-    <app-project-card-content
-      [description]="project().lang.description.en"
-      [status]="project().status"
-      [category]="project().category"
-      [skills]="project().skills"
-    />
-    <footer class="pt-3 sm:pt-4 md:pt-5">
-      <app-button
-        label="View project"
-        color="accent"
-        rounded="3xl"
-        [fluid]="true"
-        [routerLink]="['.', project().id]"
-      />
-    </footer>
-  </article>
+<app-card padding="sm" class="group">
+  <img
+    [src]="project().thumbnail"
+    alt="a project's screenshot"
+    [loading]="loading()"
+    class="aspect-video object-cover rounded-xl border-2 border-primary-700"
+  />
+  <h3
+    class="border-b-2 border-primary-600 text-center text-xl sm:text-2xl text-primary-50 font-semibold py-2.5"
+  >
+    {{ project().title }}
+  </h3>
+  <app-project-card-content
+    [description]="project().lang.description.en"
+    [status]="project().status"
+    [category]="project().category"
+    [skills]="project().skills"
+  />
+  <footer class="pt-5 flex justify-center">
+    <app-button verticalPadding="py-1.5" label="View More" variant="outlined">
+      <svg
+        right-arrow-icon
+        class="size-5 stroke-2 stroke-primary-500 pt-px"
+      ></svg>
+    </app-button>
+  </footer>
 </app-card>

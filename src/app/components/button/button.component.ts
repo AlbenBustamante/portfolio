@@ -17,6 +17,7 @@ export class ButtonComponent {
   readonly disabled = input<boolean>(false);
   readonly fluid = input<boolean>(false);
   readonly rounded = input<'2xl' | '3xl'>('2xl');
+  readonly verticalPadding = input<'py-2' | 'py-1.5'>('py-2');
 
   private _designMap() {
     return {
@@ -48,6 +49,6 @@ export class ButtonComponent {
     const f = this._mapFluid();
     const r = this._mapRounded();
 
-    return `${c} ${f} ${r}`;
+    return `${this.verticalPadding()} ${c} ${f} ${r}`;
   }
 }
