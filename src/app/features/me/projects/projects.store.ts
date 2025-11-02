@@ -21,10 +21,15 @@ export const ProjectStore = signalStore(
   withState(initialState),
   withComputed(({ projects }) => ({
     featured: computed(() => {
-      return projects().filter((project) => project.featured);
+      return projects().filter((project) => project.section === 'FEATURED');
     }),
-    noFeatured: computed(() => {
-      return projects().filter((project) => !project.featured);
+    collaboration: computed(() => {
+      return projects().filter(
+        (project) => project.section === 'COLLABORATION'
+      );
+    }),
+    small: computed(() => {
+      return projects().filter((project) => project.section === 'SMALL');
     }),
   })),
   withMethods((store, service = inject(ProjectService)) => ({

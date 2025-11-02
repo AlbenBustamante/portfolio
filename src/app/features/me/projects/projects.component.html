@@ -13,7 +13,8 @@
     [projects]="store.featured()"
   />
   <app-projects-section
-    headline="Experiments"
-    [projects]="store.noFeatured()"
+    headline="Collaborations"
+    [projects]="store.collaboration()"
   />
+  <app-projects-section headline="Experiments" [projects]="store.small()" />
 </app-container>

@@ -14,7 +14,7 @@ export interface Project {
   category: string;
   skills: string[];
   lang: Lang;
-  featured: boolean;
+  section: 'FEATURED' | 'COLLABORATION' | 'SMALL';
   sourceCode: string;
   liveDemo: string;
   status: ProjectStatus;
