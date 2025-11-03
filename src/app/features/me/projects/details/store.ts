@@ -40,6 +40,18 @@ export const Store = signalStore(
 
       return gallery.map((img) => `/images/projects/${id}-${img}`);
     }),
+    isFirst: computed(() => {
+      return store.selectedIndex() === 0;
+    }),
+    isLast: computed(() => {
+      const project = store.project();
+
+      if (!project) {
+        return false;
+      }
+
+      return store.selectedIndex() === project.gallery.length - 1;
+    }),
   })),
   withMethods((store, service = inject(GetProjectService)) => ({
     fetch: (id: string) => {
@@ -52,6 +64,20 @@ export const Store = signalStore(
     },
     setSelectedIndex: (index: number) => {
       patchState(store, { selectedIndex: index });
+    },
+    setPrevious: () => {
+      const selectedIndex = store.selectedIndex();
+
+      if (selectedIndex > 0) {
+        patchState(store, { selectedIndex: selectedIndex - 1 });
+      }
+    },
+    setNext: () => {
+      const selectedIndex = store.selectedIndex();
+
+      if (selectedIndex < store.gallery().length - 1) {
+        patchState(store, { selectedIndex: selectedIndex + 1 });
+      }
     },
   }))
 );
