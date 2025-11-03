@@ -30,6 +30,113 @@
     "status": "COMPLETED"
   },
   {
+    "id": "microblogging",
+    "thumbnail": null,
+    "title": "Microblogging",
+    "category": "Desktop",
+    "skills": ["Java", "JDBC", "MySQL", "Swing"],
+    "lang": {
+      "description": {
+        "en": "Built a desktop application that allows users to post thoughts through little texts, watch content from other users and search posts by keywords.",
+        "es": ""
+      }
+    },
+    "section": "FEATURED",
+    "status": "COMPLETED"
+  },
+
+  {
+    "id": "creditflow",
+    "thumbnail": "creditflow-1.jpeg",
+    "title": "CreditFlow",
+    "category": "Front-End",
+    "skills": ["TypeScript", "Angular", "NgRx", "PrimeNG"],
+    "lang": {
+      "description": {
+        "en": "Online platform about credit applications oriented to PYMEs, where I developed the frontend for each administrative area.",
+        "es": "Plataforma en línea de solicitudes de créditos orientada a PYMEs, donde desarrollé el frontend de cada área administrativa."
+      }
+    },
+    "section": "COLLABORATION",
+    "status": "ONLINE"
+  },
+  {
+    "id": "greenpoint",
+    "thumbnail": "greenpoint-1.jpeg",
+    "title": "GreenPoint",
+    "category": "Front-End",
+    "skills": ["TypeScript", "Angular", "Tailwind CSS"],
+    "lang": {
+      "description": {
+        "en": "Web app for people interested in taking care of the environment, linking their recycling with entities or people and get points.",
+        "es": "Aplicación web para personas interesadas en cuidar al medio ambiente, vinculando sus reciclajes con entidades o personas y recibir puntos."
+      }
+    },
+    "section": "COLLABORATION",
+    "status": "ONLINE"
+  },
+  {
+    "id": "stocker",
+    "thumbnail": "stocker-1.jpeg",
+    "title": "Stocker",
+    "category": "Back-End",
+    "skills": ["JavaScript", "Express", "Node", "MySQL"],
+    "lang": {
+      "description": {
+        "en": "Web-based system oriented to little companies so that they can manage efficiently their inventory.",
+        "es": "Sistema web orientado a pequeñas empresas para que puedan gestionar eficientemente su inventario."
+      }
+    },
+    "section": "COLLABORATION",
+    "status": "COMPLETED"
+  },
+  {
+    "id": "palomo-chat",
+    "thumbnail": "palomo-1.jpeg",
+    "title": "Palomo Chat",
+    "category": "Back-End",
+    "skills": ["Java", "Spring Boot", "MySQL"],
+    "lang": {
+      "description": {
+        "en": "Instant messaging web application on real time which makes easy the communication between users.",
+        "es": "Aplicación web de mensajería instantánea en tiempo real que facilita la comunicación entre usuarios."
+      }
+    },
+    "section": "COLLABORATION",
+    "status": "COMPLETED"
+  },
+  {
+    "id": "events-house",
+    "thumbnail": null,
+    "title": "Events House",
+    "category": "Back-End",
+    "skills": ["Java", "Spring Boot", "MySQL"],
+    "lang": {
+      "description": {
+        "en": "Web-based system that allows users to search a event house, make the online payment with Mercado Pago, and schedule a time.",
+        "es": "Sistema web que permite a los usuarios buscar una casa de eventos, hacer el pago en línea con Mercado Pago, y asignar un turno."
+      }
+    },
+    "section": "COLLABORATION",
+    "status": "COMPLETED"
+  },
+  {
+    "id": "match-pro",
+    "thumbnail": null,
+    "title": "Match Pro",
+    "category": "Back-End",
+    "skills": ["Java", "Spring Boot", "MySQL"],
+    "lang": {
+      "description": {
+        "en": "Web application that allows users to bet for the result of a match and earn points in their account.",
+        "es": "Aplicación web que permite a los usuarios apostar por el resultado de un partido y ganar puntos en su cuenta."
+      }
+    },
+    "section": "COLLABORATION",
+    "status": "COMPLETED"
+  },
+
+  {
     "id": "fun-virtual-reading-api",
     "thumbnail": null,
     "title": "Fun Virtual Reading API",
@@ -57,21 +164,6 @@
       }
     },
     "section": "SMALL",
-    "status": "COMPLETED"
-  },
-  {
-    "id": "microblogging",
-    "thumbnail": null,
-    "title": "Microblogging",
-    "category": "Desktop",
-    "skills": ["Java", "JDBC", "MySQL", "Swing"],
-    "lang": {
-      "description": {
-        "en": "Built a desktop application that allows users to post thoughts through little texts, watch content from other users and search posts by keywords.",
-        "es": ""
-      }
-    },
-    "section": "FEATURED",
     "status": "COMPLETED"
   },
   {
