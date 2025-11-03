@@ -4,6 +4,7 @@ import { OpenLiveDemoComponent } from '../open-live-demo/open-live-demo.componen
 import { SourceCodeButtonComponent } from '../source-code-button/source-code-button.component';
 import { ProjectDetailModel } from '@core/models/project-detail.model';
 import { HeaderSectionComponent } from '../header-section/header-section.component';
+import { CarouselComponent } from '../carousel/carousel.component';
 
 @Component({
   selector: 'app-header',
@@ -12,6 +13,7 @@ import { HeaderSectionComponent } from '../header-section/header-section.compone
     OpenLiveDemoComponent,
     SourceCodeButtonComponent,
     HeaderSectionComponent,
+    CarouselComponent,
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',

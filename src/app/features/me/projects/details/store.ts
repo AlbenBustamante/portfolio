@@ -11,13 +11,16 @@ import { ProjectDetailModel } from '@core/models/project-detail.model';
 
 type State = {
   project: ProjectDetailModel | null;
+  selectedIndex: number;
 };
 
 const initialState: State = {
   project: null,
+  selectedIndex: 0,
 };
 
 export const Store = signalStore(
+  { providedIn: 'root' },
   withState(initialState),
   withComputed((store) => ({
     gallery: computed(() => {
@@ -46,6 +49,9 @@ export const Store = signalStore(
         },
         error: (err) => console.warn({ err }),
       });
+    },
+    setSelectedIndex: (index: number) => {
+      patchState(store, { selectedIndex: index });
     },
   }))
 );
