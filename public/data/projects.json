@@ -92,7 +92,7 @@
   },
   {
     "id": "palomo-chat",
-    "thumbnail": "palomo-1.jpeg",
+    "thumbnail": "palomo-chat-1.jpeg",
     "title": "Palomo Chat",
     "category": "Back-End",
     "skills": ["Java", "Spring Boot", "MySQL"],

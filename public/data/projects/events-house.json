@@ -1,0 +1,18 @@
+{
+  "id": "events-house",
+  "title": "Events House",
+  "gallery": null,
+  "category": "Back-End",
+  "skills": ["Java", "Spring Boot", "MySQL"],
+  "lang": {
+    "en": {
+      "description": "Web-based system that allows users to search a event house, make the online payment with Mercado Pago, and schedule a time."
+    },
+    "es": {
+      "description": "Sistema web que permite a los usuarios buscar una casa de eventos, hacer el pago en línea con Mercado Pago, y asignar un turno."
+    }
+  },
+  "sourceCode": "https://github.com/No-Country/s5-02-t-java-react-back",
+  "liveDemo": "https://github.com/No-Country/s5-02-t-java-react-back",
+  "status": "COMPLETED"
+}
