@@ -46,8 +46,8 @@ export const Store = signalStore(
     isLast: computed(() => {
       const project = store.project();
 
-      if (!project) {
-        return false;
+      if (!project || !project.gallery) {
+        return true;
       }
 
       return store.selectedIndex() === project.gallery.length - 1;

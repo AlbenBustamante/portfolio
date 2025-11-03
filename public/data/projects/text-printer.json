@@ -1,7 +1,7 @@
 {
   "id": "text-printer",
   "title": "Text Printer",
-  "gallery": ["1.jpeg", "2.jpeg"],
+  "gallery": ["1.jpeg"],
   "category": "Front-End",
   "skills": ["TypeScript", "Angular", "Tailwind CSS"],
   "lang": {

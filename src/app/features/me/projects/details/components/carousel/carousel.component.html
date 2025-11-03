@@ -18,7 +18,7 @@
           [src]="item"
           alt="one image of the project"
           class="aspect-video object-cover w-24 sm:w-32 h-auto rounded-2xl"
-          [ngClass]="{ 'ring-4 ring-primary-500': store.selectedIndex() === i }"
+          [ngClass]="{ 'ring-4 ring-primary-600': store.selectedIndex() === i }"
           (click)="store.setSelectedIndex(i)"
         />
       </li>
