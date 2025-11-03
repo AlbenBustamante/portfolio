@@ -8,5 +8,5 @@ import { Component, input } from '@angular/core';
   styleUrl: './container.component.css',
 })
 export class ContainerComponent {
-  readonly verticalPadding = input<string>('py-14');
+  readonly verticalPadding = input<string>('py-20');
 }
