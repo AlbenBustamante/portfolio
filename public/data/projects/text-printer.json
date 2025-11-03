@@ -1,0 +1,18 @@
+{
+  "id": "text-printer",
+  "title": "Text Printer",
+  "gallery": ["1.jpeg", "2.jpeg"],
+  "category": "Front-End",
+  "skills": ["TypeScript", "Angular", "Tailwind CSS"],
+  "lang": {
+    "en": {
+      "description": "Designed a website and implemented a dependency to print little texts like quick notes or impromptu invoices."
+    },
+    "es": {
+      "description": "Designed a website and implemented a dependency to print little texts like quick notes or impromptu invoices."
+    }
+  },
+  "sourceCode": "https://github.com/AlbenBustamante/text-printer",
+  "liveDemo": "https://textprinter.vercel.app/home",
+  "status": "ONLINE"
+}

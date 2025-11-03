@@ -1,0 +1,18 @@
+{
+  "id": "palomo-chat",
+  "title": "Palomo Chat",
+  "gallery": ["1.jpeg"],
+  "category": "Back-End",
+  "skills": ["Java", "Spring Boot", "MySQL"],
+  "lang": {
+    "en": {
+      "description": "Instant messaging web application on real time which makes easy the communication between users."
+    },
+    "es": {
+      "description": "Aplicación web de mensajería instantánea en tiempo real que facilita la comunicación entre usuarios."
+    }
+  },
+  "sourceCode": "https://github.com/No-Country/S4-05-T-Java-React",
+  "liveDemo": "https://palomochat.vercel.app/",
+  "status": "COMPLETED"
+}

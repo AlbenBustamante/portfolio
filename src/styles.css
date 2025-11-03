@@ -57,5 +57,5 @@
 }
 
 body {
-  @apply font-default text-gray-700 bg-primary-900;
+  @apply font-default text-primary-300 bg-primary-900;
 }

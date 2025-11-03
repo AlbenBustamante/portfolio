@@ -8,11 +8,6 @@ export default [
     children: [
       {
         path: '',
-        redirectTo: 'home',
-        pathMatch: 'full',
-      },
-      {
-        path: 'home',
         title: 'Software Developer',
         loadComponent: () => import('./home/home.component'),
       },
@@ -23,8 +18,7 @@ export default [
       },
       {
         path: 'projects',
-        title: 'Projects',
-        loadComponent: () => import('./projects/projects.component'),
+        loadChildren: () => import('./projects/projects.routes'),
       },
       {
         path: 'hire-me',

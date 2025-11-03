@@ -1,7 +1,7 @@
 [
   {
     "id": "book-now",
-    "thumbnail": "https://images.unsplash.com/photo-1586672806791-3a67d24186c0?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y292ZXIlMjBhcnR8ZW58MHx8MHx8fDA%3D",
+    "thumbnail": "book-now-1.jpeg",
     "title": "BookNow",
     "category": "Full-Stack",
     "skills": ["Java", "Spring Boot", "Angular", "NgRx"],
@@ -11,14 +11,12 @@
         "es": ""
       }
     },
-    "featured": true,
-    "sourceCode": "https://github.com/AlbenBustamante/book-now",
-    "liveDemo": "https://booknow1.vercel.app/",
+    "section": "FEATURED",
     "status": "IN_PROGRESS"
   },
   {
     "id": "fin-manage",
-    "thumbnail": "https://images.unsplash.com/photo-1586672806791-3a67d24186c0?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y292ZXIlMjBhcnR8ZW58MHx8MHx8fDA%3D",
+    "thumbnail": null,
     "title": "Fin Manage",
     "category": "Mobile",
     "skills": ["Dart", "Firestore", "Flutter", "BLoC Flutter"],
@@ -28,82 +26,12 @@
         "es": ""
       }
     },
-    "featured": true,
-    "sourceCode": "https://github.com/AlbenBustamante/fin-manage-app",
-    "liveDemo": "https://github.com/AlbenBustamante/fin-manage-app",
-    "status": "COMPLETED"
-  },
-  {
-    "id": "text-printer",
-    "thumbnail": "https://images.unsplash.com/photo-1586672806791-3a67d24186c0?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y292ZXIlMjBhcnR8ZW58MHx8MHx8fDA%3D",
-    "title": "Text Printer",
-    "category": "Front-End",
-    "skills": ["TypeScript", "Angular", "Tailwind CSS"],
-    "lang": {
-      "description": {
-        "en": "Designed a website and implemented a dependency to print little texts like quick notes or impromptu invoices.",
-        "es": ""
-      }
-    },
-    "featured": false,
-    "sourceCode": "https://github.com/AlbenBustamante/text-printer",
-    "liveDemo": "https://textprinter.vercel.app/home",
-    "status": "ONLINE"
-  },
-  {
-    "id": "cop-calculator",
-    "thumbnail": "https://images.unsplash.com/photo-1586672806791-3a67d24186c0?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y292ZXIlMjBhcnR8ZW58MHx8MHx8fDA%3D",
-    "title": "COP Calculator",
-    "category": "Front-End",
-    "skills": ["TypeScript", "Angular", "Tailwind CSS"],
-    "lang": {
-      "description": {
-        "en": "Designed a website that calculates totality based by denomination cash amount, useful for business with high cash flow in Colombia.",
-        "es": ""
-      }
-    },
-    "featured": false,
-    "sourceCode": "https://github.com/AlbenBustamante/cop-calculator",
-    "liveDemo": "https://cop-calculator.netlify.app/",
-    "status": "ONLINE"
-  },
-  {
-    "id": "fun-virtual-reading-api",
-    "thumbnail": "https://images.unsplash.com/photo-1586672806791-3a67d24186c0?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y292ZXIlMjBhcnR8ZW58MHx8MHx8fDA%3D",
-    "title": "Fun Virtual Reading API",
-    "category": "Back-End",
-    "skills": ["Java", "Spring Boot", "PostgreSQL", "JWT"],
-    "lang": {
-      "description": {
-        "en": "Developed a secure RESTful API to simulate a virtual library where users can post books, create collections and share reviews.",
-        "es": ""
-      }
-    },
-    "featured": false,
-    "sourceCode": "https://github.com/AlbenBustamante/fun-virtual-reading-api",
-    "liveDemo": "https://github.com/AlbenBustamante/fun-virtual-reading-api",
-    "status": "COMPLETED"
-  },
-  {
-    "id": "to-do-list-api",
-    "thumbnail": "https://images.unsplash.com/photo-1586672806791-3a67d24186c0?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y292ZXIlMjBhcnR8ZW58MHx8MHx8fDA%3D",
-    "title": "ToDo List API",
-    "category": "Back-End",
-    "skills": ["Java", "Spring Boot", "PostgreSQL", "JWT"],
-    "lang": {
-      "description": {
-        "en": "Crafted a RESTful API to manage personal tasks creating to-do lists and filtering by status, category or tags.",
-        "es": ""
-      }
-    },
-    "featured": false,
-    "sourceCode": "https://github.com/AlbenBustamante/todo_list",
-    "liveDemo": "https://github.com/AlbenBustamante/todo_list/blob/main/README.md",
+    "section": "FEATURED",
     "status": "COMPLETED"
   },
   {
     "id": "microblogging",
-    "thumbnail": "https://images.unsplash.com/photo-1586672806791-3a67d24186c0?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y292ZXIlMjBhcnR8ZW58MHx8MHx8fDA%3D",
+    "thumbnail": null,
     "title": "Microblogging",
     "category": "Desktop",
     "skills": ["Java", "JDBC", "MySQL", "Swing"],
@@ -113,9 +41,159 @@
         "es": ""
       }
     },
-    "featured": true,
-    "sourceCode": "https://github.com/AlbenBustamante/microblogging",
-    "liveDemo": "https://github.com/AlbenBustamante/microblogging",
+    "section": "FEATURED",
     "status": "COMPLETED"
+  },
+
+  {
+    "id": "creditflow",
+    "thumbnail": "creditflow-1.jpeg",
+    "title": "CreditFlow",
+    "category": "Front-End",
+    "skills": ["TypeScript", "Angular", "NgRx", "PrimeNG"],
+    "lang": {
+      "description": {
+        "en": "Online platform about credit applications oriented to PYMEs, where I developed the frontend for each administrative area.",
+        "es": "Plataforma en línea de solicitudes de créditos orientada a PYMEs, donde desarrollé el frontend de cada área administrativa."
+      }
+    },
+    "section": "COLLABORATION",
+    "status": "ONLINE"
+  },
+  {
+    "id": "greenpoint",
+    "thumbnail": "greenpoint-1.jpeg",
+    "title": "GreenPoint",
+    "category": "Front-End",
+    "skills": ["TypeScript", "Angular", "Tailwind CSS"],
+    "lang": {
+      "description": {
+        "en": "Web app for people interested in taking care of the environment, linking their recycling with entities or people and get points.",
+        "es": "Aplicación web para personas interesadas en cuidar al medio ambiente, vinculando sus reciclajes con entidades o personas y recibir puntos."
+      }
+    },
+    "section": "COLLABORATION",
+    "status": "ONLINE"
+  },
+  {
+    "id": "stocker",
+    "thumbnail": "stocker-1.jpeg",
+    "title": "Stocker",
+    "category": "Back-End",
+    "skills": ["JavaScript", "Express", "Node", "MySQL"],
+    "lang": {
+      "description": {
+        "en": "Web-based system oriented to little companies so that they can manage efficiently their inventory.",
+        "es": "Sistema web orientado a pequeñas empresas para que puedan gestionar eficientemente su inventario."
+      }
+    },
+    "section": "COLLABORATION",
+    "status": "COMPLETED"
+  },
+  {
+    "id": "palomo-chat",
+    "thumbnail": "palomo-chat-1.jpeg",
+    "title": "Palomo Chat",
+    "category": "Back-End",
+    "skills": ["Java", "Spring Boot", "MySQL"],
+    "lang": {
+      "description": {
+        "en": "Instant messaging web application on real time which makes easy the communication between users.",
+        "es": "Aplicación web de mensajería instantánea en tiempo real que facilita la comunicación entre usuarios."
+      }
+    },
+    "section": "COLLABORATION",
+    "status": "COMPLETED"
+  },
+  {
+    "id": "events-house",
+    "thumbnail": null,
+    "title": "Events House",
+    "category": "Back-End",
+    "skills": ["Java", "Spring Boot", "MySQL"],
+    "lang": {
+      "description": {
+        "en": "Web-based system that allows users to search a event house, make the online payment with Mercado Pago, and schedule a time.",
+        "es": "Sistema web que permite a los usuarios buscar una casa de eventos, hacer el pago en línea con Mercado Pago, y asignar un turno."
+      }
+    },
+    "section": "COLLABORATION",
+    "status": "COMPLETED"
+  },
+  {
+    "id": "match-pro",
+    "thumbnail": null,
+    "title": "Match Pro",
+    "category": "Back-End",
+    "skills": ["Java", "Spring Boot", "MySQL"],
+    "lang": {
+      "description": {
+        "en": "Web application that allows users to bet for the result of a match and earn points in their account.",
+        "es": "Aplicación web que permite a los usuarios apostar por el resultado de un partido y ganar puntos en su cuenta."
+      }
+    },
+    "section": "COLLABORATION",
+    "status": "COMPLETED"
+  },
+
+  {
+    "id": "fun-virtual-reading-api",
+    "thumbnail": null,
+    "title": "Fun Virtual Reading API",
+    "category": "Back-End",
+    "skills": ["Java", "Spring Boot", "PostgreSQL", "JWT"],
+    "lang": {
+      "description": {
+        "en": "Developed a secure RESTful API to simulate a virtual library where users can post books, create collections and share reviews.",
+        "es": ""
+      }
+    },
+    "section": "SMALL",
+    "status": "COMPLETED"
+  },
+  {
+    "id": "to-do-list-api",
+    "thumbnail": null,
+    "title": "ToDo List API",
+    "category": "Back-End",
+    "skills": ["Java", "Spring Boot", "PostgreSQL", "JWT"],
+    "lang": {
+      "description": {
+        "en": "Crafted a RESTful API to manage personal tasks creating to-do lists and filtering by status, category or tags.",
+        "es": ""
+      }
+    },
+    "section": "SMALL",
+    "status": "COMPLETED"
+  },
+  {
+    "id": "cop-calculator",
+    "thumbnail": null,
+    "title": "COP Calculator",
+    "category": "Front-End",
+    "skills": ["TypeScript", "Angular", "Tailwind CSS"],
+    "lang": {
+      "description": {
+        "en": "Designed a website that calculates totality based by denomination cash amount, useful for business with high cash flow in Colombia.",
+        "es": ""
+      }
+    },
+    "section": "SMALL",
+    "status": "ONLINE"
+  },
+  {
+    "id": "text-printer",
+    "thumbnail": "text-printer-1.jpeg",
+    "title": "Text Printer",
+    "category": "Front-End",
+    "skills": ["TypeScript", "Angular", "Tailwind CSS"],
+    "lang": {
+      "description": {
+        "en": "Designed a website and implemented a dependency to print little texts like quick notes or impromptu invoices.",
+        "es": ""
+      }
+    },
+    "section": "SMALL",
+    "status": "ONLINE"
   }
 ]

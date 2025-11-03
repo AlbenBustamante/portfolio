@@ -3,6 +3,7 @@ import { FormComponent } from './components/form/form.component';
 import { TitleComponent } from '@components/title/title.component';
 import { SocialMediaComponent } from '@components/social-media/social-media.component';
 import { HireMeCardComponent } from './components/hire-me-card/hire-me-card.component';
+import { ContainerComponent } from '@components/container/container.component';
 
 @Component({
   selector: 'app-hire-me',
@@ -11,6 +12,7 @@ import { HireMeCardComponent } from './components/hire-me-card/hire-me-card.comp
     TitleComponent,
     SocialMediaComponent,
     HireMeCardComponent,
+    ContainerComponent,
   ],
   templateUrl: './hire-me.component.html',
   styleUrl: './hire-me.component.css',
