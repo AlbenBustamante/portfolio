@@ -1,3 +1,14 @@
-<app-container>
-  <app-header [project]="store.project()" [gallery]="store.gallery()" />
+<app-container verticalPadding="pt-8 pb-20">
+  <div class="flex flex-col gap-y-5">
+    <a
+      routerLink=".."
+      class="group flex items-center gap-x-2.5 w-fit text-sm sm:text-base hover:text-primary-50 duration-300"
+      ><svg
+        right-arrow-icon
+        class="size-3 sm:size-4 stroke-2 stroke-primary-400 rotate-180 sm:pb-px group-hover:stroke-primary-50 duration-300"
+      ></svg>
+      Return to Projects</a
+    >
+    <app-header [project]="store.project()" [gallery]="store.gallery()" />
+  </div>
 </app-container>

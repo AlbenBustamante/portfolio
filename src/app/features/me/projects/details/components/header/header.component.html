@@ -1,18 +1,18 @@
-<header class="flex flex-col gap-y-6 xl:flex-row-reverse gap-x-8">
-  <div class="xl:w-3/5 flex flex-col gap-y-3.5">
-    <app-title [headline]="project()?.title" class="xl:hidden" />
+<header class="flex flex-col gap-y-6 lg:flex-row-reverse gap-x-8">
+  <div class="lg:w-3/5 flex flex-col gap-y-3.5">
+    <app-title [headline]="project()?.title" class="lg:hidden" />
     <img
       [src]="gallery()[0]"
       alt=""
-      class="aspect-video w-full max-w-2xl mx-auto h-auto rounded-xl border-2 border-primary-800 p-1"
+      class="aspect-video rounded-xl border-2 border-primary-800 p-1"
     />
   </div>
   <div
-    class="flex flex-col xl:justify-between gap-y-6 xl:w-2/5 border-2 border-primary-800 rounded-xl p-5"
+    class="flex flex-col lg:justify-between gap-y-6 lg:w-2/5 border-2 border-primary-800 rounded-xl p-5"
   >
-    <app-title [headline]="project()?.title" class="max-xl:hidden" />
+    <app-title [headline]="project()?.title" class="max-lg:hidden" />
     <app-header-section headline="Description">
-      <p class="text-left text-pretty text-base sm:text-lg leading-6">
+      <p class="text-left text-pretty text-sm sm:text-base leading-6">
         {{ project()?.lang?.en?.description ?? "" }}
       </p>
     </app-header-section>
@@ -20,14 +20,14 @@
       <ul class="flex items-center gap-x-2.5 gap-y-3 flex-wrap">
         @for (skill of project()?.skills ?? []; track $index) {
         <li
-          class="text-sm sm:text-base rounded-3xl bg-primary-800 px-3.5 py-1 cursor-default inset-ring inset-ring-primary-700 hover:inset-ring-primary-600 ring hover:ring-2 ring-primary-600 hover:ring-primary-500 duration-300"
+          class="text-xs sm:text-sm rounded-3xl bg-primary-800 px-2.5 py-1 cursor-default inset-ring inset-ring-primary-700 hover:inset-ring-primary-600 ring hover:ring-2 ring-primary-600 hover:ring-primary-500 duration-300"
         >
           {{ skill }}
         </li>
         }
       </ul>
     </app-header-section>
-    <div class="flex items-center justify-center xl:justify-end gap-x-5">
+    <div class="flex items-center justify-center lg:justify-end gap-x-5">
       <app-open-live-demo [url]="project()?.liveDemo" />
       <app-source-code-button [url]="project()?.sourceCode" />
     </div>
