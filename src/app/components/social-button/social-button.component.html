@@ -1,27 +1,27 @@
 <div class="group relative">
   <a
-    [href]="url()"
+    [href]="url"
     target="_blank"
     rel="noreferrer"
     [ngClass]="{
-      'flex items-center gap-5': axis() === 'y'
+      'flex items-center gap-5': axis() === 'y',
     }"
   >
     <ng-content />
-    @if (axis() === 'y') {
-    <span
-      class="text-primary-400 font-light hover:text-accent-500 duration-200 overflow-ellipsis overflow-hidden"
-    >
-      {{ displayName() }}
-    </span>
+    @if (axis() === "y") {
+      <span
+        class="text-primary-400 font-light hover:text-accent-500 duration-200 overflow-ellipsis overflow-hidden"
+      >
+        {{ displayName }}
+      </span>
     }
   </a>
-  @if (axis() === 'x') {
-  <span
-    class="invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute -bottom-10 left-1/2 right-1/2 -translate-x-1/2 bg-primary-300 text-primary-900 text-center text-sm sm:text-base px-2 sm:px-3 py-1 rounded-3xl w-20 sm:w-24 duration-300"
-    role="tooltip"
-  >
-    {{ socialName() }}
-  </span>
+  @if (axis() === "x") {
+    <span
+      class="invisible opacity-0 group-hover:visible group-hover:opacity-100 absolute -bottom-10 left-1/2 right-1/2 -translate-x-1/2 bg-primary-300 text-primary-900 text-center text-sm sm:text-base px-2 sm:px-3 py-1 rounded-3xl w-20 sm:w-24 duration-300"
+      role="tooltip"
+    >
+      {{ socialName }}
+    </span>
   }
 </div>

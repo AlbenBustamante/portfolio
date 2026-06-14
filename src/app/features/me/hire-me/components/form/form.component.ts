@@ -52,7 +52,7 @@ export class FormComponent {
     this.store.setLoading(true);
 
     const { name, email, subject, message } = this.form.value;
-    const { serviceId, templateId, publicKey } = environment.email;
+    const { serviceId, templateId, publicKey } = environment.emailjs;
     const time = formatDate(new Date(), 'dd-MM-yyyy hh:mm a', this._locale);
 
     emailjs
@@ -60,7 +60,7 @@ export class FormComponent {
         serviceId,
         templateId,
         { name, email, title: subject, message, time },
-        { publicKey, limitRate: { throttle: 60000 } }
+        { publicKey, limitRate: { throttle: 60000 } },
       )
       .then(
         () => {
@@ -70,7 +70,7 @@ export class FormComponent {
         (err) => {
           console.log((err as EmailJSResponseStatus).text);
           this.store.setLoading(false);
-        }
+        },
       );
   }
 }
