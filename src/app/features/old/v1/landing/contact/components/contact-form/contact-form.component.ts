@@ -23,7 +23,7 @@ export class ContactFormComponent {
 
   constructor(
     @Inject(LOCALE_ID) private readonly _locale: string,
-    private readonly _fb: FormBuilder
+    private readonly _fb: FormBuilder,
   ) {
     this.form = this._fb.group({
       name: ['', Validators.required],
@@ -39,7 +39,7 @@ export class ContactFormComponent {
     }
 
     const { name, email, title, message } = this.form.value;
-    const { serviceId, templateId, publicKey } = environment.email;
+    const { serviceId, templateId, publicKey } = environment.emailjs;
     const time = formatDate(new Date(), 'dd-MM-yyyy hh:mm a', this._locale);
 
     emailjs
@@ -47,7 +47,7 @@ export class ContactFormComponent {
         serviceId,
         templateId,
         { name, email, title, message, time },
-        { publicKey, limitRate: { throttle: 60000 } }
+        { publicKey, limitRate: { throttle: 60000 } },
       )
       .then(
         () => {
@@ -55,7 +55,7 @@ export class ContactFormComponent {
         },
         (err) => {
           console.log((err as EmailJSResponseStatus).text);
-        }
+        },
       );
   }
 

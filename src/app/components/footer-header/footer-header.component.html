@@ -6,15 +6,13 @@
     <p class="text-primary-200">Software Developer</p>
   </div>
   <div class="w-full flex items-center justify-center md:justify-start gap-x-5">
-    <app-footer-social-link url="https://github.com/AlbenBustamante">
+    <app-footer-social-link [url]="github.url">
       <svg github-icon></svg>
     </app-footer-social-link>
-    <app-footer-social-link url="https://linkedin.com/in/albenbustamante/">
+    <app-footer-social-link [url]="linkedIn.url">
       <svg linkedin-icon></svg>
     </app-footer-social-link>
-    <app-footer-social-link
-      url="https://discordapp.com/users/429028705533165580"
-    >
+    <app-footer-social-link [url]="discord.url">
       <svg discord-icon></svg>
     </app-footer-social-link>
   </div>

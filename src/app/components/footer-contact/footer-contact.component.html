@@ -3,13 +3,10 @@
     <b>Get In Touch</b>
   </p>
   <ul class="text-primary-300 flex flex-col gap-y-1.5">
+    <app-footer-contact-link [url]="email.url" [headline]="email.displayName" />
     <app-footer-contact-link
-      url="mailto:albenbustamante@outlook.com"
-      headline="albenbustamante&#64;outlook.com"
-    />
-    <app-footer-contact-link
-      url="https://wa.me/573165574868"
-      headline="+57 3165574868"
+      [url]="whatsApp.url"
+      [headline]="whatsApp.displayName"
     />
   </ul>
 </div>
