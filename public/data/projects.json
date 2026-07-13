@@ -168,7 +168,7 @@
   },
   {
     "id": "cop-calculator",
-    "thumbnail": null,
+    "thumbnail": "cop-calculator-1.png",
     "title": "COP Calculator",
     "category": "Front-End",
     "skills": ["TypeScript", "Angular", "Tailwind CSS"],

@@ -1,11 +1,17 @@
 <div
   class="flex items-center justify-center gap-x-5 sm:gap-x-7 md:gap-x-10 lg:gap-x-12"
 >
-  <app-button label="Download CV" variant="outlined" rounded="3xl" />
+  <app-button
+    label="View CV"
+    variant="outlined"
+    rounded="3xl"
+    href="/docs/CV_Alben_Bustamante_Desarrollador_de_Software_2026_ES.pdf"
+    target="_blank"
+  />
   <app-button
     label="About Me"
     color="accent"
     rounded="3xl"
-    routerLink="./about-me"
+    fragment="about-me"
   />
 </div>

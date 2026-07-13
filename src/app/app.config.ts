@@ -8,6 +8,7 @@ import {
   provideRouter,
   TitleStrategy,
   withComponentInputBinding,
+  withInMemoryScrolling,
   withPreloading,
 } from '@angular/router';
 
@@ -27,7 +28,11 @@ export const appConfig: ApplicationConfig = {
     provideRouter(
       routes,
       withPreloading(PreloadAllModules),
-      withComponentInputBinding()
+      withComponentInputBinding(),
+      withInMemoryScrolling({
+        anchorScrolling: 'enabled',
+        scrollPositionRestoration: 'enabled',
+      }),
     ),
     provideHttpClient(),
     importProvidersFrom([

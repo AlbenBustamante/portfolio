@@ -17,6 +17,7 @@ import { CloseMenuIconComponent } from '../icons/close-menu-icon/close-menu-icon
 })
 export class NavbarComponent {
   readonly adjust = signal<boolean>(false);
+  readonly lightBorder = signal<boolean>(false);
   readonly showNavbar = signal<boolean>(false);
 
   ngOnInit() {
@@ -31,11 +32,13 @@ export class NavbarComponent {
   @HostListener('mouseenter')
   onMouseEnter() {
     this.adjust.set(false);
+    this.lightBorder.set(true);
   }
 
   @HostListener('mouseleave')
   onMouseLeave() {
     this._setAdjust();
+    this.lightBorder.set(false);
   }
 
   private _setAdjust() {
