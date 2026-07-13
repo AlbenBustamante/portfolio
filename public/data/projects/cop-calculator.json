@@ -1,6 +1,7 @@
 {
   "id": "cop-calculator",
   "title": "COP Calculator",
+  "gallery": ["1.png", "2.png"],
   "category": "Front-End",
   "skills": ["TypeScript", "Angular", "Tailwind CSS"],
   "lang": {
