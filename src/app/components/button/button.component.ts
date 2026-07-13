@@ -19,7 +19,9 @@ export class ButtonComponent {
   readonly fluid = input<boolean>(false);
   readonly rounded = input<'2xl' | '3xl'>('2xl');
   readonly verticalPadding = input<'py-2' | 'py-1.5'>('py-2');
+  readonly target = input<'_self' | '_blank'>('_self');
   readonly fragment = input<string>();
+  readonly href = input<string>();
 
   private _designMap() {
     return {
