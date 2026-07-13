@@ -1,10 +1,20 @@
-<button
-  [type]="type()"
-  [disabled]="disabled()"
-  class="flex items-center justify-center gap-x-2.5 px-6 text-sm sm:text-base cursor-pointer duration-500"
-  [ngClass]="design"
-  (click)="disabled() ? undefined : onClick.emit()"
->
-  {{ label() }}
-  <ng-content />
-</button>
+@if (fragment()) {
+  <a
+    routerLink=""
+    [fragment]="fragment()"
+    class="flex items-center justify-center gap-x-2.5 px-6 text-sm sm:text-base cursor-pointer duration-500"
+    [ngClass]="design"
+    >{{ label() }}</a
+  >
+} @else {
+  <button
+    [type]="type()"
+    [disabled]="disabled()"
+    class="flex items-center justify-center gap-x-2.5 px-6 text-sm sm:text-base cursor-pointer duration-500"
+    [ngClass]="design"
+    (click)="disabled() ? undefined : onClick.emit()"
+  >
+    {{ label() }}
+    <ng-content />
+  </button>
+}
