@@ -28,5 +28,5 @@ import { Component } from '@angular/core';
 export class RightArrowIconComponent {
   readonly viewBox = '0 0 24 24';
   readonly fill = 'none';
-  readonly xlmns = 'http://www.w3.org/2000/svg';
+  readonly xmlns = 'http://www.w3.org/2000/svg';
 }

@@ -2,7 +2,7 @@ import { Component, inject, input } from '@angular/core';
 import { Store } from './store';
 import { ContainerComponent } from '@components/container/container.component';
 import { HeaderComponent } from './components/header/header.component';
-import { RightArrowIconComponent } from '../components/right-arrow-icon/right-arrow-icon.component';
+import { RightArrowIconComponent } from '@components/right-arrow-icon/right-arrow-icon.component';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -13,8 +13,8 @@ import { RouterLink } from '@angular/router';
     RightArrowIconComponent,
     RouterLink,
   ],
-  templateUrl: './details.component.html',
-  styleUrl: './details.component.css',
+  templateUrl: './project-details.component.html',
+  styleUrl: './project-details.component.css',
   providers: [Store],
 })
 export default class DetailsComponent {
