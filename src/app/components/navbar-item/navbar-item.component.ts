@@ -14,5 +14,4 @@ export class NavbarItemComponent {
   readonly route = input.required<string>();
   readonly adjust = input.required<boolean>();
   readonly lightBorder = input.required<boolean>();
-  readonly exact = input<boolean>(false);
 }
