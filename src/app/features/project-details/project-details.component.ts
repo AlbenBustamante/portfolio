@@ -6,7 +6,7 @@ import { RightArrowIconComponent } from '@components/right-arrow-icon/right-arro
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-details',
+  selector: 'app-project-details',
   imports: [
     ContainerComponent,
     HeaderComponent,

@@ -13,7 +13,7 @@ export class AppTitleStrategyService extends TitleStrategy {
   override updateTitle(snapshot: RouterStateSnapshot): void {
     const prefix = 'Alben Bustamante';
 
-    if (snapshot.url.includes('/projects/')) {
+    if (snapshot.url.includes('/project/')) {
       const id = snapshot.url.split('/')[2];
 
       this._getProjectService.get(id).subscribe({
