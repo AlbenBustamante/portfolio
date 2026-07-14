@@ -1,5 +1,5 @@
 <header
-  class="fixed top-0 left-0 right-0 bg-primary-950 border-b-2 flex items-center justify-center px-3 z-40 duration-500 border-accent-950"
+  class="fixed top-0 left-0 right-0 bg-primary-950 border-b-2 flex items-center justify-center px-3 z-40 duration-500 border-accent-950 w-full"
   [ngClass]="{
     'opacity-100 h-20': !adjust(),
     'bg-transparent h-16 backdrop-blur-sm': adjust() && !showNavbar(),
@@ -7,65 +7,68 @@
     'border-accent-700': lightBorder(),
   }"
 >
-  <div class="sm:hidden">
-    <button
-      class="flex items-center justify-start w-full h-20 cursor-pointer"
-      (click)="showNavbar.set(true)"
+  <div class="container mx-auto relative">
+    <div class="sm:hidden max-sm:w-full">
+      <button
+        class="flex items-center justify-center w-full h-20 cursor-pointer"
+        (click)="showNavbar.set(true)"
+      >
+        <svg
+          menu-icon
+          class="stroke-2 stroke-primary-500 hover:stroke-primary-400 size-14 duration-150"
+        ></svg>
+      </button>
+    </div>
+    <nav
+      class="max-sm:fixed max-sm:inset-0 max-sm:min-h-dvh max-sm:bg-primary-950 max-sm:z-50 max-sm:duration-500 w-full max-sm:-translate-x-full"
+      [ngClass]="{ 'max-sm:translate-none': showNavbar() }"
     >
-      <svg
-        menu-icon
-        class="stroke-2 stroke-primary-500 hover:stroke-primary-400 size-14 duration-150"
-      ></svg>
-    </button>
+      <button
+        class="sm:hidden absolute top-5 right-5 cursor-pointer"
+        (click)="showNavbar.set(false)"
+      >
+        <svg
+          close-menu-icon
+          class="stroke-2 stroke-primary-500 hover:stroke-primary-400 size-12 duration-150"
+        ></svg>
+      </button>
+      <ul
+        class="flex max-sm:flex-col gap-2 items-center justify-center size-full"
+      >
+        <app-navbar-item
+          text="Home"
+          route=""
+          class="max-sm:w-full"
+          (onClick)="showNavbar.set(false)"
+          [adjust]="adjust()"
+          [lightBorder]="lightBorder()"
+        />
+        <app-navbar-item
+          text="About"
+          route="about-me"
+          class="max-sm:w-full"
+          (onClick)="showNavbar.set(false)"
+          [adjust]="adjust()"
+          [lightBorder]="lightBorder()"
+        />
+        <app-navbar-item
+          text="Projects"
+          route="projects"
+          class="max-sm:w-full"
+          (onClick)="showNavbar.set(false)"
+          [adjust]="adjust()"
+          [lightBorder]="lightBorder()"
+        />
+        <app-navbar-item
+          text="Hire"
+          route="hire-me"
+          class="max-sm:w-full"
+          (onClick)="showNavbar.set(false)"
+          [adjust]="adjust()"
+          [lightBorder]="lightBorder()"
+        />
+      </ul>
+    </nav>
+    <button class="absolute top-0 bottom-0 right-0">ES</button>
   </div>
-  <nav
-    class="max-sm:fixed max-sm:inset-0 max-sm:min-h-dvh max-sm:bg-primary-950 max-sm:z-50 max-sm:duration-500 w-full max-sm:-translate-x-full"
-    [ngClass]="{ 'max-sm:translate-none': showNavbar() }"
-  >
-    <button
-      class="sm:hidden absolute top-5 right-5 cursor-pointer"
-      (click)="showNavbar.set(false)"
-    >
-      <svg
-        close-menu-icon
-        class="stroke-2 stroke-primary-500 hover:stroke-primary-400 size-12 duration-150"
-      ></svg>
-    </button>
-    <ul
-      class="flex max-sm:flex-col gap-2 items-center justify-center size-full"
-    >
-      <app-navbar-item
-        text="Home"
-        route=""
-        class="max-sm:w-full"
-        (onClick)="showNavbar.set(false)"
-        [adjust]="adjust()"
-        [lightBorder]="lightBorder()"
-      />
-      <app-navbar-item
-        text="About"
-        route="about-me"
-        class="max-sm:w-full"
-        (onClick)="showNavbar.set(false)"
-        [adjust]="adjust()"
-        [lightBorder]="lightBorder()"
-      />
-      <app-navbar-item
-        text="Projects"
-        route="projects"
-        class="max-sm:w-full"
-        (onClick)="showNavbar.set(false)"
-        [adjust]="adjust()"
-        [lightBorder]="lightBorder()"
-      />
-      <app-navbar-item
-        text="Hire"
-        route="hire-me"
-        class="max-sm:w-full"
-        (onClick)="showNavbar.set(false)"
-        [adjust]="adjust()"
-        [lightBorder]="lightBorder()"
-      />
-    </ul>
-  </nav>
 </header>
