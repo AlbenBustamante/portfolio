@@ -3,6 +3,7 @@ import { MenuIconComponent } from '../icons/menu-icon/menu-icon.component';
 import { NavbarItemComponent } from '../navbar-item/navbar-item.component';
 import { NgClass } from '@angular/common';
 import { CloseMenuIconComponent } from '../icons/close-menu-icon/close-menu-icon.component';
+import { LanguageSelectorComponent } from '@components/language-selector/language-selector.component';
 
 @Component({
   selector: 'app-navbar',
@@ -11,6 +12,7 @@ import { CloseMenuIconComponent } from '../icons/close-menu-icon/close-menu-icon
     CloseMenuIconComponent,
     NavbarItemComponent,
     NgClass,
+    LanguageSelectorComponent,
   ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css',
