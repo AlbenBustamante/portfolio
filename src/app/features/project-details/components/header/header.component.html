@@ -9,17 +9,17 @@
     <app-title [headline]="project()?.title" class="max-lg:hidden" />
     <app-header-section headline="Description">
       <p class="text-left text-pretty text-sm sm:text-base leading-6">
-        {{ project()?.lang?.en?.description ?? "" }}
+        {{ project()?.lang?.description ?? "" }}
       </p>
     </app-header-section>
     <app-header-section headline="Technologies">
       <ul class="flex items-center gap-x-2.5 gap-y-3 flex-wrap">
         @for (skill of project()?.skills ?? []; track $index) {
-        <li
-          class="text-xs sm:text-sm rounded-3xl bg-primary-800 px-2.5 py-1 cursor-default inset-ring inset-ring-primary-700 hover:inset-ring-primary-600 ring hover:ring-2 ring-primary-600 hover:ring-primary-500 duration-300"
-        >
-          {{ skill }}
-        </li>
+          <li
+            class="text-xs sm:text-sm rounded-3xl bg-primary-800 px-2.5 py-1 cursor-default inset-ring inset-ring-primary-700 hover:inset-ring-primary-600 ring hover:ring-2 ring-primary-600 hover:ring-primary-500 duration-300"
+          >
+            {{ skill }}
+          </li>
         }
       </ul>
     </app-header-section>

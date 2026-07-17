@@ -1,7 +1,4 @@
-/**
- * Base model for language.
- */
-export interface Lang<T> {
-  en: T;
-  es: T;
+export interface Lang {
+  flag: string;
+  label: string;
 }

@@ -5,8 +5,8 @@
       [ngClass]="{ 'bg-primary-800': showLanguages() }"
       (click)="showLanguages.set(!showLanguages())"
     >
-      {{ flag(selectedLanguage()) }}
-      <span>{{ label(selectedLanguage()) }}</span>
+      {{ flag(store.selectedLanguage()!) }}
+      <span>{{ label(store.selectedLanguage()!) }}</span>
     </button>
     @if (showLanguages()) {
       <ul
