@@ -35,38 +35,16 @@
       <ul
         class="flex max-sm:flex-col gap-2 items-center justify-center size-full"
       >
-        <app-navbar-item
-          text="Home"
-          route=""
-          class="max-sm:w-full"
-          (onClick)="showNavbar.set(false)"
-          [adjust]="adjust()"
-          [lightBorder]="lightBorder()"
-        />
-        <app-navbar-item
-          text="About"
-          route="about-me"
-          class="max-sm:w-full"
-          (onClick)="showNavbar.set(false)"
-          [adjust]="adjust()"
-          [lightBorder]="lightBorder()"
-        />
-        <app-navbar-item
-          text="Projects"
-          route="projects"
-          class="max-sm:w-full"
-          (onClick)="showNavbar.set(false)"
-          [adjust]="adjust()"
-          [lightBorder]="lightBorder()"
-        />
-        <app-navbar-item
-          text="Hire"
-          route="hire-me"
-          class="max-sm:w-full"
-          (onClick)="showNavbar.set(false)"
-          [adjust]="adjust()"
-          [lightBorder]="lightBorder()"
-        />
+        @for (item of store.navigation(); track $index) {
+          <app-navbar-item
+            [text]="item[appStore.lang()]"
+            [route]="item.route"
+            class="max-sm:w-full"
+            (onClick)="showNavbar.set(false)"
+            [adjust]="adjust()"
+            [lightBorder]="lightBorder()"
+          />
+        }
       </ul>
     </nav>
     <app-language-selector
