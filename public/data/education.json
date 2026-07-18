@@ -1,17 +1,32 @@
 {
-  "langs": {
-    "en": [
+  "en": {
+    "title": "Education",
+    "items": [
       {
         "institute": "Bicentenary University of Aragua",
         "degree": "Systems Engineering",
-        "year": "2018"
+        "year": "Jan. - Sep. 2018 / Jan. 2026 - Present"
       },
       {
         "institute": "Antonio Jose De Sucre",
         "degree": "Bachelor of Science",
         "year": "2013 - 2017"
       }
-    ],
-    "es": []
+    ]
+  },
+  "es": {
+    "title": "Educación",
+    "items": [
+      {
+        "institute": "Universidad Bicentenaria de Aragua",
+        "degree": "Ingeniería de Sistemas",
+        "year": "Enero - Septiembre 2018 / Enero 2026 - Presente"
+      },
+      {
+        "institute": "Antonio Jose De Sucre",
+        "degree": "Bachiller en Ciencias",
+        "year": "2013 - 2017"
+      }
+    ]
   }
 }

@@ -16,6 +16,8 @@ import { SkillsAndTechnologiesModel } from '@core/models/skills-and-technologies
 import { SkillsApiService } from '@core/api/skills-api.service';
 import { ExperienceModel } from '@core/models/experience.model';
 import { ExperienceApiService } from '@core/api/experience-api.service';
+import { EducationModel } from '@core/models/education.model';
+import { EducationApiService } from '@core/api/education-api.service';
 
 interface State {
   loading: boolean;
@@ -23,6 +25,7 @@ interface State {
   aboutMe: AboutMeModel | undefined;
   skills: SkillsAndTechnologiesModel | undefined;
   experience: ExperienceModel | undefined;
+  education: EducationModel | undefined;
 }
 
 const initialState: State = {
@@ -31,13 +34,17 @@ const initialState: State = {
   aboutMe: undefined,
   skills: undefined,
   experience: undefined,
+  education: undefined,
 };
 
 export const MeStore = signalStore(
   { providedIn: 'root' },
   withState(initialState),
   withComputed(
-    ({ home, aboutMe, skills, experience }, appStore = inject(AppStore)) => ({
+    (
+      { home, aboutMe, skills, experience, education },
+      appStore = inject(AppStore),
+    ) => ({
       lang: computed(() => {
         const currentLang = appStore.lang();
 
@@ -46,6 +53,7 @@ export const MeStore = signalStore(
           aboutMe: aboutMe()?.[currentLang],
           skills: skills()?.[currentLang],
           experience: experience()?.title[currentLang],
+          education: education()?.[currentLang],
         };
       }),
     }),
@@ -57,6 +65,7 @@ export const MeStore = signalStore(
       aboutMeApi = inject(AboutMeApiService),
       skillsApi = inject(SkillsApiService),
       experienceApi = inject(ExperienceApiService),
+      educationApi = inject(EducationApiService),
     ) => ({
       fetch: () => {
         patchState(store, { loading: true });
@@ -66,13 +75,15 @@ export const MeStore = signalStore(
           aboutMe: aboutMeApi.getAboutMe(),
           skills: skillsApi.getSkills(),
           experience: experienceApi.getExperience(),
+          education: educationApi.getEducation(),
         }).subscribe({
-          next: ({ home, aboutMe, skills, experience }) => {
+          next: ({ home, aboutMe, skills, experience, education }) => {
             patchState(store, {
               home,
               aboutMe,
               skills,
               experience,
+              education,
               loading: false,
             });
           },

@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { Education } from '../../models/education.model';
+import { EducationItemModel } from '@core/models/education.model';
 import { BulletContentComponent } from '@features/me/about-me/components/bullet-content/bullet-content.component';
 
 @Component({
@@ -10,5 +10,5 @@ import { BulletContentComponent } from '@features/me/about-me/components/bullet-
 })
 export class EducationItemComponent {
   readonly border = input.required<boolean>();
-  readonly education = input.required<Education>();
+  readonly education = input.required<EducationItemModel>();
 }
