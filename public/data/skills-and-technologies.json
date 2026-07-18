@@ -1,0 +1,16 @@
+{
+  "en": {
+    "title": "Skills & Technologies",
+    "backend": "Backend",
+    "frontend": "Frontend",
+    "mobile": "Mobile",
+    "tools": "Tools & Platforms"
+  },
+  "es": {
+    "title": "Habilidades y Tecnologías",
+    "backend": "Back-End",
+    "frontend": "Front-End",
+    "mobile": "Móvil",
+    "tools": "Herramientas y Plataformas"
+  }
+}
