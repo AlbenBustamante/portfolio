@@ -1,4 +1,4 @@
 export interface Lang {
   flag: string;
-  label: string;
+  label: 'en' | 'es';
 }

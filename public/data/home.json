@@ -1,0 +1,14 @@
+{
+  "en": {
+    "greeting": "Hey there! I'm",
+    "occupation": "Software Developer",
+    "viewCV": "View CV",
+    "aboutMe": "About me"
+  },
+  "es": {
+    "greeting": "Hola! Soy",
+    "occupation": "Desarrollador de Software",
+    "viewCV": "Ver CV",
+    "aboutMe": "Acerca de mí"
+  }
+}

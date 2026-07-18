@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import projects from '@public/data/projects.json';
 import { Project } from '../models/project.model';
 import { HttpClient } from '@angular/common/http';
 

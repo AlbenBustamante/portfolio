@@ -1,9 +1,15 @@
 <app-container verticalPadding="py-0">
   <div class="min-h-[calc(100dvh_-_5rem)] grid place-items-center">
     <article class="flex flex-col gap-y-7">
-      <app-header />
+      <app-header
+        [greeting]="store.lang()?.greeting"
+        [occupation]="store.lang()?.occupation"
+      />
       <app-divider />
-      <app-actions />
+      <app-actions
+        [viewCV]="store.lang()?.viewCV"
+        [aboutMe]="store.lang()?.aboutMe"
+      />
       <app-divider />
       <div class="px-3 w-full max-w-xl mx-auto">
         <app-social-media />
