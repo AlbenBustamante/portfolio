@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { SkillsAndTechnologiesModel } from '@features/me/about-me/skills-and-technologies/skills-and-technologies.model';
+import { SkillsAndTechnologiesModel } from '@core/models/skills-and-technologies.model';
 
 @Injectable({
   providedIn: 'root',
