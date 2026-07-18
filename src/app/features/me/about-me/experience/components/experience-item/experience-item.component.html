@@ -1,9 +1,9 @@
 <app-bullet-content
-  container="border"
+  container="bullet"
   [headline]="lang?.occupation ?? ''"
   [subheadline]="experience()?.company"
   [year]="lang?.year"
-  [bulletBorder]="false"
+  [bulletBorder]="border()"
 >
   <p class="text-primary-200 text-sm sm:text-base">
     {{ lang?.description }}

@@ -5,6 +5,20 @@
   },
   "items": [
     {
+      "company": "Tenshi No Sekai",
+      "en": {
+        "occupation": "Software Developer",
+        "year": "April 2026 - Present",
+        "description": ""
+      },
+      "es": {
+        "occupation": "Desarrollador de Software",
+        "year": "Abril 2026 - Presente",
+        "description": ""
+      },
+      "skills": ["Angular", "Tailwind CSS", "Supabase", "NgRx", "Signals"]
+    },
+    {
       "company": "Servinet Computers",
       "en": {
         "occupation": "FullStack Developer",
@@ -26,6 +40,20 @@
         "Tailwind CSS",
         "Firebase Storage"
       ]
+    },
+    {
+      "company": "Confidential",
+      "en": {
+        "occupation": "Mobile Developer",
+        "year": "June - Aug. 2024",
+        "description": ""
+      },
+      "es": {
+        "occupation": "Desarrollador Móvil",
+        "year": "Junio - Agosto 2024",
+        "description": ""
+      },
+      "skills": ["Dart", "Flutter", "Firebase"]
     }
   ]
 }

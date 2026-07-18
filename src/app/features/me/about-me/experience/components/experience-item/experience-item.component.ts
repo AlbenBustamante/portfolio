@@ -11,6 +11,7 @@ import { AppStore } from 'app/app.store';
 })
 export class ExperienceItemComponent {
   private readonly _appStore = inject(AppStore);
+  readonly border = input.required<boolean>();
   readonly experience = input<ExperienceItemModel>();
 
   get lang() {
