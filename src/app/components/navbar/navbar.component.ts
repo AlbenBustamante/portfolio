@@ -4,7 +4,6 @@ import { NavbarItemComponent } from '../navbar-item/navbar-item.component';
 import { NgClass } from '@angular/common';
 import { CloseMenuIconComponent } from '../icons/close-menu-icon/close-menu-icon.component';
 import { LanguageSelectorComponent } from '@components/language-selector/language-selector.component';
-import { NavbarStore } from './navbar.store';
 import { AppStore } from 'app/app.store';
 
 @Component({
@@ -18,18 +17,15 @@ import { AppStore } from 'app/app.store';
   ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css',
-  providers: [NavbarStore],
 })
 export class NavbarComponent {
-  readonly store = inject(NavbarStore);
-  readonly appStore = inject(AppStore);
+  readonly store = inject(AppStore);
   readonly adjust = signal<boolean>(false);
   readonly lightBorder = signal<boolean>(false);
   readonly showNavbar = signal<boolean>(false);
 
   ngOnInit() {
     this._setAdjust();
-    this.store.fetch();
   }
 
   @HostListener('window:scroll')

@@ -35,9 +35,9 @@
       <ul
         class="flex max-sm:flex-col gap-2 items-center justify-center size-full"
       >
-        @for (item of store.navigation(); track $index) {
+        @for (item of store.navbar(); track $index) {
           <app-navbar-item
-            [text]="item[appStore.lang()]"
+            [text]="item[store.lang()]"
             [route]="item.route"
             class="max-sm:w-full"
             (onClick)="showNavbar.set(false)"

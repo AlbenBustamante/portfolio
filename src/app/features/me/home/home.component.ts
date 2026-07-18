@@ -4,7 +4,7 @@ import { DividerComponent } from '@components/divider/divider.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ActionsComponent } from './components/actions/actions.component';
 import { ContainerComponent } from '@components/container/container.component';
-import { HomeStore } from './home.store';
+import { MeStore } from '../me.store';
 
 @Component({
   selector: 'app-home',
@@ -17,12 +17,11 @@ import { HomeStore } from './home.store';
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
-  providers: [HomeStore],
 })
 export default class HomeComponent {
-  readonly store = inject(HomeStore);
+  private readonly _store = inject(MeStore);
 
-  ngOnInit() {
-    this.store.fetch();
+  get home() {
+    return this._store.lang().home;
   }
 }

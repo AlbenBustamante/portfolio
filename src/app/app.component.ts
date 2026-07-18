@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from '@components/navbar/navbar.component';
 import { FooterComponent } from '@components/footer/footer.component';
@@ -11,4 +11,10 @@ import { AppStore } from './app.store';
   styleUrl: './app.component.css',
   providers: [AppStore],
 })
-export class AppComponent {}
+export class AppComponent {
+  private readonly _store = inject(AppStore);
+
+  ngOnInit() {
+    this._store.fetchNavbar();
+  }
+}

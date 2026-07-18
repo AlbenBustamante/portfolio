@@ -1,11 +1,11 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { AboutMeModel } from '../about-me.model';
+import { AboutMeModel } from '../models/about-me.model';
 
 @Injectable({
   providedIn: 'root',
 })
-export class AboutMeService {
+export class AboutMeApiService {
   private readonly _http = inject(HttpClient);
 
   getAboutMe() {

@@ -1,14 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { NavbarModel } from '@core/models/navbar.model';
+import { HomeModel } from '@core/models/home.model';
 
 @Injectable({
   providedIn: 'root',
 })
-export class NavbarService {
+export class HomeApiService {
   private readonly _http = inject(HttpClient);
 
-  getNavbar() {
-    return this._http.get<NavbarModel[]>('/data/navigation.json');
+  getHome() {
+    return this._http.get<HomeModel>('/data/home.json');
   }
 }

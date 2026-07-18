@@ -1,6 +1,6 @@
 import { Component, input } from '@angular/core';
 import { TitleComponent } from '@components/title/title.component';
-import { AboutMeData } from '../../about-me.model';
+import { AboutMeData } from '@core/models/about-me.model';
 
 @Component({
   selector: 'app-header',
@@ -9,5 +9,5 @@ import { AboutMeData } from '../../about-me.model';
   styleUrl: './header.component.css',
 })
 export class HeaderComponent {
-  readonly aboutMe = input.required<AboutMeData>();
+  readonly aboutMe = input.required<AboutMeData | undefined>();
 }
