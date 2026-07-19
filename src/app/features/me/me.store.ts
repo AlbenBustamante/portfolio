@@ -20,6 +20,8 @@ import { EducationModel } from '@core/models/education.model';
 import { EducationApiService } from '@core/api/education-api.service';
 import { CertificateModel } from '@core/models/certificate.model';
 import { CertificateApiService } from '@core/api/certificate-api.service';
+import { ProjectModel } from '@core/models/project.model';
+import { ProjectApiService } from '@core/api/project-api.service';
 
 interface State {
   loading: boolean;
@@ -29,6 +31,7 @@ interface State {
   experience: ExperienceModel | undefined;
   education: EducationModel | undefined;
   certificate: CertificateModel | undefined;
+  project: ProjectModel | undefined;
 }
 
 const initialState: State = {
@@ -39,6 +42,7 @@ const initialState: State = {
   experience: undefined,
   education: undefined,
   certificate: undefined,
+  project: undefined,
 };
 
 export const MeStore = signalStore(
@@ -46,7 +50,7 @@ export const MeStore = signalStore(
   withState(initialState),
   withComputed(
     (
-      { home, aboutMe, skills, experience, education, certificate },
+      { home, aboutMe, skills, experience, education, certificate, project },
       appStore = inject(AppStore),
     ) => ({
       lang: computed(() => {
@@ -59,6 +63,7 @@ export const MeStore = signalStore(
           experience: experience()?.title[currentLang],
           education: education()?.[currentLang],
           certificate: certificate()?.[currentLang],
+          project: project()?.[currentLang],
         };
       }),
     }),
@@ -72,6 +77,7 @@ export const MeStore = signalStore(
       experienceApi = inject(ExperienceApiService),
       educationApi = inject(EducationApiService),
       certificateApi = inject(CertificateApiService),
+      projectApi = inject(ProjectApiService),
     ) => ({
       fetch: () => {
         patchState(store, { loading: true });
@@ -83,6 +89,7 @@ export const MeStore = signalStore(
           experience: experienceApi.getExperience(),
           education: educationApi.getEducation(),
           certificate: certificateApi.getCertificate(),
+          project: projectApi.getProject(),
         }).subscribe({
           next: ({
             home,
@@ -91,7 +98,19 @@ export const MeStore = signalStore(
             experience,
             education,
             certificate,
+            project,
           }) => {
+            project.items.map((project) => {
+              const thumbnail = project.thumbnail;
+
+              project.thumbnail =
+                thumbnail === null
+                  ? 'https://images.unsplash.com/photo-1586672806791-3a67d24186c0?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y292ZXIlMjBhcnR8ZW58MHx8MHx8fDA%3D'
+                  : `/images/projects/${thumbnail}`;
+
+              return project;
+            });
+
             patchState(store, {
               home,
               aboutMe,
@@ -99,6 +118,7 @@ export const MeStore = signalStore(
               experience,
               education,
               certificate,
+              project,
               loading: false,
             });
           },

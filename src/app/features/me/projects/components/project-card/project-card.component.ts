@@ -1,9 +1,11 @@
-import { Component, input } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 import { CardComponent } from '@components/card/card.component';
 import { ProjectCardContentComponent } from '../project-card-content/project-card-content.component';
-import { Project } from '../../models/project.model';
 import { ButtonComponent } from '@components/button/button.component';
 import { RightArrowIconComponent } from '@components/right-arrow-icon/right-arrow-icon.component';
+import { ProjectItemModel } from '@core/models/project.model';
+import { AppStore } from 'app/app.store';
+import { MeStore } from '@features/me/me.store';
 
 @Component({
   selector: 'app-project-card',
@@ -17,6 +19,24 @@ import { RightArrowIconComponent } from '@components/right-arrow-icon/right-arro
   styleUrl: './project-card.component.css',
 })
 export class ProjectCardComponent {
+  private readonly _meStore = inject(MeStore);
+  readonly appStore = inject(AppStore);
   readonly loading = input<'eager' | 'lazy'>('eager');
-  readonly project = input.required<Project>();
+  readonly project = input.required<ProjectItemModel>();
+
+  get lang() {
+    return this._meStore.lang().project;
+  }
+
+  get cta() {
+    return this.lang?.cta ?? '';
+  }
+
+  get category() {
+    return this.lang?.category[this.project().category] ?? '';
+  }
+
+  get status() {
+    return this.lang?.status[this.project().status] ?? '';
+  }
 }
