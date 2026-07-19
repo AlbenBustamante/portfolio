@@ -7,6 +7,7 @@ import { formatDate } from '@angular/common';
 import { environment } from '@environments/environment.development';
 import { FormStore } from './form.store';
 import { ButtonComponent } from '@components/button/button.component';
+import { MeStore } from '@features/me/me.store';
 
 @Component({
   selector: 'app-form',
@@ -21,6 +22,7 @@ import { ButtonComponent } from '@components/button/button.component';
   providers: [FormStore],
 })
 export class FormComponent {
+  private readonly _meStore = inject(MeStore);
   private readonly _locale = inject(LOCALE_ID);
   private readonly _fb = inject(FormBuilder);
   readonly store = inject(FormStore);
@@ -31,6 +33,14 @@ export class FormComponent {
     subject: ['', Validators.required],
     message: ['', Validators.required],
   });
+
+  get lang() {
+    return this._meStore.lang().hireMe;
+  }
+
+  get formLang() {
+    return this.lang?.form;
+  }
 
   constructor() {
     effect(() => {

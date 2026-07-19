@@ -11,7 +11,7 @@ import { RouterLink } from '@angular/router';
 export class ButtonComponent {
   readonly onClick = output<void>();
 
-  readonly label = input.required<string>();
+  readonly label = input<string>();
   readonly type = input<'button' | 'submit'>('button');
   readonly color = input<'primary' | 'accent'>('primary');
   readonly variant = input<'normal' | 'outlined'>('normal');

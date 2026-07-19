@@ -22,6 +22,8 @@ import { CertificateModel } from '@core/models/certificate.model';
 import { CertificateApiService } from '@core/api/certificate-api.service';
 import { ProjectModel } from '@core/models/project.model';
 import { ProjectApiService } from '@core/api/project-api.service';
+import { HireMeModel } from '@core/models/hire-me.model';
+import { HireMeApiService } from '@core/api/hire-me-api.service';
 
 interface State {
   loading: boolean;
@@ -32,6 +34,7 @@ interface State {
   education: EducationModel | undefined;
   certificate: CertificateModel | undefined;
   project: ProjectModel | undefined;
+  hireMe: HireMeModel | undefined;
 }
 
 const initialState: State = {
@@ -43,6 +46,7 @@ const initialState: State = {
   education: undefined,
   certificate: undefined,
   project: undefined,
+  hireMe: undefined,
 };
 
 export const MeStore = signalStore(
@@ -50,7 +54,16 @@ export const MeStore = signalStore(
   withState(initialState),
   withComputed(
     (
-      { home, aboutMe, skills, experience, education, certificate, project },
+      {
+        home,
+        aboutMe,
+        skills,
+        experience,
+        education,
+        certificate,
+        project,
+        hireMe,
+      },
       appStore = inject(AppStore),
     ) => ({
       lang: computed(() => {
@@ -64,6 +77,7 @@ export const MeStore = signalStore(
           education: education()?.[currentLang],
           certificate: certificate()?.[currentLang],
           project: project()?.[currentLang],
+          hireMe: hireMe()?.[currentLang],
         };
       }),
     }),
@@ -78,6 +92,7 @@ export const MeStore = signalStore(
       educationApi = inject(EducationApiService),
       certificateApi = inject(CertificateApiService),
       projectApi = inject(ProjectApiService),
+      hireMeApi = inject(HireMeApiService),
     ) => ({
       fetch: () => {
         patchState(store, { loading: true });
@@ -90,6 +105,7 @@ export const MeStore = signalStore(
           education: educationApi.getEducation(),
           certificate: certificateApi.getCertificate(),
           project: projectApi.getProject(),
+          hireMe: hireMeApi.getHireMe(),
         }).subscribe({
           next: ({
             home,
@@ -99,6 +115,7 @@ export const MeStore = signalStore(
             education,
             certificate,
             project,
+            hireMe,
           }) => {
             project.items.map((project) => {
               const thumbnail = project.thumbnail;
@@ -119,6 +136,7 @@ export const MeStore = signalStore(
               education,
               certificate,
               project,
+              hireMe,
               loading: false,
             });
           },

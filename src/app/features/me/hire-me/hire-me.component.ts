@@ -1,9 +1,10 @@
-import { Component, HostListener, signal } from '@angular/core';
+import { Component, HostListener, inject, signal } from '@angular/core';
 import { FormComponent } from './components/form/form.component';
 import { TitleComponent } from '@components/title/title.component';
 import { SocialMediaComponent } from '@components/social-media/social-media.component';
 import { HireMeCardComponent } from './components/hire-me-card/hire-me-card.component';
 import { ContainerComponent } from '@components/container/container.component';
+import { MeStore } from '../me.store';
 
 @Component({
   selector: 'app-hire-me',
@@ -18,7 +19,12 @@ import { ContainerComponent } from '@components/container/container.component';
   styleUrl: './hire-me.component.css',
 })
 export default class HireMeComponent {
+  private readonly _store = inject(MeStore);
   readonly socialMediaAxis = signal<'x' | 'y'>('x');
+
+  get lang() {
+    return this._store.lang().hireMe;
+  }
 
   ngAfterViewInit() {
     this._resizeSocialMediaContainer();

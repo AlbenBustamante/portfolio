@@ -1,5 +1,6 @@
 import { Component, input } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { FormItemModel } from '@core/models/hire-me.model';
 
 @Component({
   selector: 'app-text-area',
@@ -9,7 +10,6 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
 })
 export class TextAreaComponent {
   readonly name = input.required<string>();
-  readonly label = input.required<string>();
   readonly control = input.required<FormControl>();
-  readonly placeholder = input.required<string>();
+  readonly item = input<FormItemModel>();
 }
