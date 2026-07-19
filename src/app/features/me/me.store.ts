@@ -18,6 +18,8 @@ import { ExperienceModel } from '@core/models/experience.model';
 import { ExperienceApiService } from '@core/api/experience-api.service';
 import { EducationModel } from '@core/models/education.model';
 import { EducationApiService } from '@core/api/education-api.service';
+import { CertificateModel } from '@core/models/certificate.model';
+import { CertificateApiService } from '@core/api/certificate-api.service';
 
 interface State {
   loading: boolean;
@@ -26,6 +28,7 @@ interface State {
   skills: SkillsAndTechnologiesModel | undefined;
   experience: ExperienceModel | undefined;
   education: EducationModel | undefined;
+  certificate: CertificateModel | undefined;
 }
 
 const initialState: State = {
@@ -35,6 +38,7 @@ const initialState: State = {
   skills: undefined,
   experience: undefined,
   education: undefined,
+  certificate: undefined,
 };
 
 export const MeStore = signalStore(
@@ -42,7 +46,7 @@ export const MeStore = signalStore(
   withState(initialState),
   withComputed(
     (
-      { home, aboutMe, skills, experience, education },
+      { home, aboutMe, skills, experience, education, certificate },
       appStore = inject(AppStore),
     ) => ({
       lang: computed(() => {
@@ -54,6 +58,7 @@ export const MeStore = signalStore(
           skills: skills()?.[currentLang],
           experience: experience()?.title[currentLang],
           education: education()?.[currentLang],
+          certificate: certificate()?.[currentLang],
         };
       }),
     }),
@@ -66,6 +71,7 @@ export const MeStore = signalStore(
       skillsApi = inject(SkillsApiService),
       experienceApi = inject(ExperienceApiService),
       educationApi = inject(EducationApiService),
+      certificateApi = inject(CertificateApiService),
     ) => ({
       fetch: () => {
         patchState(store, { loading: true });
@@ -76,14 +82,23 @@ export const MeStore = signalStore(
           skills: skillsApi.getSkills(),
           experience: experienceApi.getExperience(),
           education: educationApi.getEducation(),
+          certificate: certificateApi.getCertificate(),
         }).subscribe({
-          next: ({ home, aboutMe, skills, experience, education }) => {
+          next: ({
+            home,
+            aboutMe,
+            skills,
+            experience,
+            education,
+            certificate,
+          }) => {
             patchState(store, {
               home,
               aboutMe,
               skills,
               experience,
               education,
+              certificate,
               loading: false,
             });
           },

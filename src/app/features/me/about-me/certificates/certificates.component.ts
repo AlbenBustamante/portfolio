@@ -3,6 +3,7 @@ import { SubtitleComponent } from '@components/subtitle/subtitle.component';
 import { CertificateComponent } from './components/certificate/certificate.component';
 import { CertificateStore } from './certificates.store';
 import { NgClass } from '@angular/common';
+import { MeStore } from '@features/me/me.store';
 
 @Component({
   selector: 'app-certificates',
@@ -12,9 +13,10 @@ import { NgClass } from '@angular/common';
   providers: [CertificateStore],
 })
 export class CertificatesComponent {
+  private readonly _meStore = inject(MeStore);
   readonly store = inject(CertificateStore);
 
-  constructor() {
-    this.store.fetchAll();
+  get lang() {
+    return this._meStore.lang().certificate;
   }
 }
