@@ -15,6 +15,6 @@ export class AppComponent {
   private readonly _store = inject(AppStore);
 
   ngOnInit() {
-    this._store.fetchNavbar();
+    this._store.fetch();
   }
 }

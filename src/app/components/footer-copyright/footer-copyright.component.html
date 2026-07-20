@@ -1,6 +1,6 @@
 <div class="text-center flex flex-col gap-y-1.5">
   <p class="cursor-default text-primary-400">
-    Website made by Alben Bustamante
+    {{ store.footer()?.[store.lang()]?.madeBy }}
   </p>
   <p class="text-primary-100">
     Copyright &copy; 2025 - {{ today | date: "yyyy" }} |
@@ -9,7 +9,7 @@
       href="https://github.com/AlbenBustamante/portfolio"
       target="_blank"
     >
-      Source Code
+      {{ store.footer()?.[store.lang()]?.source }}
     </a>
   </p>
 </div>

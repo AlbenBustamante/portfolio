@@ -1,6 +1,6 @@
 <div class="text-center md:text-right flex flex-col gap-y-1.5">
   <p class="text-primary-100 text-lg">
-    <b>Get In Touch</b>
+    <b>{{ store.footer()?.[store.lang()]?.contact }}</b>
   </p>
   <ul class="text-primary-300 flex flex-col gap-y-1.5">
     <app-footer-contact-link [url]="email.url" [headline]="email.displayName" />

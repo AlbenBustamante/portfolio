@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { FooterContactLinkComponent } from '@components/footer-contact-link/footer-contact-link.component';
 import { SocialMediaService } from '@core/services/social-media.service';
+import { AppStore } from 'app/app.store';
 
 @Component({
   selector: 'app-footer-contact',
@@ -10,6 +11,8 @@ import { SocialMediaService } from '@core/services/social-media.service';
 })
 export class FooterContactComponent {
   private readonly _socialMediaService = inject(SocialMediaService);
+
+  readonly store = inject(AppStore);
 
   get email() {
     return this._socialMediaService.email;
