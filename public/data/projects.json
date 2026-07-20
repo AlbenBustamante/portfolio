@@ -46,7 +46,7 @@
       "skills": ["Java", "Spring Boot", "Angular", "NgRx"],
       "description": {
         "en": "Developing a web-based application that allows customers to schedule appointments with providers and use their services, post a review and automate a ranking of the bests providers.",
-        "es": ""
+        "es": "Desarrollando una aplicación web que permite a los clientes agendar citas con proveedores y usar sus servicios, publicar reseñas y automatizar un ranking de los mejores proveedores."
       },
       "section": "FEATURED",
       "status": "IN_PROGRESS"
@@ -59,7 +59,7 @@
       "skills": ["Dart", "Firestore", "Flutter", "BLoC Flutter"],
       "description": {
         "en": "Coded a native Android & iOS application to manage personal finances, allowing to store records such as expenses and income, automatizing balances and reports.",
-        "es": ""
+        "es": "Programé una aplicación nativa de Android y iOS para manejar finanzas personales, permitiendo guardar registros tanto de gastos como ingresos, automatizando saldos y reportes."
       },
       "section": "FEATURED",
       "status": "COMPLETED"
@@ -72,7 +72,7 @@
       "skills": ["Java", "JDBC", "MySQL", "Swing"],
       "description": {
         "en": "Built a desktop application that allows users to post thoughts through little texts, watch content from other users and search posts by keywords.",
-        "es": ""
+        "es": "Construí una aplicación de escritorio que permite a los usuarios publicar pensamientos a través de pequeños textos, ver contenido de otros usuarios y buscar publicaciones por palabras claves."
       },
       "section": "FEATURED",
       "status": "COMPLETED"
@@ -163,7 +163,7 @@
       "skills": ["Java", "Spring Boot", "PostgreSQL", "JWT"],
       "description": {
         "en": "Developed a secure RESTful API to simulate a virtual library where users can post books, create collections and share reviews.",
-        "es": ""
+        "es": "Desarrollé una API RESTful protegida para simular una librería virtual donde los usuarios podrán buscar libros, crear colecciones y publicar reseñas."
       },
       "section": "SMALL",
       "status": "COMPLETED"
@@ -175,8 +175,8 @@
       "category": "BACKEND",
       "skills": ["Java", "Spring Boot", "PostgreSQL", "JWT"],
       "description": {
-        "en": "Crafted a RESTful API to manage personal tasks creating to-do lists and filtering by status, category or tags.",
-        "es": ""
+        "en": "Crafted a RESTful API to manage personal tasks creating to-do lists and filtering by status, category ans tags.",
+        "es": "Construí una API RESTful para manejar tareas personales creando listas de tareas y filtrar por estado, categoría y etiquetas."
       },
       "section": "SMALL",
       "status": "COMPLETED"
@@ -189,7 +189,7 @@
       "skills": ["TypeScript", "Angular", "Tailwind CSS"],
       "description": {
         "en": "Designed a website that calculates totality based by denomination cash amount, useful for business with high cash flow in Colombia.",
-        "es": ""
+        "es": "Diseñé un sitio web que calcula una totalidad según la denominación del efectivo, útil para negocios con alto flujo de efectivo en Colombia."
       },
       "section": "SMALL",
       "status": "ONLINE"
@@ -202,7 +202,7 @@
       "skills": ["TypeScript", "Angular", "Tailwind CSS"],
       "description": {
         "en": "Designed a website and implemented a dependency to print little texts like quick notes or impromptu invoices.",
-        "es": ""
+        "es": "Diseñé un sitio web e implementé una dependencia para imprimir textos pequeños como notas rápidas o pequeñas facturas."
       },
       "section": "SMALL",
       "status": "ONLINE"
