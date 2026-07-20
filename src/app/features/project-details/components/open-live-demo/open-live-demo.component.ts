@@ -1,4 +1,5 @@
-import { Component, input } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
+import { ProjectDetailsStore } from '@features/project-details/project-details.store';
 
 @Component({
   selector: 'app-open-live-demo',
@@ -7,5 +8,6 @@ import { Component, input } from '@angular/core';
   styleUrl: './open-live-demo.component.css',
 })
 export class OpenLiveDemoComponent {
+  readonly store = inject(ProjectDetailsStore);
   readonly url = input.required<string | undefined>();
 }

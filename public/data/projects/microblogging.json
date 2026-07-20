@@ -3,13 +3,11 @@
   "title": "Microblogging",
   "category": "Desktop",
   "skills": ["Java", "JDBC", "MySQL", "Swing"],
-  "lang": {
-    "en": {
-      "description": "Built a desktop application that allows users to post thoughts through little texts, watch content from other users and search posts by keywords."
-    },
-    "es": {
-      "description": "Built a desktop application that allows users to post thoughts through little texts, watch content from other users and search posts by keywords."
-    }
+  "en": {
+    "description": "Built a desktop application that allows users to post thoughts through little texts, watch content from other users and search posts by keywords."
+  },
+  "es": {
+    "description": "Construí una aplicación de escritorio que permite a los usuarios publicar pensamientos a través de pequeños textos, ver contenido de otros usuarios y buscar publicaciones por palabras claves."
   },
   "sourceCode": "https://github.com/AlbenBustamante/microblogging",
   "liveDemo": "https://github.com/AlbenBustamante/microblogging",

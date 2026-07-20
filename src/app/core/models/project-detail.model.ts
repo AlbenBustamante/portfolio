@@ -1,4 +1,17 @@
+interface ProjectDetailData {
+  return: string;
+  description: string;
+  technologies: string;
+  demo: string;
+  source: string;
+}
+
 export interface ProjectDetailModel {
+  en: ProjectDetailData;
+  es: ProjectDetailData;
+}
+
+export interface ProjectDetailItemModel {
   id: string;
   title: string;
   gallery: string[];
@@ -7,5 +20,6 @@ export interface ProjectDetailModel {
   sourceCode: string;
   liveDemo: string;
   status: string;
-  lang: { description: string };
+  en: { description: string };
+  es: { description: string };
 }

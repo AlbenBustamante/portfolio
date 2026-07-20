@@ -6,23 +6,39 @@ import {
   withMethods,
   withState,
 } from '@ngrx/signals';
-import { GetProjectService } from '@core/services/get-project.service';
-import { ProjectDetailModel } from '@core/models/project-detail.model';
+import { ProjectDetailsApiService } from '@core/api/project-details-api.service';
+import {
+  ProjectDetailItemModel,
+  ProjectDetailModel,
+} from '@core/models/project-detail.model';
+import { forkJoin } from 'rxjs';
+import { AppStore } from 'app/app.store';
 
 type State = {
-  project: ProjectDetailModel | null;
+  project: ProjectDetailItemModel | null;
+  projectDetails: ProjectDetailModel | undefined;
   selectedIndex: number;
+  loading: boolean;
 };
 
 const initialState: State = {
   project: null,
+  projectDetails: undefined,
   selectedIndex: 0,
+  loading: false,
 };
 
-export const Store = signalStore(
+export const ProjectDetailsStore = signalStore(
   { providedIn: 'root' },
   withState(initialState),
-  withComputed((store) => ({
+  withComputed((store, appStore = inject(AppStore)) => ({
+    lang: computed(() => {
+      const lang = appStore.lang();
+      return {
+        projectDetails: store.projectDetails()?.[lang],
+        projectDescription: store.project()?.[lang].description,
+      };
+    }),
     gallery: computed(() => {
       const details = store.project();
 
@@ -53,13 +69,21 @@ export const Store = signalStore(
       return store.selectedIndex() === project.gallery.length - 1;
     }),
   })),
-  withMethods((store, service = inject(GetProjectService)) => ({
+  withMethods((store, api = inject(ProjectDetailsApiService)) => ({
     fetch: (id: string) => {
-      service.get(id).subscribe({
-        next: (project) => {
-          patchState(store, { project });
+      patchState(store, { loading: true });
+
+      forkJoin({
+        projectDetails: api.getProjectDetails(),
+        project: api.getProjectDetailsData(id),
+      }).subscribe({
+        next: ({ project, projectDetails }) => {
+          patchState(store, { projectDetails, project, loading: false });
         },
-        error: (err) => console.warn({ err }),
+        error: (err) => {
+          console.error(err);
+          patchState(store, { loading: false });
+        },
       });
     },
     setSelectedIndex: (index: number) => {
@@ -70,6 +94,8 @@ export const Store = signalStore(
 
       if (selectedIndex > 0) {
         patchState(store, { selectedIndex: selectedIndex - 1 });
+      } else {
+        patchState(store, { selectedIndex: store.gallery().length - 1 });
       }
     },
     setNext: () => {
@@ -77,7 +103,9 @@ export const Store = signalStore(
 
       if (selectedIndex < store.gallery().length - 1) {
         patchState(store, { selectedIndex: selectedIndex + 1 });
+      } else {
+        patchState(store, { selectedIndex: 0 });
       }
     },
-  }))
+  })),
 );

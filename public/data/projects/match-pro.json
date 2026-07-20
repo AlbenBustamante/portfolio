@@ -4,13 +4,11 @@
   "gallery": null,
   "category": "Back-End",
   "skills": ["Java", "Spring Boot", "MySQL"],
-  "lang": {
-    "en": {
-      "description": "Web application that allows users to bet for the result of a match and earn points in their account."
-    },
-    "es": {
-      "description": "Aplicación web que permite a los usuarios apostar por el resultado de un partido y ganar puntos en su cuenta."
-    }
+  "en": {
+    "description": "Web application that allows users to bet for the result of a match and earn points in their account."
+  },
+  "es": {
+    "description": "Aplicación web que permite a los usuarios apostar por el resultado de un partido y ganar puntos en su cuenta."
   },
   "sourceCode": "https://github.com/cristiangromero/matchprobackend",
   "liveDemo": "https://github.com/cristiangromero/matchprobackend",

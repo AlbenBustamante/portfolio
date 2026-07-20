@@ -4,13 +4,11 @@
   "gallery": ["1.jpeg"],
   "category": "Front-End",
   "skills": ["TypeScript", "Angular", "Tailwind CSS"],
-  "lang": {
-    "en": {
-      "description": "Designed a website and implemented a dependency to print little texts like quick notes or impromptu invoices."
-    },
-    "es": {
-      "description": "Designed a website and implemented a dependency to print little texts like quick notes or impromptu invoices."
-    }
+  "en": {
+    "description": "Designed a website and implemented a dependency to print little texts like quick notes or impromptu invoices."
+  },
+  "es": {
+    "description": "Diseñé un sitio web e implementé una dependencia para imprimir textos pequeños como notas rápidas o pequeñas facturas."
   },
   "sourceCode": "https://github.com/AlbenBustamante/text-printer",
   "liveDemo": "https://textprinter.vercel.app/home",

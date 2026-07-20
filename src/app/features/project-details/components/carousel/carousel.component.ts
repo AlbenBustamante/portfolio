@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { Store } from '../../store';
+import { ProjectDetailsStore } from '../../project-details.store';
 import { ArrowIconComponent } from '../arrow-icon/arrow-icon.component';
 import { NgClass } from '@angular/common';
 
@@ -10,5 +10,5 @@ import { NgClass } from '@angular/common';
   styleUrl: './carousel.component.css',
 })
 export class CarouselComponent {
-  readonly store = inject(Store);
+  readonly store = inject(ProjectDetailsStore);
 }
