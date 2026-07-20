@@ -1,4 +1,7 @@
-<app-home id="home" />
-<app-about-me id="about-me" />
-<app-projects id="projects" />
-<app-hire-me id="hire-me" />
+@if (store.loading()) {
+} @else {
+  <app-home id="home" />
+  <app-about-me id="about-me" />
+  <app-projects id="projects" />
+  <app-hire-me id="hire-me" />
+}

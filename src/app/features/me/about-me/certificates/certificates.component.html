@@ -1,5 +1,5 @@
 <section class="flex flex-col gap-7 w-full max-w-5xl mx-auto">
-  <app-subtitle headline="Certificates" />
+  <app-subtitle [headline]="lang?.title" />
   <ul class="flex items-center justify-center cursor-default">
     <li
       class="px-5 py-2 text-primary-100 rounded-l-3xl duration-100"
@@ -10,7 +10,7 @@
       "
       (click)="store.updateQuery('featured')"
     >
-      Featured
+      {{ lang?.featured }}
     </li>
     <li
       class="px-5 py-2 text-primary-100 rounded-r-3xl duration-100"
@@ -19,12 +19,12 @@
       "
       (click)="store.updateQuery('all')"
     >
-      Show All
+      {{ lang?.showAll }}
     </li>
   </ul>
   <ul class="flex flex-col gap-y-7">
     @for (certificate of store.sortedCertificates(); track $index) {
-    <app-certificate [certificate]="certificate" />
+      <app-certificate [certificate]="certificate" />
     }
   </ul>
 </section>

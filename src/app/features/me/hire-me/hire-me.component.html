@@ -1,10 +1,10 @@
 <app-container>
-  <app-title headline="Let's work together" />
+  <app-title [headline]="lang?.title" />
   <div class="grid gap-y-12 gap-x-7 lg:grid-cols-3">
-    <app-hire-me-card headline="My Contact Media">
+    <app-hire-me-card [headline]="lang?.media ?? ''">
       <app-social-media [axis]="socialMediaAxis()" />
     </app-hire-me-card>
-    <app-hire-me-card headline="Send me a message" class="lg:col-span-2">
+    <app-hire-me-card [headline]="lang?.message ?? ''" class="lg:col-span-2">
       <app-form />
     </app-hire-me-card>
   </div>

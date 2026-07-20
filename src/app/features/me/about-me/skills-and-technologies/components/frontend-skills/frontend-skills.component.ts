@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { SkillCardComponent } from '../skill-card/skill-card.component';
 import { SkillComponent } from '../skill/skill.component';
 import { HTMLIconComponent } from '../icons/html-icon/html-icon.component';
@@ -9,6 +9,7 @@ import { AngularIconComponent } from '../icons/angular-icon/angular-icon.compone
 import { TailwindIconComponent } from '../icons/tailwind-icon/tailwind-icon.component';
 import { BootstrapIconComponent } from '../icons/bootstrap-icon/bootstrap-icon.component';
 import { NgRxIconComponent } from '../icons/ngrx-icon/ngrx-icon.component';
+import { MeStore } from '@features/me/me.store';
 
 @Component({
   selector: 'app-frontend-skills',
@@ -27,4 +28,10 @@ import { NgRxIconComponent } from '../icons/ngrx-icon/ngrx-icon.component';
   templateUrl: './frontend-skills.component.html',
   styleUrl: './frontend-skills.component.css',
 })
-export class FrontendSkillsComponent {}
+export class FrontendSkillsComponent {
+  private readonly _store = inject(MeStore);
+
+  get title() {
+    return this._store.lang().skills?.frontend;
+  }
+}

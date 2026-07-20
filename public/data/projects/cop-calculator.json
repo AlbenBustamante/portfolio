@@ -4,13 +4,11 @@
   "gallery": ["1.png", "2.png"],
   "category": "Front-End",
   "skills": ["TypeScript", "Angular", "Tailwind CSS"],
-  "lang": {
-    "en": {
-      "description": "Designed a website that calculates totality based by denomination cash amount, useful for business with high cash flow in Colombia."
-    },
-    "es": {
-      "description": "Designed a website that calculates totality based by denomination cash amount, useful for business with high cash flow in Colombia."
-    }
+  "en": {
+    "description": "Designed a website that calculates totality based by denomination cash amount, useful for business with high cash flow in Colombia."
+  },
+  "es": {
+    "description": "Diseñé un sitio web que calcula una totalidad según la denominación del efectivo, útil para negocios con alto flujo de efectivo en Colombia."
   },
   "sourceCode": "https://github.com/AlbenBustamante/cop-calculator",
   "liveDemo": "https://cop-calculator.netlify.app/",

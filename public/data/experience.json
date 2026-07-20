@@ -1,23 +1,59 @@
 {
-  "lang": {
-    "en": [
-      {
+  "title": {
+    "en": "Experience",
+    "es": "Experiencia"
+  },
+  "items": [
+    {
+      "company": "Tenshi No Sekai",
+      "en": {
         "occupation": "Software Developer",
-        "company": "Servinet Computers",
-        "year": "2023 - 2025",
-        "description": "Developed a web-based system that improved cash flow and accounting of the banking correspondent, enabling efficient management of employees, cash registers, safes, and banking platforms, reducing wrong records and generating accurate earnings reports.",
-        "skills": [
-          "Java",
-          "Spring Boot",
-          "PostgreSQL",
-          "JWT",
-          "TypeScript",
-          "Angular",
-          "Tailwind CSS",
-          "Firebase Storage"
-        ]
-      }
-    ],
-    "es": []
-  }
+        "year": "April 2026 - Present",
+        "description": ""
+      },
+      "es": {
+        "occupation": "Desarrollador de Software",
+        "year": "Abril 2026 - Presente",
+        "description": ""
+      },
+      "skills": ["Angular", "Tailwind CSS", "Supabase", "NgRx", "Signals"]
+    },
+    {
+      "company": "Servinet Computers",
+      "en": {
+        "occupation": "FullStack Developer",
+        "year": "Oct. 2023 - Sep. 2025",
+        "description": "Developed a web-based system that improved cash flow and accounting of the banking correspondent, enabling efficient management of employees, cash registers, safes, and banking platforms, reducing wrong records and generating accurate earnings reports."
+      },
+      "es": {
+        "occupation": "Desarrollador Full-Stack",
+        "year": "Oct. 2023 - Sep. 2025",
+        "description": "Desarrollé un sistema web que mejoró el manejo de efectivo y contabilidad del corresponsal bancario, permitiendo el manejo efectivo de empleados, cajas registradoras, cajas fuertes, y plataformas bancarias, reduciendo errores de registro manual y generando reportes de ganancia acertados."
+      },
+      "skills": [
+        "Java",
+        "Spring Boot",
+        "PostgreSQL",
+        "JWT",
+        "TypeScript",
+        "Angular",
+        "Tailwind CSS",
+        "Firebase Storage"
+      ]
+    },
+    {
+      "company": "Confidential",
+      "en": {
+        "occupation": "Mobile Developer",
+        "year": "June - Aug. 2024",
+        "description": ""
+      },
+      "es": {
+        "occupation": "Desarrollador Móvil",
+        "year": "Junio - Agosto 2024",
+        "description": ""
+      },
+      "skills": ["Dart", "Flutter", "Firebase"]
+    }
+  ]
 }

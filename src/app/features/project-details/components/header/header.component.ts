@@ -1,10 +1,11 @@
-import { Component, input } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 import { TitleComponent } from '../title/title.component';
 import { OpenLiveDemoComponent } from '../open-live-demo/open-live-demo.component';
 import { SourceCodeButtonComponent } from '../source-code-button/source-code-button.component';
-import { ProjectDetailModel } from '@core/models/project-detail.model';
+import { ProjectDetailItemModel } from '@core/models/project-detail.model';
 import { HeaderSectionComponent } from '../header-section/header-section.component';
 import { CarouselComponent } from '../carousel/carousel.component';
+import { ProjectDetailsStore } from '@features/project-details/project-details.store';
 
 @Component({
   selector: 'app-header',
@@ -19,6 +20,7 @@ import { CarouselComponent } from '../carousel/carousel.component';
   styleUrl: './header.component.css',
 })
 export class HeaderComponent {
-  readonly project = input.required<ProjectDetailModel | null>();
+  readonly store = inject(ProjectDetailsStore);
+  readonly project = input.required<ProjectDetailItemModel | null>();
   readonly gallery = input.required<string[]>();
 }

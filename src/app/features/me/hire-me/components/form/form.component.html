@@ -1,34 +1,30 @@
 <form [formGroup]="form" (ngSubmit)="onSubmit()" class="flex flex-col gap-6">
   <app-input
     name="name"
-    label="Full Name"
-    placeholder="E.g: John Doe"
+    [item]="formLang?.fullName"
     autocomplete="name"
     [control]="form.controls.name"
   />
   <app-input
     name="email"
     type="email"
-    label="Email"
-    placeholder="yourmail@example.com"
+    [item]="formLang?.email"
     autocomplete="email"
     [control]="form.controls.email"
   />
   <app-input
     name="subject"
-    label="Subject"
-    placeholder="Type your subject here"
+    [item]="formLang?.subject"
     [control]="form.controls.subject"
   />
   <app-text-area
     name="message"
-    label="Message"
-    placeholder="Please, write your message here"
+    [item]="formLang?.message"
     [control]="form.controls.message"
   />
   <div class="w-full">
     <app-button
-      [label]="store.loading() ? 'Sending message...' : 'Send message'"
+      [label]="store.loading() ? lang?.ctaSending : lang?.cta"
       color="accent"
       [disabled]="store.loading()"
       [fluid]="true"

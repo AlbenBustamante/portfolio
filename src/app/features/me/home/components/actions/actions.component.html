@@ -2,14 +2,14 @@
   class="flex items-center justify-center gap-x-5 sm:gap-x-7 md:gap-x-10 lg:gap-x-12"
 >
   <app-button
-    label="View CV"
+    [label]="viewCV() ?? ''"
     variant="outlined"
     rounded="3xl"
     href="/docs/CV_Alben_Bustamante_Desarrollador_de_Software_2026_ES.pdf"
     target="_blank"
   />
   <app-button
-    label="About Me"
+    [label]="aboutMe() ?? ''"
     color="accent"
     rounded="3xl"
     fragment="about-me"

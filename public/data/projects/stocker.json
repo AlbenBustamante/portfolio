@@ -4,13 +4,11 @@
   "gallery": ["1.jpeg"],
   "category": "Back-End",
   "skills": ["JavaScript", "Express.js", "Sequelize.js", "Node.js", "MySQL"],
-  "lang": {
-    "en": {
-      "description": "Web-based system oriented to little companies so that they can manage efficiently their inventory."
-    },
-    "es": {
-      "description": "Sistema web orientado a pequeñas empresas para que puedan gestionar eficientemente su inventario."
-    }
+  "en": {
+    "description": "Web-based system oriented to little companies so that they can manage efficiently their inventory."
+  },
+  "es": {
+    "description": "Sistema web orientado a pequeñas empresas para que puedan gestionar eficientemente su inventario."
   },
   "sourceCode": "https://github.com/No-Country/c10-35-t-MERN",
   "liveDemo": "https://c10-35-t-mern.vercel.app/",

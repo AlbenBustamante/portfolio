@@ -1,5 +1,6 @@
 import { DatePipe } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { AppStore } from 'app/app.store';
 
 @Component({
   selector: 'app-footer-copyright',
@@ -8,5 +9,6 @@ import { Component } from '@angular/core';
   styleUrl: './footer-copyright.component.css',
 })
 export class FooterCopyrightComponent {
+  readonly store = inject(AppStore);
   readonly today = new Date();
 }

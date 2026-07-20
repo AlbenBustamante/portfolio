@@ -1,6 +1,7 @@
-import { Component, input } from '@angular/core';
-import { Experience } from '../../models/experience.model';
+import { Component, inject, input } from '@angular/core';
+import { ExperienceItemModel } from '@core/models/experience.model';
 import { BulletContentComponent } from '@features/me/about-me/components/bullet-content/bullet-content.component';
+import { AppStore } from 'app/app.store';
 
 @Component({
   selector: 'app-experience-item',
@@ -9,5 +10,11 @@ import { BulletContentComponent } from '@features/me/about-me/components/bullet-
   styleUrl: './experience-item.component.css',
 })
 export class ExperienceItemComponent {
-  readonly experience = input.required<Experience>();
+  private readonly _appStore = inject(AppStore);
+  readonly border = input.required<boolean>();
+  readonly experience = input<ExperienceItemModel>();
+
+  get lang() {
+    return this.experience()?.[this._appStore.lang()];
+  }
 }

@@ -1,11 +1,13 @@
 <nav class="text-center flex flex-col gap-y-3">
   <p class="text-primary-100 text-lg">
-    <b>Explore</b>
+    <b>{{ store.footer()?.[store.lang()]?.explore }}</b>
   </p>
   <ul class="text-primary-300 flex flex-col gap-y-2.5">
-    <app-footer-navigation-link route="/home" headline="Home" />
-    <app-footer-navigation-link route="/about-me" headline="About" />
-    <app-footer-navigation-link route="/projects" headline="Projects" />
-    <app-footer-navigation-link route="/hire-me" headline="Hire" />
+    @for (item of store.navbar(); track $index) {
+      <app-footer-navigation-link
+        [route]="item.route"
+        [headline]="item[store.lang()]"
+      />
+    }
   </ul>
 </nav>

@@ -1,0 +1,22 @@
+[
+  {
+    "route": "",
+    "en": "Home",
+    "es": "Inicio"
+  },
+  {
+    "route": "about-me",
+    "en": "About",
+    "es": "Acerca"
+  },
+  {
+    "route": "projects",
+    "en": "Projects",
+    "es": "Proyectos"
+  },
+  {
+    "route": "hire-me",
+    "en": "Hire",
+    "es": "Contratar"
+  }
+]

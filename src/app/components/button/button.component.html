@@ -5,7 +5,7 @@
     class="flex items-center justify-center gap-x-2.5 px-6 text-sm sm:text-base cursor-pointer duration-500"
     [ngClass]="design"
   >
-    {{ label() }}
+    {{ label() ?? "" }}
   </a>
 } @else if (fragment()) {
   <a
@@ -15,7 +15,7 @@
     class="flex items-center justify-center gap-x-2.5 px-6 text-sm sm:text-base cursor-pointer duration-500"
     [ngClass]="design"
   >
-    {{ label() }}
+    {{ label() ?? "" }}
   </a>
 } @else {
   <button
@@ -25,7 +25,7 @@
     [ngClass]="design"
     (click)="disabled() ? undefined : onClick.emit()"
   >
-    {{ label() }}
+    {{ label() ?? "" }}
     <ng-content />
   </button>
 }
