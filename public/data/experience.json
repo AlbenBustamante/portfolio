@@ -9,12 +9,12 @@
       "en": {
         "occupation": "Software Developer",
         "year": "April 2026 - Present",
-        "description": ""
+        "description": "End-to-end design and development of an e-commerce platform, featuring an optimized customer-facing interface and a robust administrative dashboard. Implemented scalable modules for inventory management, product categorization, dynamic order processing, and system configurations."
       },
       "es": {
         "occupation": "Desarrollador de Software",
         "year": "Abril 2026 - Presente",
-        "description": ""
+        "description": "Diseño y desarrollo integral (End-to-End) de una plataforma de comercio electrónico que incluye una interfaz optimizada de cara al cliente y un panel de administración robusto. Implementé módulos escalables para la gestión de inventario, categorización de productos, procesamiento dinámico de órdenes y configuraciones del sistema."
       },
       "skills": ["Angular", "Tailwind CSS", "Supabase", "NgRx", "Signals"]
     },
@@ -23,12 +23,12 @@
       "en": {
         "occupation": "FullStack Developer",
         "year": "Oct. 2023 - Sep. 2025",
-        "description": "Developed a web-based system that improved cash flow and accounting of the banking correspondent, enabling efficient management of employees, cash registers, safes, and banking platforms, reducing wrong records and generating accurate earnings reports."
+        "description": "Developed a mission-critical web system for internal financial management, controlling transactions, expenses, and monetary transfers across multiple safes, supporting a flow of over 500 simultaneous daily transactions. Designed an advanced reporting and automated data export system, reducing manual data entry errors by 20%."
       },
       "es": {
         "occupation": "Desarrollador Full-Stack",
         "year": "Oct. 2023 - Sep. 2025",
-        "description": "Desarrollé un sistema web que mejoró el manejo de efectivo y contabilidad del corresponsal bancario, permitiendo el manejo efectivo de empleados, cajas registradoras, cajas fuertes, y plataformas bancarias, reduciendo errores de registro manual y generando reportes de ganancia acertados."
+        "description": "Desarrollé un sistema web crítico para la gestión financiera interna, controlando transacciones, gastos y transferencias monetarias entre múltiples cajas fuertes con un flujo soportado de más de 500 transacciones diarias en simultáneo. Diseñé un sistema avanzado de reportes y exportación de datos automatizada, reduciendo los errores de digitación manual en un 20%."
       },
       "skills": [
         "Java",
@@ -38,7 +38,8 @@
         "TypeScript",
         "Angular",
         "Tailwind CSS",
-        "Firebase Storage"
+        "Firebase Storage",
+        "Docker"
       ]
     },
     {
@@ -46,12 +47,12 @@
       "en": {
         "occupation": "Mobile Developer",
         "year": "June - Aug. 2024",
-        "description": ""
+        "description": "Designed and developed a native mobile-first social media application from scratch, implementing real-time geolocation and user proximity filtering. Programmed complex features such as an interactive chat system, a multimedia publication feed, and coordinated weekly iterations directly with the client."
       },
       "es": {
         "occupation": "Desarrollador Móvil",
         "year": "Junio - Agosto 2024",
-        "description": ""
+        "description": "Diseñé y desarrollé desde cero una aplicación móvil nativa de red social mobile-first, implementando geolocalización y filtros de cercanía por usuarios en tiempo real. Programé funciones complejas como un sistema de chat interactivo, feed de publicaciones multimedia y coordiné iteraciones semanales directamente con el cliente."
       },
       "skills": ["Dart", "Flutter", "Firebase"]
     }

@@ -4,4 +4,12 @@
   [headline]="education().degree"
   [subheadline]="education().institute"
   [year]="education().year"
-/>
+>
+  <ul class="list-disc pl-5">
+    @for (item of education().description; track $index) {
+      <li class="text-primary-200 text-sm sm:text-base">
+        {{ item }}
+      </li>
+    }
+  </ul>
+</app-bullet-content>

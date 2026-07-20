@@ -5,12 +5,17 @@
       {
         "institute": "Bicentenary University of Aragua",
         "degree": "Systems Engineering",
-        "year": "Jan. - Sep. 2018 / Jan. 2026 - Present"
+        "year": "January 2026 - Present (Expected: April 2029)",
+        "description": [
+          "Currently in the 4th trimester (equivalent to the second academic year) with 19 out of 71 curriculum credits approved.",
+          "Academic track originally started in 2018, paused due to international migration, and formally reactivated in 2026."
+        ]
       },
       {
         "institute": "Antonio Jose De Sucre",
         "degree": "Bachelor of Science",
-        "year": "2013 - 2017"
+        "year": "2013 - 2017",
+        "description": ["Graduated in Sciences. Cagua, Aragua State."]
       }
     ]
   },
@@ -20,12 +25,17 @@
       {
         "institute": "Universidad Bicentenaria de Aragua",
         "degree": "Ingeniería de Sistemas",
-        "year": "Enero - Septiembre 2018 / Enero 2026 - Presente"
+        "year": "Enero 2026 - Presente (Expectativa: Abril 2029)",
+        "description": [
+          "Cursando actualmente el 4° trimestre (equivalente al segundo año académico) con 19 de 71 materias aprobadas.",
+          "Trayectoria académica iniciada originalmente en 2018, pausada por motivos de migración internacional y reactivada formalmente en 2026."
+        ]
       },
       {
         "institute": "Antonio Jose De Sucre",
         "degree": "Bachiller en Ciencias",
-        "year": "2013 - 2017"
+        "year": "2013 - 2017",
+        "description": ["Graduado en Ciencias. Cagua, Estado Aragua."]
       }
     ]
   }
