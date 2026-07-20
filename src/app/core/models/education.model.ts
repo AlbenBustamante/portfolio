@@ -2,6 +2,7 @@ export interface EducationItemModel {
   institute: string;
   degree: string;
   year: string;
+  description: string[];
 }
 
 interface EducationData {
