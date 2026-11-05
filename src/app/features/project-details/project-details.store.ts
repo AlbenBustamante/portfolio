@@ -18,6 +18,7 @@ type State = {
   project: ProjectDetailItemModel | null;
   projectDetails: ProjectDetailModel | undefined;
   selectedIndex: number;
+  prevSelectedIndex: number;
   loading: boolean;
 };
 
@@ -25,11 +26,11 @@ const initialState: State = {
   project: null,
   projectDetails: undefined,
   selectedIndex: 0,
+  prevSelectedIndex: 0,
   loading: false,
 };
 
 export const ProjectDetailsStore = signalStore(
-  { providedIn: 'root' },
   withState(initialState),
   withComputed((store, appStore = inject(AppStore)) => ({
     lang: computed(() => {
@@ -54,7 +55,19 @@ export const ProjectDetailsStore = signalStore(
         ];
       }
 
-      return gallery.map((img) => `/images/projects/${id}-${img}`);
+      const allGallery = gallery.map((img) => `/images/projects/${id}-${img}`);
+      const prevIndex = store.prevSelectedIndex();
+      const index = store.selectedIndex();
+
+      if (index === 0 || index === 1) {
+        return allGallery.slice(0, 3);
+      }
+
+      if (index > prevIndex) {
+        console.log((index + 1) % gallery.length);
+      }
+
+      return allGallery;
     }),
     isFirst: computed(() => {
       return store.selectedIndex() === 0;
@@ -87,10 +100,14 @@ export const ProjectDetailsStore = signalStore(
       });
     },
     setSelectedIndex: (index: number) => {
-      patchState(store, { selectedIndex: index });
+      patchState(store, {
+        prevSelectedIndex: store.selectedIndex(),
+        selectedIndex: index,
+      });
     },
     setPrevious: () => {
       const selectedIndex = store.selectedIndex();
+      patchState(store, { prevSelectedIndex: selectedIndex });
 
       if (selectedIndex > 0) {
         patchState(store, { selectedIndex: selectedIndex - 1 });
@@ -100,6 +117,7 @@ export const ProjectDetailsStore = signalStore(
     },
     setNext: () => {
       const selectedIndex = store.selectedIndex();
+      patchState(store, { prevSelectedIndex: selectedIndex });
 
       if (selectedIndex < store.gallery().length - 1) {
         patchState(store, { selectedIndex: selectedIndex + 1 });
