@@ -1,9 +1,9 @@
 <section class="flex flex-col gap-7">
-  <app-subtitle headline="Education" />
-  @for (item of store.educations(); track $index; let i = $index) {
-  <app-education-item
-    [education]="item"
-    [border]="i !== store.educations().length - 1"
-  />
+  <app-subtitle [headline]="lang?.title" />
+  @for (item of items; track $index; let i = $index) {
+    <app-education-item
+      [education]="item"
+      [border]="i !== (items?.length ?? 0) - 1"
+    />
   }
 </section>

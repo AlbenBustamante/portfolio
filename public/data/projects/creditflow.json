@@ -1,16 +1,27 @@
 {
   "id": "creditflow",
   "title": "CreditFlow",
-  "gallery": ["1.jpeg"],
+  "gallery": [
+    "1.png",
+    "2.png",
+    "3.png",
+    "4.png",
+    "5.png",
+    "6.png",
+    "7.png",
+    "8.png",
+    "9.png",
+    "10.png",
+    "11.png",
+    "12.png"
+  ],
   "category": "Front-End",
   "skills": ["TypeScript", "Angular", "PrimeNG", "Tailwind CSS", "NgRx"],
-  "lang": {
-    "en": {
-      "description": "Online platform about credit applications oriented to PYMEs, where I developed the frontend for each administrative area."
-    },
-    "es": {
-      "description": "Plataforma en línea de solicitudes de créditos orientada a PYMEs, donde desarrollé el frontend de cada área administrativa."
-    }
+  "en": {
+    "description": "Online platform about credit applications oriented to PYMEs, where I developed the frontend for each administrative area."
+  },
+  "es": {
+    "description": "Plataforma en línea de solicitudes de créditos orientada a PYMEs, donde desarrollé el frontend de cada área administrativa."
   },
   "sourceCode": "https://github.com/Simulaciones-Laborales/Equipo-9-Weapp/tree/main",
   "liveDemo": "https://team-nine-creditflow.vercel.app/",

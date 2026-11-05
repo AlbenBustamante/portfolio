@@ -8,5 +8,5 @@ import { CardComponent } from '@components/card/card.component';
   styleUrl: './skill-card.component.css',
 })
 export class SkillCardComponent {
-  readonly headline = input.required<string>();
+  readonly headline = input<string>();
 }

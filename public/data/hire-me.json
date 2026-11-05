@@ -1,0 +1,52 @@
+{
+  "en": {
+    "title": "Let's work together",
+    "media": "Connect with me",
+    "message": "Send me a message",
+    "form": {
+      "fullName": {
+        "label": "Full Name",
+        "placeholder": "E.g: John Doe"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "yourmail@example.com"
+      },
+      "subject": {
+        "label": "Subject",
+        "placeholder": "Type your subject here"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Please, write your message here"
+      }
+    },
+    "cta": "Send message",
+    "ctaSending": "Sending..."
+  },
+  "es": {
+    "title": "Trabajemos juntos",
+    "media": "Conecta conmigo",
+    "message": "Envíame un mensaje",
+    "form": {
+      "fullName": {
+        "label": "Nombre Completo",
+        "placeholder": "Ej: John Doe"
+      },
+      "email": {
+        "label": "Correo electrónico",
+        "placeholder": "tucorreo@ejemplo.com"
+      },
+      "subject": {
+        "label": "Asunto",
+        "placeholder": "Escribe tu asunto aquí"
+      },
+      "message": {
+        "label": "Mensaje",
+        "placeholder": "Por favor, escribe tu mensaje aquí"
+      }
+    },
+    "cta": "Enviar mensaje",
+    "ctaSending": "Enviando..."
+  }
+}

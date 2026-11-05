@@ -1,25 +1,17 @@
-import {
-  ApplicationConfig,
-  importProvidersFrom,
-  provideZoneChangeDetection,
-} from '@angular/core';
+import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
 import {
   PreloadAllModules,
   provideRouter,
   TitleStrategy,
   withComponentInputBinding,
+  withInMemoryScrolling,
   withPreloading,
 } from '@angular/router';
 
 import { routes } from './app.routes';
 
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { HttpClient, provideHttpClient } from '@angular/common/http';
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { provideHttpClient } from '@angular/common/http';
 import { AppTitleStrategyService } from '@core/strategies/app-title-strategy.service';
-
-const httpLoaderFactory = (http: HttpClient) =>
-  new TranslateHttpLoader(http, './i18n/', '.json');
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -27,18 +19,13 @@ export const appConfig: ApplicationConfig = {
     provideRouter(
       routes,
       withPreloading(PreloadAllModules),
-      withComponentInputBinding()
+      withComponentInputBinding(),
+      withInMemoryScrolling({
+        anchorScrolling: 'enabled',
+        scrollPositionRestoration: 'enabled',
+      }),
     ),
     provideHttpClient(),
-    importProvidersFrom([
-      TranslateModule.forRoot({
-        loader: {
-          provide: TranslateLoader,
-          useFactory: httpLoaderFactory,
-          deps: [HttpClient],
-        },
-      }),
-    ]),
     { provide: TitleStrategy, useClass: AppTitleStrategyService },
   ],
 };

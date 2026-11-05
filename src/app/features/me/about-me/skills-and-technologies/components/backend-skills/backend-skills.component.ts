@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { SkillCardComponent } from '../skill-card/skill-card.component';
 import { SkillComponent } from '../skill/skill.component';
 import { JavaIconComponent } from '../icons/java-icon/java-icon.component';
@@ -8,6 +8,7 @@ import { PostgreSQLIconComponent } from '../icons/postgresql-icon/postgresql-ico
 import { MySQLIconComponent } from '../icons/mysql-icon/mysql-icon.component';
 import { MongoDBIconComponent } from '../icons/mongodb-icon/mongodb-icon.component';
 import { FirestoreIconComponent } from '../icons/firestore-icon/firestore-icon.component';
+import { MeStore } from '@features/me/me.store';
 
 @Component({
   selector: 'app-backend-skills',
@@ -25,4 +26,10 @@ import { FirestoreIconComponent } from '../icons/firestore-icon/firestore-icon.c
   templateUrl: './backend-skills.component.html',
   styleUrl: './backend-skills.component.css',
 })
-export class BackendSkillsComponent {}
+export class BackendSkillsComponent {
+  private readonly _store = inject(MeStore);
+
+  get title() {
+    return this._store.lang().skills?.backend;
+  }
+}

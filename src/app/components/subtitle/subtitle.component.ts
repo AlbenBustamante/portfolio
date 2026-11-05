@@ -7,5 +7,5 @@ import { Component, input } from '@angular/core';
   styleUrl: './subtitle.component.css',
 })
 export class SubtitleComponent {
-  readonly headline = input.required<string>();
+  readonly headline = input<string>();
 }

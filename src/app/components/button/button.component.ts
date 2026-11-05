@@ -1,16 +1,17 @@
 import { NgClass } from '@angular/common';
 import { Component, input, output } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-button',
-  imports: [NgClass],
+  imports: [NgClass, RouterLink],
   templateUrl: './button.component.html',
   styleUrl: './button.component.css',
 })
 export class ButtonComponent {
   readonly onClick = output<void>();
 
-  readonly label = input.required<string>();
+  readonly label = input<string>();
   readonly type = input<'button' | 'submit'>('button');
   readonly color = input<'primary' | 'accent'>('primary');
   readonly variant = input<'normal' | 'outlined'>('normal');
@@ -18,6 +19,9 @@ export class ButtonComponent {
   readonly fluid = input<boolean>(false);
   readonly rounded = input<'2xl' | '3xl'>('2xl');
   readonly verticalPadding = input<'py-2' | 'py-1.5'>('py-2');
+  readonly target = input<'_self' | '_blank'>('_self');
+  readonly fragment = input<string>();
+  readonly href = input<string>();
 
   private _designMap() {
     return {

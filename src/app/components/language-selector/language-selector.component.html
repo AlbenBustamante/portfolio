@@ -1,0 +1,27 @@
+<div class="h-full flex items-center">
+  <div class="relative h-1/2 flex items-center">
+    <button
+      class="language h-full hover:bg-primary-800 rounded-xl duration-300 cursor-pointer font-semibold"
+      [ngClass]="{ 'bg-primary-800': showLanguages() }"
+      (click)="showLanguages.set(!showLanguages())"
+    >
+      {{ flag(store.selectedLanguage()!) }}
+      <span>{{ label(store.selectedLanguage()!) }}</span>
+    </button>
+    @if (showLanguages()) {
+      <ul
+        class="absolute bg-primary-800 duration-500 h-[calc(100%*2)] rounded-xl"
+        [ngClass]="{ 'top-10': !adjust(), 'top-8': adjust() }"
+      >
+        @for (item of languages; track $index) {
+          <li
+            class="language h-1/2 hover:bg-accent-700 cursor-default rounded-xl"
+            (click)="onSelect(item)"
+          >
+            {{ flag(item) }} <span>{{ label(item) }}</span>
+          </li>
+        }
+      </ul>
+    }
+  </div>
+</div>

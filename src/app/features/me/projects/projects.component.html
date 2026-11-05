@@ -1,6 +1,6 @@
 <app-container>
   <header class="flex flex-col gap-5">
-    <app-title headline="Projects" />
+    <app-title [headline]="lang?.title" />
     <!--p class="text-lg sm:text-xl text-primary-300">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ex
       architecto perferendis eveniet id. Accusamus quod repellat deleniti
@@ -9,12 +9,15 @@
     </p-->
   </header>
   <app-projects-section
-    headline="Featured Work"
+    [headline]="lang?.featured"
     [projects]="store.featured()"
   />
   <app-projects-section
-    headline="Collaborations"
+    [headline]="lang?.collaborations"
     [projects]="store.collaboration()"
   />
-  <app-projects-section headline="Experiments" [projects]="store.small()" />
+  <app-projects-section
+    [headline]="lang?.experiments"
+    [projects]="store.small()"
+  />
 </app-container>

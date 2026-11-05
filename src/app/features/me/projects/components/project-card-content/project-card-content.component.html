@@ -10,12 +10,12 @@
     <p
       class="py-0.5 px-2 sm:px-3 text-xs sm:text-sm rounded-xl cursor-default"
       [ngClass]="{
-          'bg-green-900 text-green-50': status() === 'ONLINE',
-          'bg-blue-900 text-blue-50': status() === 'COMPLETED',
-          'bg-yellow-900 text-yellow-50': status() === 'IN_PROGRESS',
-        }"
+        'bg-green-900 text-green-50': status() === 'ONLINE',
+        'bg-blue-900 text-blue-50': status() === 'COMPLETED',
+        'bg-yellow-900 text-yellow-50': status() === 'IN_PROGRESS',
+      }"
     >
-      {{ status() | projectStatus }}
+      {{ statusLabel() }}
     </p>
     <p class="text-accent-500 text-center text-pretty text-sm sm:text-base">
       {{ category() }}
@@ -25,11 +25,11 @@
     class="text-primary-300 flex items-center justify-around text-xs lg:text-sm py-2.5 border-t border-primary-600 w-full"
   >
     @for (skill of skills(); track $index; let i = $index) {
-    <li
-      class="py-1 px-2 sm:px-2.5 bg-primary-700 inset-ring-2 inset-ring-primary-700 hover:inset-ring-primary-600 duration-200 rounded-xl"
-    >
-      {{ skill }}
-    </li>
+      <li
+        class="py-1 px-2 sm:px-2.5 bg-primary-700 inset-ring-2 inset-ring-primary-700 hover:inset-ring-primary-600 duration-200 rounded-xl"
+      >
+        {{ skill }}
+      </li>
     }
   </ul>
 </div>

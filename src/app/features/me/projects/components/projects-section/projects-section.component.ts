@@ -1,8 +1,8 @@
 import { Component, input } from '@angular/core';
 import { SubtitleComponent } from '@components/subtitle/subtitle.component';
-import { Project } from '../../models/project.model';
 import { ProjectCardComponent } from '../project-card/project-card.component';
 import { RouterLink } from '@angular/router';
+import { ProjectItemModel } from '@core/models/project.model';
 
 @Component({
   selector: 'app-projects-section',
@@ -11,6 +11,6 @@ import { RouterLink } from '@angular/router';
   styleUrl: './projects-section.component.css',
 })
 export class ProjectsSectionComponent {
-  readonly headline = input.required<string>();
-  readonly projects = input.required<Project[]>();
+  readonly headline = input<string>();
+  readonly projects = input.required<ProjectItemModel[]>();
 }

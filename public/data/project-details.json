@@ -1,0 +1,16 @@
+{
+  "en": {
+    "return": "Return to Projects",
+    "description": "Description",
+    "technologies": "Technologies",
+    "demo": "Live demo",
+    "source": "Source code"
+  },
+  "es": {
+    "return": "Volver a Proyectos",
+    "description": "Descripción",
+    "technologies": "Tecnologías",
+    "demo": "Ver sitio web",
+    "source": "Código fuente"
+  }
+}

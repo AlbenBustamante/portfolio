@@ -59,3 +59,15 @@
 body {
   @apply font-default text-primary-300 bg-primary-900;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: --spacing(2.5);
+  width: 4.75rem;
+}

@@ -3,11 +3,12 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./features/me/me.routes'),
+    loadComponent: () => import('@features/me/me.component'),
   },
   {
-    path: 'old',
-    loadChildren: () => import('./features/old/old.routes'),
+    path: 'project/:id',
+    loadComponent: () =>
+      import('@features/project-details/project-details.component'),
   },
   {
     path: '**',

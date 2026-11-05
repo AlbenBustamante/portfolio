@@ -4,13 +4,11 @@
   "gallery": ["1.jpeg"],
   "category": "Front-End",
   "skills": ["TypeScript", "Angular", "Tailwind CSS"],
-  "lang": {
-    "en": {
-      "description": "Web app for people interested in taking care of the environment, linking their recycling with entities or people and get points."
-    },
-    "es": {
-      "description": "Aplicación web para personas interesadas en cuidar al medio ambiente, vinculando sus reciclajes con entidades o personas y recibir puntos."
-    }
+  "en": {
+    "description": "Web app for people interested in taking care of the environment, linking their recycling with entities or people and get points."
+  },
+  "es": {
+    "description": "Aplicación web para personas interesadas en cuidar al medio ambiente, vinculando sus reciclajes con entidades o personas y recibir puntos."
   },
   "sourceCode": "https://github.com/No-Country/s13-10-m-java",
   "liveDemo": "https://site-ecoapp.netlify.app/home",

@@ -1,90 +1,192 @@
-[
-  {
-    "title": "B2 English",
-    "date": "2025",
-    "institute": "EF SET",
-    "url": "https://cert.efset.org/es/H7FWG1",
-    "imageUrl": "images/certificates/efset_english.png",
-    "featured": true
+{
+  "en": {
+    "title": "Certificates",
+    "featured": "Featured",
+    "showAll": "Show All",
+    "items": [
+      {
+        "title": "B2 English",
+        "date": "2025",
+        "institute": "EF SET",
+        "url": "https://cert.efset.org/es/H7FWG1",
+        "imageUrl": "images/certificates/efset_english.png",
+        "featured": true
+      },
+      {
+        "title": "Data Structures and Algorithms",
+        "date": "2025",
+        "institute": "Coursera / Amazon",
+        "url": "https://coursera.org/share/107cd5f0ac4a436485dd6bd12a9e0569",
+        "imageUrl": "images/certificates/coursera_amazon_java_algorithms.jpeg",
+        "featured": false
+      },
+      {
+        "title": "Programming with Java",
+        "date": "2025",
+        "institute": "Coursera / Amazon",
+        "url": "https://coursera.org/share/c7396b9bf99db47d2fde9013b46c1146",
+        "imageUrl": "images/certificates/coursera_amazon_java_programming.jpeg",
+        "featured": false
+      },
+      {
+        "title": "Introduction to Software Development",
+        "date": "2025",
+        "institute": "Coursera / Amazon",
+        "url": "https://coursera.org/share/8b805adacff148d322f31d757214ec06",
+        "imageUrl": "images/certificates/coursera_amazon_java_introduction.jpeg",
+        "featured": false
+      },
+      {
+        "title": "Methodology of Computing Systems Programming",
+        "date": "2025",
+        "institute": "SENA",
+        "url": "https://certificados.sena.edu.co/CertificadoDigital/com.sena.consultacer",
+        "imageUrl": "images/certificates/sena_introduction.jpg",
+        "featured": false
+      },
+      {
+        "title": "Angular 17: Web Applications Development",
+        "date": "2024",
+        "institute": "Platzi",
+        "url": "https://platzi.com/p/albenbustamante/curso/8352-course/diploma/detalle/",
+        "imageUrl": "images/certificates/platzi_angular17.png",
+        "featured": true
+      },
+      {
+        "title": "Responsive Web Design",
+        "date": "2023",
+        "institute": "freeCodeCamp",
+        "url": "https://www.freecodecamp.org/certification/albenbustamante/responsive-web-design",
+        "imageUrl": "images/certificates/freeCodeCamp_responsivewebdesign.png",
+        "featured": true
+      },
+      {
+        "title": "Java SE: SQL & Databases",
+        "date": "2024",
+        "institute": "Platzi",
+        "url": "https://platzi.com/p/albenbustamante/curso/8048-course/diploma/detalle/",
+        "imageUrl": "images/certificates/platzi_javasesql.png",
+        "featured": false
+      },
+      {
+        "title": "Git & GitHub Professional Course",
+        "date": "2021",
+        "institute": "Platzi",
+        "url": "https://platzi.com/p/albenbustamante/curso/1557-course/diploma/detalle/",
+        "imageUrl": "images/certificates/platzi_git.png",
+        "featured": true
+      },
+      {
+        "title": "Java SE Object-Oriented",
+        "date": "2021",
+        "institute": "Platzi",
+        "url": "https://platzi.com/p/albenbustamante/curso/1629-course/diploma/detalle/",
+        "imageUrl": "images/certificates/platzi_javaseoop.png",
+        "featured": false
+      },
+      {
+        "title": "Introduction to Java SE",
+        "date": "2021",
+        "institute": "Platzi",
+        "url": "https://platzi.com/p/albenbustamante/curso/1631-course/diploma/detalle/",
+        "imageUrl": "images/certificates/platzi_javase.png",
+        "featured": false
+      }
+    ]
   },
-  {
-    "title": "Data Structures and Algorithms",
-    "date": "2025",
-    "institute": "Coursera / Amazon",
-    "url": "https://coursera.org/share/107cd5f0ac4a436485dd6bd12a9e0569",
-    "imageUrl": "images/certificates/coursera_amazon_java_algorithms.jpeg",
-    "featured": false
-  },
-  {
-    "title": "Programming with Java",
-    "date": "2025",
-    "institute": "Coursera / Amazon",
-    "url": "https://coursera.org/share/c7396b9bf99db47d2fde9013b46c1146",
-    "imageUrl": "images/certificates/coursera_amazon_java_programming.jpeg",
-    "featured": false
-  },
-  {
-    "title": "Introduction to Software Development",
-    "date": "2025",
-    "institute": "Coursera / Amazon",
-    "url": "https://coursera.org/share/8b805adacff148d322f31d757214ec06",
-    "imageUrl": "images/certificates/coursera_amazon_java_introduction.jpeg",
-    "featured": false
-  },
-  {
-    "title": "Methodology of Computing Systems Programming",
-    "date": "2025",
-    "institute": "SENA",
-    "url": "https://certificados.sena.edu.co/CertificadoDigital/com.sena.consultacer",
-    "imageUrl": "images/certificates/sena_introduction.jpg",
-    "featured": false
-  },
-  {
-    "title": "Angular Course: Web Applications Development",
-    "date": "2024",
-    "institute": "Platzi",
-    "url": "https://platzi.com/p/albenbustamante/curso/8352-course/diploma/detalle/",
-    "imageUrl": "images/certificates/platzi_angular17.png",
-    "featured": true
-  },
-  {
-    "title": "Responsive Web Design",
-    "date": "2023",
-    "institute": "freeCodeCamp",
-    "url": "https://www.freecodecamp.org/certification/albenbustamante/responsive-web-design",
-    "imageUrl": "images/certificates/freeCodeCamp_responsivewebdesign.png",
-    "featured": true
-  },
-  {
-    "title": "Java SE: SQL & Databases",
-    "date": "2024",
-    "institute": "Platzi",
-    "url": "https://platzi.com/p/albenbustamante/curso/8048-course/diploma/detalle/",
-    "imageUrl": "images/certificates/platzi_javasesql.png",
-    "featured": false
-  },
-  {
-    "title": "Git & GitHub Professional Course",
-    "date": "2021",
-    "institute": "Platzi",
-    "url": "https://platzi.com/p/albenbustamante/curso/1557-course/diploma/detalle/",
-    "imageUrl": "images/certificates/platzi_git.png",
-    "featured": true
-  },
-  {
-    "title": "Java SE Course Object-Oriented",
-    "date": "2021",
-    "institute": "Platzi",
-    "url": "https://platzi.com/p/albenbustamante/curso/1629-course/diploma/detalle/",
-    "imageUrl": "images/certificates/platzi_javaseoop.png",
-    "featured": false
-  },
-  {
-    "title": "Introduction Course to Java",
-    "date": "2021",
-    "institute": "Platzi",
-    "url": "https://platzi.com/p/albenbustamante/curso/1631-course/diploma/detalle/",
-    "imageUrl": "images/certificates/platzi_javase.png",
-    "featured": false
+  "es": {
+    "title": "Certificados",
+    "featured": "Destacados",
+    "showAll": "Mostrar Todos",
+    "items": [
+      {
+        "title": "Inglés B2",
+        "date": "2025",
+        "institute": "EF SET",
+        "url": "https://cert.efset.org/es/H7FWG1",
+        "imageUrl": "images/certificates/efset_english.png",
+        "featured": true
+      },
+      {
+        "title": "Estructuras de Datos y Algoritmos",
+        "date": "2025",
+        "institute": "Coursera / Amazon",
+        "url": "https://coursera.org/share/107cd5f0ac4a436485dd6bd12a9e0569",
+        "imageUrl": "images/certificates/coursera_amazon_java_algorithms.jpeg",
+        "featured": false
+      },
+      {
+        "title": "Programando con Java",
+        "date": "2025",
+        "institute": "Coursera / Amazon",
+        "url": "https://coursera.org/share/c7396b9bf99db47d2fde9013b46c1146",
+        "imageUrl": "images/certificates/coursera_amazon_java_programming.jpeg",
+        "featured": false
+      },
+      {
+        "title": "Introducción al Desarrollo de Software",
+        "date": "2025",
+        "institute": "Coursera / Amazon",
+        "url": "https://coursera.org/share/8b805adacff148d322f31d757214ec06",
+        "imageUrl": "images/certificates/coursera_amazon_java_introduction.jpeg",
+        "featured": false
+      },
+      {
+        "title": "Metodología de la Programación de Sistemas Informáticos",
+        "date": "2025",
+        "institute": "SENA",
+        "url": "https://certificados.sena.edu.co/CertificadoDigital/com.sena.consultacer",
+        "imageUrl": "images/certificates/sena_introduction.jpg",
+        "featured": false
+      },
+      {
+        "title": "Angular 17: Creación de Aplicaciones Web",
+        "date": "2024",
+        "institute": "Platzi",
+        "url": "https://platzi.com/p/albenbustamante/curso/8352-course/diploma/detalle/",
+        "imageUrl": "images/certificates/platzi_angular17.png",
+        "featured": true
+      },
+      {
+        "title": "Diseño Web Responsivo",
+        "date": "2023",
+        "institute": "freeCodeCamp",
+        "url": "https://www.freecodecamp.org/certification/albenbustamante/responsive-web-design",
+        "imageUrl": "images/certificates/freeCodeCamp_responsivewebdesign.png",
+        "featured": true
+      },
+      {
+        "title": "Java SE: SQL y Bases de Datos",
+        "date": "2024",
+        "institute": "Platzi",
+        "url": "https://platzi.com/p/albenbustamante/curso/8048-course/diploma/detalle/",
+        "imageUrl": "images/certificates/platzi_javasesql.png",
+        "featured": false
+      },
+      {
+        "title": "Curso Profesional de Git y GitHub",
+        "date": "2021",
+        "institute": "Platzi",
+        "url": "https://platzi.com/p/albenbustamante/curso/1557-course/diploma/detalle/",
+        "imageUrl": "images/certificates/platzi_git.png",
+        "featured": true
+      },
+      {
+        "title": "Java SE Orientado a Objetos",
+        "date": "2021",
+        "institute": "Platzi",
+        "url": "https://platzi.com/p/albenbustamante/curso/1629-course/diploma/detalle/",
+        "imageUrl": "images/certificates/platzi_javaseoop.png",
+        "featured": false
+      },
+      {
+        "title": "Introducción a Java SE",
+        "date": "2021",
+        "institute": "Platzi",
+        "url": "https://platzi.com/p/albenbustamante/curso/1631-course/diploma/detalle/",
+        "imageUrl": "images/certificates/platzi_javase.png",
+        "featured": false
+      }
+    ]
   }
-]
+}

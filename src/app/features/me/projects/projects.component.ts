@@ -3,6 +3,7 @@ import { TitleComponent } from '@components/title/title.component';
 import { ProjectStore } from './projects.store';
 import { ContainerComponent } from '@components/container/container.component';
 import { ProjectsSectionComponent } from './components/projects-section/projects-section.component';
+import { MeStore } from '../me.store';
 
 @Component({
   selector: 'app-projects',
@@ -12,9 +13,10 @@ import { ProjectsSectionComponent } from './components/projects-section/projects
   providers: [ProjectStore],
 })
 export default class ProjectsComponent {
+  private readonly _meStore = inject(MeStore);
   readonly store = inject(ProjectStore);
 
-  constructor() {
-    this.store.fetchAll();
+  get lang() {
+    return this._meStore.lang().project;
   }
 }

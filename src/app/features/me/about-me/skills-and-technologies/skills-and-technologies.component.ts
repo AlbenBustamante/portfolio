@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { SubtitleComponent } from '@components/subtitle/subtitle.component';
 import { BackendSkillsComponent } from './components/backend-skills/backend-skills.component';
 import { FrontendSkillsComponent } from './components/frontend-skills/frontend-skills.component';
 import { MobileSkillsComponent } from './components/mobile-skills/mobile-skills.component';
 import { ToolsSkillsComponent } from './components/tools-skills/tools-skills.component';
+import { MeStore } from '@features/me/me.store';
 
 @Component({
   selector: 'app-skills-and-technologies',
@@ -17,4 +18,6 @@ import { ToolsSkillsComponent } from './components/tools-skills/tools-skills.com
   templateUrl: './skills-and-technologies.component.html',
   styleUrl: './skills-and-technologies.component.css',
 })
-export class SkillsAndTechnologies {}
+export class SkillsAndTechnologies {
+  readonly store = inject(MeStore);
+}
